@@ -64,11 +64,117 @@
 
 \section{Blatt 0}
 
+%----------------------------------------------------------------------------
+
+\subsection{Aufgabe 1: Logarithmus}
+
+\subsubsection*{a)}
+
+Zeigen Sie: $b^{log_{b}(a)} = a$
+
+\subsubsection*{b)}
+
+Zeigen Sie: $log_{b}(x*y) = log_{b}(x) + log_{b}(y)$
+
+\subsubsection*{c)}
+
+Berechnen Sie $2^{log_{4}(n)}$
+
+%----------------------------------------------------------------------------
+
+\subsection{Aufgabe 2: Summenformel}
+
+\subsubsection*{a)}
+
+$\sum^{n}_{i=1} i = \dfrac{1}{2} n (n+1)$
+
+\subsubsection*{b)}
+
+$\sum^{n}_{i=1} i^{3} = (\sum^{n}_{i=1} i)^{2}$
+
+\subsubsection*{c)}
+
+$\sum^{n}_{i=1} (i 2^{i}) = 2 + 2^{n+1} (n-1)$
+
+%----------------------------------------------------------------------------
+
+\subsection{Aufgabe 3: Ereignisraum und Ereignisse}
+
+Lösen Sie folgende Aufgaben unter der Annahme, dass Ereignisse gleichverteilt sind.
+
+\subsubsection*{a)}
+
+Bestimmen Sie den Ereignisraum für: "Eine Münze wird drei Mal hintereinander geworfen." Betrachten Sie das Ereignis: "Es wird mindestens zwei Mal Kopf geworfen. " Wie sieht dieses Ereignis als Menge geschrieben aus? Wie ist die Wahrscheinlichkeit für dieses Ereignis?
+
+\subsubsection*{b)}
+
+Zeigen Sie: Aus $A\cap B =\varnothing$ folgt $P[A \cup B] = P[A] + P[B]$. Was gilt, wenn $A \cap B \neq \varnothing$?
+
+\subsubsection*{c)}
+
+Zeigen Sie für das Gegenereignis $A^{C}= \Omega \backslash A$ eines Ergebnisses $A: P [A^{C}] = 1-P[A]$.
+
+%----------------------------------------------------------------------------
+
+\subsection{Aufgabe 4: Zufallsvariable}
+
+Eine Zufallsvariable X ist eine Funktion $X: \Omega \rightarrow M$, wobei $\Omega$ ein Ereignisraum ist und M eine beliebige Menge. \\
+
+Sei $\Omega = {1, ..., 10}^{2}$. Betrachten Sie die Zufallsvariable
+
+$$X: \Omega \rightarrow \mathbb{N}, X(x,y) = x+y.$$
+
+Wir definieren das Ereignis $[X \leq a] = {(x,y) \epsilon \Omega | X(x,y) \leq a}.$
+
+\subsubsection*{a)}
+
+Geben Sie die Menge $[X \leq 5]$ konkret an und beschreiben Sie das Ereignis in Worten.
+
+\subsubsection*{b)}
+
+Berechnen Sie $P[X \leq 5]$ unter Annahme der Gleichverteilung der Ereignisse.
+
+%----------------------------------------------------------------------------
+
+\subsection{Aufgabe 5: Erwartungswert und Varianz}
+
+Sei $\Omega$ ein Ereignisraum. Wir definieren den Erwartungswert einer Zufallsvariable $X: \Omega \rightarrow M$ als
+
+$$E[X] = \sum_{x \epsilon M} x * P[X=x].$$
+
+Intuitiv beschreibt der Erwartungswert einer Zufallsvariable das Ereignis, welches im Mittel am häufigsten auftritt. Der Erwartungswert ist linear, d.h. es gilt
+
+$$E[a+b*X] = a+b * E[X]$$
+
+\subsubsection*{a)}
+
+Berechnen Sie den Erwartungswert einer Zufallsvariable, die nur Werte 0 und 1 haben kann.
+
+\subsubsection*{b)}
+
+Berechnen Sie den Erwartungswert eines fairen Würfels.
+
+\subsubsection*{c)}
+
+Verwenden Sie die Linearität des Erwartungswertes, um den Erwartungswert der Summe von zwei unabhängigen Würfelwürfen zu berechnen.
+
+\subsubsection*{d)}
+
+Die Varianz einer Zufallsvariable X gibt das Mittel der quadratischen Abweichung von X zu ihrem Erwartungswert an. Formal:
+
+$$var(X) = E[(X-E(x))^{2}].$$
+
+Zeigen Sie mit Hilfe der Linearität des Erwartungswerts, dass folgende Gleichung gilt:
+
+$$var(X) = E[X^{2}] - E[X]^{2}.$$
+
 %----------------------------------------------------------------------------------------
 
 \newpage
 
 \section{Blatt 01}
+
+%----------------------------------------------------------------------------
 
 \subsection*{Aufgabe 1: O-Notation}
 
