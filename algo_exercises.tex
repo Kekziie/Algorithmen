@@ -58,11 +58,94 @@
 
 \tableofcontents
 
+%----------------------------------------------------------------------------------------
+
 \newpage
+
+\section{Blatt 0}
 
 %----------------------------------------------------------------------------------------
 
-\section{eins}
+\newpage
+
+\section{Blatt 01}
+
+\subsection*{Aufgabe 1: O-Notation}
+
+\subsubsection*{a)}
+
+Aus $f_{1}(n), f_{2}(n) = \mathcal{O}(g(n))$ folgt $f_{1}(n) + f_{2}(n) = \mathcal{O}(g(n))$ und $f_{1}(n) \cdot f_{2}(n) = \mathcal{O}(g(n)^{2})$. \\
+
+\subsubsection*{b)}
+
+Aus $f(n) = \mathcal{O}(g(n))$ und $g(n) = \mathcal{O}(h(n))$ folgt $f(n) = \mathcal{O}(h(n))$. \\
+
+\subsubsection*{c)}
+
+$f(n) = \Theta (g(n))$ genau dann, wenn $g(n) = \Theta (f(n))$. \\
+
+\subsubsection*{d)}
+
+$f(n) = \mathcal{O} (g(n))$ genau dann, wenn $g(n) = \Omega (f(n))$. \\
+
+%----------------------------------------------------------------------------
+
+\subsection*{Aufgabe 2: Mastertheorem}
+
+Bestimmen Sie die Komplexitätsklasse für folgende Rekursionsgleichung mit Hilfe des Mastertheorems:
+
+\subsubsection*{a)}
+
+$T(n) = T( \dfrac{n}{2}) + 1$
+
+\subsubsection*{b)}
+
+$T(n) = 2T( \dfrac{n}{2}) + 1$
+
+\subsubsection*{c)}
+
+$T(n) = 2T( \dfrac{n}{2}) + n$
+
+%----------------------------------------------------------------------------
+
+\subsection*{Aufgabe 3: Rekursionen aus alten Klausuren und geometrische Summenformel}
+
+\subsubsection*{a)}
+
+Zeigen Sie, dass für folgende Rekursion $T(n) = \Theta (n^{2} log n)$ ist. 
+
+$$T(1) = 0$$ 
+$$T(n) = T(n-1) + n log n $$
+
+\subsubsection*{b)}
+
+Sei $n = ( \dfrac{8}{7})^{k}$ für ein $k \epsilon \mathbb{N}$. Folgende Rekursion ist für die Funktion T gegeben:
+
+$$T(1)=0$$
+$$T(n)= \dfrac{7}{8} T(\dfrac{7}{8} n) + \dfrac{7}{8} n$$
+
+Finden Sie für $T(n)$ eine geschlossene Form ohne das Mastertheorem zu verwenden und beweisen Sie die Korrektheit Ihrer geschlossenen Form mit vollständiger Induktion.
+
+\subsubsection*{c)}
+
+Sei $n = (\dfrac{3}{2})^{k}$ mit $k \epsilon \mathbb{N}$. Folgende Rekursion ist für die Funktion T gegeben:
+
+$$T(1)=0$$
+$$T(n)= 2T ( \dfrac{2}{3} n) + 1$$
+
+Finden Sie für $T(n)$ eine geschlossene Form ohne das Mastertheorem zu verwenden und beweisen Sie die Korrektheit Ihrer geschlossenen Form mit vollständiger Induktion.
+
+\subsubsection*{d)}
+
+Sei n eine Zweierpotenz, das heißt $n = 2^{k}$ für ein $k \epsilon \mathbb{N}$. Folgende Rekursion ist für die Funktion T gegeben: Für $n > 1$ gelte
+
+$$T(n) = A(n) + B(n) ,$$ wobei
+$$A(n)=A(\dfrac{n}{2}) + B( \dfrac{n}{2})$$ und
+$$B(n)=B(n-1)+2n-1.$$
+
+Die Endwerte seien $T(1)=1$, $B(1)=1$ und $A(1)=0$. Finden Sie für $T(n)$ eine geschlossene Form ohne das Mastertheorem zu verwenden und beweisen Sie die Korrektheit Ihrer Lösung.
+
+%----------------------------------------------------------------------------------------
 
 
 \end{document}
