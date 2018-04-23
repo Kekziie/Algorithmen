@@ -213,6 +213,37 @@ $= T(n)_{i+1}$
 $\Rightarrow T(n)_{n} = \sum^{n}_{k=1} 2^{n-k} + T(n-n) $
 $= \sum^{n}_{k=1} 2^{n-k}$
 
+In welcher Laufzeitklasse liegt eine rekursive Funktion?
+
+$T(n) = a T ( \dfrac{n}{b}) + f(n) ; a,b \geq 1; f(n), T(n) \geq 0; \varepsilon > 0$
+
+\begin{itemize}
+\item[1.Fall]
+$f(n) \epsilon \mathcal{O}(n^{log_{b}(a - \varepsilon)})$ für ein $\varepsilon > 0$
+$\Rightarrow T(n) \epsilon \Theta (n^{log_{b}(a)})$
+\item[2.Fall]
+$f(n) \epsilon \Theta(n^{log_{b}(a)}) \Rightarrow T(n) \epsilon \Theta(n^{log_{b}(a)} * log_{b}(n))$
+\item[3.Fall]
+$f(n) \epsilon \Omega(n^{log_{b}(a+ \varepsilon)}) \Rightarrow T(n) \epsilon \Theta (f(n))$
+\end{itemize}
+
+\begin{itemize}
+\item $\mathcal{O}(n)$ Oberschranke
+\item $\Omega(n)$ Unterschranke
+\item $\Theta(n)$ Vereinigung beider Schranken
+\end{itemize}
+
+\subsection{Beispiele}
+\underline{Mergesort}
+$T(n)=2T( \dfrac{n}{2}) + n$
+$a=2, b=2,f(n)=n$
+$n^{log_{2}2}=n \Rightarrow 2.Fall: T(n) \epsilon \Theta(n*log_{2}n)$
+
+\underline{binarySearch}
+$T(n)=T(\dfrac{n}{2})+1$
+$a=1,b=2,f(n)=1$
+$1^{log_{2}1}=1 \Rightarrow2.Fall$
+
 %----------------------------------------------------------------------------------------
 \newpage
 \section{Blatt 01}
