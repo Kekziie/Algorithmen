@@ -157,11 +157,20 @@ $$E[a+b*X] = a+b * E[X]$$
 \subsubsection*{a)}
 Berechnen Sie den Erwartungswert einer Zufallsvariable, die nur Werte 0 und 1 haben kann.
 
+$E(X) = \sum_{x \epsilon M} x * P[X = x] = 0*P [X=0]+1*P[X=1]=P[X=1]$ 
+
 \subsubsection*{b)}
 Berechnen Sie den Erwartungswert eines fairen Würfels.
 
+Erwartungswert fairer Würfel: $W={1,...,6}$
+$E(X)= \sum_{x \epsilon M} x * \dfrac{1}{6} = \dfrac{1}{6} * \sum_{x \epsilon M} x = \dfrac{1}{6} * 21 = 3,5$
+
 \subsubsection*{c)}
 Verwenden Sie die Linearität des Erwartungswertes, um den Erwartungswert der Summe von zwei unabhängigen Würfelwürfen zu berechnen.
+
+X: Ergebnis 1. Wurf
+Y: Ergebnis 2.Wurf
+$E[X+Y] = E[X]+E[Y] = 3,5 + 3,5 = 7$
 
 \subsubsection*{d)}
 Die Varianz einer Zufallsvariable X gibt das Mittel der quadratischen Abweichung von X zu ihrem Erwartungswert an. Formal:
@@ -171,6 +180,14 @@ $$var(X) = E[(X-E(x))^{2}].$$
 Zeigen Sie mit Hilfe der Linearität des Erwartungswerts, dass folgende Gleichung gilt:
 
 $$var(X) = E[X^{2}] - E[X]^{2}.$$
+
+$var(x) = E [(X-E(X))^{2}]$
+$= E[X^{2}] - E[X]^{2}$
+$= E[X^{2}-2x*E(X)+E(X)^{2}]$
+$= E[X^{2}]-E[2XE(X)]+E[E(X)^{2}]$
+$= E[X^{2}]-2E(X)E(X)+E(X)^{2}$
+$= E(X^{2})-2E(X)^{2}+E(X)^{2}$
+$=E(X^{2})-E(X)^{2}$
 
 %----------------------------------------------------------------------------------------
 \newpage
