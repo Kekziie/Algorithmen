@@ -1,9 +1,35 @@
 \contentsline {section}{\numberline {1}Blatt 0}{3}
 \contentsline {subsection}{\numberline {1.1}Aufgabe 1: Logarithmus}{3}
+\contentsline {paragraph}{\nonumberline a)}{3}
+\contentsline {paragraph}{\nonumberline b)}{3}
+\contentsline {paragraph}{\nonumberline c)}{3}
 \contentsline {subsection}{\numberline {1.2}Aufgabe 2: Summenformel}{3}
+\contentsline {paragraph}{\nonumberline a) Kleiner Gau\IeC {\ss }}{3}
+\contentsline {paragraph}{\nonumberline b)}{3}
+\contentsline {paragraph}{\nonumberline c)}{3}
 \contentsline {subsection}{\numberline {1.3}Aufgabe 3: Ereignisraum und Ereignisse}{3}
+\contentsline {paragraph}{\nonumberline a)}{3}
+\contentsline {paragraph}{\nonumberline b)}{3}
+\contentsline {paragraph}{\nonumberline c)}{3}
 \contentsline {subsection}{\numberline {1.4}Aufgabe 4: Zufallsvariable}{4}
+\contentsline {paragraph}{\nonumberline a)}{4}
+\contentsline {paragraph}{\nonumberline b)}{4}
 \contentsline {subsection}{\numberline {1.5}Aufgabe 5: Erwartungswert und Varianz}{4}
+\contentsline {paragraph}{\nonumberline a)}{4}
+\contentsline {paragraph}{\nonumberline b)}{4}
+\contentsline {paragraph}{\nonumberline c)}{4}
+\contentsline {paragraph}{\nonumberline d)}{5}
 \contentsline {section}{\numberline {2}Tutorium 23.04.2018: Rekursion}{6}
 \contentsline {subsection}{\numberline {2.1}Beispiele}{6}
 \contentsline {section}{\numberline {3}Blatt 01}{7}
+\contentsline {paragraph}{\nonumberline a)}{7}
+\contentsline {paragraph}{\nonumberline b)}{7}
+\contentsline {paragraph}{\nonumberline c)}{7}
+\contentsline {paragraph}{\nonumberline d)}{7}
+\contentsline {paragraph}{\nonumberline a)}{7}
+\contentsline {paragraph}{\nonumberline b)}{7}
+\contentsline {paragraph}{\nonumberline c)}{7}
+\contentsline {paragraph}{\nonumberline a)}{7}
+\contentsline {paragraph}{\nonumberline b)}{7}
+\contentsline {paragraph}{\nonumberline c)}{8}
+\contentsline {paragraph}{\nonumberline d)}{8}

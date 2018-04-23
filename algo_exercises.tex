@@ -60,7 +60,7 @@
 \section{Blatt 0}
 %----------------------------------------------------------------------------
 \subsection{Aufgabe 1: Logarithmus}
-\subsubsection*{a)}
+\paragraph{a)}
 Zeigen Sie: $b^{log_{b}(a)} = a$ 
 
 $log_{b}(a) = x \Leftrightarrow b^{x} = a$
@@ -69,7 +69,7 @@ Sei $x = log_{b}(a)$ für angemessenes $x \epsilon \mathbb{R}$
 $\Rightarrow b^{x} = a$
 $\Rightarrow a = b^{x} = b^{log_{b}(a)}$
 
-\subsubsection*{b)}
+\paragraph{b)}
 Zeigen Sie: $log_{b}(x*y) = log_{b}(x) + log_{b}(y)$
 
 Sei $x_{1}=log_{b}(x), x_{2}=log_{b}(y)$
@@ -77,20 +77,20 @@ $\Rightarrow b^{x_{1}} = x & b^{x_{2}} = y$
 $\Rightarrow x*y = b^{x_{1}}*b^{x_{2}} = b^{x_{1}+x_{2}}$
 $\Rightarrow log_{b}(x*y) = x_{1} + x^{2} = log_{b}(x) + log_{b}(y)$
 
-\subsubsection*{c)}
+\paragraph{c)}
 Berechnen Sie $2^{log_{4}(n)}$
 
 $2^{log_{4}(n)}=2^{log_{2}(n^{ \dfrac{1}{2}})} = n^{\dfrac{1}{2}} = \sqrt{n}$
 
 %----------------------------------------------------------------------------
 \subsection{Aufgabe 2: Summenformel}
-\subsubsection*{a) Kleiner Gauß}
+\paragraph{a) Kleiner Gauß}
 $\sum^{n}_{i=1} i = \dfrac{1}{2} n (n+1)$
 
-\subsubsection*{b)}
+\paragraph{b)}
 $\sum^{n}_{i=1} i^{3} = (\sum^{n}_{i=1} i)^{2}$
 
-\subsubsection*{c)}
+\paragraph{c)}
 $\sum^{n}_{i=1} (i 2^{i}) = 2 + 2^{n+1} (n-1)$
 
 %----------------------------------------------------------------------------
@@ -99,14 +99,14 @@ Lösen Sie folgende Aufgaben unter der Annahme, dass Ereignisse gleichverteilt s
 
 Münze: Kopf (K), Zahl (Z)
 
-\subsubsection*{a)}
+\paragraph{a)}
 Bestimmen Sie den Ereignisraum für: "Eine Münze wird drei Mal hintereinander geworfen." Betrachten Sie das Ereignis: "Es wird mindestens zwei Mal Kopf geworfen. " Wie sieht dieses Ereignis als Menge geschrieben aus? Wie ist die Wahrscheinlichkeit für dieses Ereignis?
 
 Münze wird dreimal geworfen: $\Omega = {KKK, KKZ, KZK,ZKK,ZZK,ZKZ,KZZ,ZZZ}$
 mind. zweimal Kopf: $S = {KKK,KKZ,KZK,ZKK}$
 $P[S]= \dfrac{|S|}{| \Omega|} = \dfrac{4}{8} = \dfrac{1}{2}$
 
-\subsubsection*{b)}
+\paragraph{b)}
 Zeigen Sie: Aus $A\cap B =\varnothing$ folgt $P[A \cup B] = P[A] + P[B]$. Was gilt, wenn $A \cap B \neq \varnothing$?
 
 $A \cap B = \varnothing \Rightarrow P[A \cup B] = P[A] + P[B]$
@@ -114,7 +114,7 @@ $|A \cup B| = |A| + |B| - |A \cap B|$
 $A \cap B = \varnothing \Rightarrow |A \cap B| = 0$
 $P[A \cup B] = \dfrac{|A \cup B|}{| \Omega|} = \dfrac{|A|+|B|}{| \Omega|} = \dfrac{|A|}{| \Omega|}+ \dfrac{|B|}{| \Omega|} = P[A] + P[B]$
 
-\subsubsection*{c)}
+\paragraph{c)}
 Zeigen Sie für das Gegenereignis $A^{C}= \Omega \backslash A$ eines Ergebnisses $A: P [A^{C}] = 1-P[A]$.
 
 $A^{C} = \Omega \backslash A : P[A^{C}] = 1 - P[A]$
@@ -132,12 +132,12 @@ $$X: \Omega \rightarrow \mathbb{N}, X(x,y) = x+y.$$
 
 Wir definieren das Ereignis $[X \leq a] = {(x,y) \epsilon \Omega | X(x,y) \leq a}.$
 
-\subsubsection*{a)}
+\paragraph{a)}
 Geben Sie die Menge $[X \leq 5]$ konkret an und beschreiben Sie das Ereignis in Worten.
 
 $[X \leq 5] = {(1,1),(1,2),(1,2),(1,4),(2,1),(2,2),(2,3),(3,1),(3,2),(4,1)}$
 
-\subsubsection*{b)}
+\paragraph{b)}
 Berechnen Sie $P[X \leq 5]$ unter Annahme der Gleichverteilung der Ereignisse.
 
 $P(X \leq 5)$ bei Gleichverteilung: $|[X \leq 5]| = 10$
@@ -154,25 +154,25 @@ Intuitiv beschreibt der Erwartungswert einer Zufallsvariable das Ereignis, welch
 
 $$E[a+b*X] = a+b * E[X]$$
 
-\subsubsection*{a)}
+\paragraph{a)}
 Berechnen Sie den Erwartungswert einer Zufallsvariable, die nur Werte 0 und 1 haben kann.
 
 $E(X) = \sum_{x \epsilon M} x * P[X = x] = 0*P [X=0]+1*P[X=1]=P[X=1]$ 
 
-\subsubsection*{b)}
+\paragraph{b)}
 Berechnen Sie den Erwartungswert eines fairen Würfels.
 
 Erwartungswert fairer Würfel: $W={1,...,6}$
 $E(X)= \sum_{x \epsilon M} x * \dfrac{1}{6} = \dfrac{1}{6} * \sum_{x \epsilon M} x = \dfrac{1}{6} * 21 = 3,5$
 
-\subsubsection*{c)}
+\paragraph{c)}
 Verwenden Sie die Linearität des Erwartungswertes, um den Erwartungswert der Summe von zwei unabhängigen Würfelwürfen zu berechnen.
 
 X: Ergebnis 1. Wurf
 Y: Ergebnis 2.Wurf
 $E[X+Y] = E[X]+E[Y] = 3,5 + 3,5 = 7$
 
-\subsubsection*{d)}
+\paragraph{d)}
 Die Varianz einer Zufallsvariable X gibt das Mittel der quadratischen Abweichung von X zu ihrem Erwartungswert an. Formal:
 
 $$var(X) = E[(X-E(x))^{2}].$$
@@ -249,42 +249,42 @@ $1^{log_{2}1}=1 \Rightarrow2.Fall$
 \section{Blatt 01}
 %----------------------------------------------------------------------------
 \subsection*{Aufgabe 1: O-Notation}
-\subsubsection*{a)}
+\paragraph{a)}
 
 Aus $f_{1}(n), f_{2}(n) = \mathcal{O}(g(n))$ folgt $f_{1}(n) + f_{2}(n) = \mathcal{O}(g(n))$ und $f_{1}(n) \cdot f_{2}(n) = \mathcal{O}(g(n)^{2})$. \\
 
-\subsubsection*{b)}
+\paragraph{b)}
 Aus $f(n) = \mathcal{O}(g(n))$ und $g(n) = \mathcal{O}(h(n))$ folgt $f(n) = \mathcal{O}(h(n))$. \\
 
-\subsubsection*{c)}
+\paragraph{c)}
 $f(n) = \Theta (g(n))$ genau dann, wenn $g(n) = \Theta (f(n))$. \\
 
-\subsubsection*{d)}
+\paragraph{d)}
 $f(n) = \mathcal{O} (g(n))$ genau dann, wenn $g(n) = \Omega (f(n))$. \\
 
 %----------------------------------------------------------------------------
 \subsection*{Aufgabe 2: Mastertheorem}
 Bestimmen Sie die Komplexitätsklasse für folgende Rekursionsgleichung mit Hilfe des Mastertheorems:
 
-\subsubsection*{a)}
+\paragraph{a)}
 $T(n) = T( \dfrac{n}{2}) + 1$
 
-\subsubsection*{b)}
+\paragraph{b)}
 $T(n) = 2T( \dfrac{n}{2}) + 1$
 
-\subsubsection*{c)}
+\paragraph{c)}
 $T(n) = 2T( \dfrac{n}{2}) + n$
 
 %----------------------------------------------------------------------------
 \subsection*{Aufgabe 3: Rekursionen aus alten Klausuren und geometrische Summenformel}
-\subsubsection*{a)}
+\paragraph{a)}
 
 Zeigen Sie, dass für folgende Rekursion $T(n) = \Theta (n^{2} log n)$ ist. 
 
 $$T(1) = 0$$ 
 $$T(n) = T(n-1) + n log n $$
 
-\subsubsection*{b)}
+\paragraph{b)}
 Sei $n = ( \dfrac{8}{7})^{k}$ für ein $k \epsilon \mathbb{N}$. Folgende Rekursion ist für die Funktion T gegeben:
 
 $$T(1)=0$$
@@ -292,7 +292,7 @@ $$T(n)= \dfrac{7}{8} T(\dfrac{7}{8} n) + \dfrac{7}{8} n$$
 
 Finden Sie für $T(n)$ eine geschlossene Form ohne das Mastertheorem zu verwenden und beweisen Sie die Korrektheit Ihrer geschlossenen Form mit vollständiger Induktion.
 
-\subsubsection*{c)}
+\paragraph{c)}
 Sei $n = (\dfrac{3}{2})^{k}$ mit $k \epsilon \mathbb{N}$. Folgende Rekursion ist für die Funktion T gegeben:
 
 $$T(1)=0$$
@@ -300,7 +300,7 @@ $$T(n)= 2T ( \dfrac{2}{3} n) + 1$$
 
 Finden Sie für $T(n)$ eine geschlossene Form ohne das Mastertheorem zu verwenden und beweisen Sie die Korrektheit Ihrer geschlossenen Form mit vollständiger Induktion.
 
-\subsubsection*{d)}
+\paragraph{d)}
 Sei n eine Zweierpotenz, das heißt $n = 2^{k}$ für ein $k \epsilon \mathbb{N}$. Folgende Rekursion ist für die Funktion T gegeben: Für $n > 1$ gelte
 
 $$T(n) = A(n) + B(n) ,$$ wobei
