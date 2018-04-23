@@ -84,7 +84,7 @@ $2^{log_{4}(n)}=2^{log_{2}(n^{ \dfrac{1}{2}})} = n^{\dfrac{1}{2}} = \sqrt{n}$
 
 %----------------------------------------------------------------------------
 \subsection{Aufgabe 2: Summenformel}
-\subsubsection*{a)}
+\subsubsection*{a) Kleiner Gauß}
 $\sum^{n}_{i=1} i = \dfrac{1}{2} n (n+1)$
 
 \subsubsection*{b)}
@@ -97,14 +97,30 @@ $\sum^{n}_{i=1} (i 2^{i}) = 2 + 2^{n+1} (n-1)$
 \subsection{Aufgabe 3: Ereignisraum und Ereignisse}
 Lösen Sie folgende Aufgaben unter der Annahme, dass Ereignisse gleichverteilt sind.
 
+Münze: Kopf (K), Zahl (Z)
+
 \subsubsection*{a)}
 Bestimmen Sie den Ereignisraum für: "Eine Münze wird drei Mal hintereinander geworfen." Betrachten Sie das Ereignis: "Es wird mindestens zwei Mal Kopf geworfen. " Wie sieht dieses Ereignis als Menge geschrieben aus? Wie ist die Wahrscheinlichkeit für dieses Ereignis?
+
+Münze wird dreimal geworfen: $\Omega = {KKK, KKZ, KZK,ZKK,ZZK,ZKZ,KZZ,ZZZ}$
+mind. zweimal Kopf: $S = {KKK,KKZ,KZK,ZKK}$
+$P[S]= \dfrac{|S|}{| \Omega|} = \dfrac{4}{8} = \dfrac{1}{2}$
 
 \subsubsection*{b)}
 Zeigen Sie: Aus $A\cap B =\varnothing$ folgt $P[A \cup B] = P[A] + P[B]$. Was gilt, wenn $A \cap B \neq \varnothing$?
 
+$A \cap B = \varnothing \Rightarrow P[A \cup B] = P[A] + P[B]$
+$|A \cup B| = |A| + |B| - |A \cap B|$
+$A \cap B = \varnothing \Rightarrow |A \cap B| = 0$
+$P[A \cup B] = \dfrac{|A \cup B|}{| \Omega|} = \dfrac{|A|+|B|}{| \Omega|} = \dfrac{|A|}{| \Omega|}+ \dfrac{|B|}{| \Omega|} = P[A] + P[B]$
+
 \subsubsection*{c)}
 Zeigen Sie für das Gegenereignis $A^{C}= \Omega \backslash A$ eines Ergebnisses $A: P [A^{C}] = 1-P[A]$.
+
+$A^{C} = \Omega \backslash A : P[A^{C}] = 1 - P[A]$
+$ \Omega = A \cup A^{C}, A \cap A^{C} = \varnothing$
+$\Rightarrow P[ \Omega] = P[A \cup A^{C}] = P[A] + P[A^{C}]$
+da $P[ \Omega] = 1 \Rightarrow P[A^{C}] = 1- P[A]$
 
 %----------------------------------------------------------------------------
 \subsection{Aufgabe 4: Zufallsvariable}
