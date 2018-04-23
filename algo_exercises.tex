@@ -191,6 +191,30 @@ $=E(X^{2})-E(X)^{2}$
 
 %----------------------------------------------------------------------------------------
 \newpage
+\section{Tutorium 23.04.2018: Rekursion}
+
+$T(0)=0$
+$T(n) = 2^{n-1} + T(n-1)$
+$= 2^{n-1}+2^{(n-1)-1}+T((n-1)-1)$
+...
+$2^{n-1}+2^{n-2}+2^{n-3}+ ... + 2^{n-i}+T(n-i)$
+
+\underline{Vollständige Induktion}
+
+IB: $T(n): = \sum^{i}_{k=1}2^{n-k}+T(n-i)$
+IV: Behauptung gelte für beliebige feste $i \epsilon \mathbb{N}$
+IA: $T(n)_{1} = \sum^{1}_{k=1} 2^{n-k}+T(n-1) = 2^{n-1}+T(n-1)$
+IS: Beh: $T(n)_{i+1}= \sum^{i+1}_{k=1} 2^{n-k} + T(n-(i+1))$
+$T(n):= \sum^{i}_{k=1} 2^{n-k}+ T(n-i)$
+$\Rightarrow \sum^{i}_{k=1} 2^{n-i-1}+ T(n-i-1)$
+$= \sum^{i}_{k=1} 2^{n-k} + 2^{n-(i+1)}+T(n-(i+1))$
+$I.V.= \sum^{i+1}_{k=1} 2^{n-k} + T(n-(i+1))$
+$= T(n)_{i+1}$
+$\Rightarrow T(n)_{n} = \sum^{n}_{k=1} 2^{n-k} + T(n-n) $
+$= \sum^{n}_{k=1} 2^{n-k}$
+
+%----------------------------------------------------------------------------------------
+\newpage
 \section{Blatt 01}
 %----------------------------------------------------------------------------
 \subsection*{Aufgabe 1: O-Notation}
