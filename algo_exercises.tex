@@ -253,6 +253,8 @@ $1^{log_{2}1}=1 \Rightarrow2.Fall$
 
 Aus $f_{1}(n), f_{2}(n) = \mathcal{O}(g(n))$ folgt $f_{1}(n) + f_{2}(n) = \mathcal{O}(g(n))$ und $f_{1}(n) \cdot f_{2}(n) = \mathcal{O}(g(n)^{2})$. \\
 
+
+
 \paragraph{b)}
 Aus $f(n) = \mathcal{O}(g(n))$ und $g(n) = \mathcal{O}(h(n))$ folgt $f(n) = \mathcal{O}(h(n))$. \\
 
@@ -269,11 +271,44 @@ Bestimmen Sie die Komplexitätsklasse für folgende Rekursionsgleichung mit Hilf
 \paragraph{a)}
 $T(n) = T( \dfrac{n}{2}) + 1$
 
+\begin{itemize}
+\item $a = 1$
+\item $b = 2$
+\item $f(n) = 1$
+\end{itemize}
+
+$n^{log_{2}(1)} = n^{0} = 1$
+$\Rightarrow 2. Fall$
+$f(n) \in \Theta (1)$
+$\Rightarrow T(n) \in \Theta(log n)$
+
 \paragraph{b)}
 $T(n) = 2T( \dfrac{n}{2}) + 1$
 
+\begin{itemize}
+\item $a = 2$
+\item $b = 2$
+\item $f(n) = 1$
+\end{itemize}
+
+$n^{log_{2}(2- \varepsilon)} = n^{log_{2}(2-1)} = n^{0} = 1$
+$\Rightarrow 1. Fall$
+$f(n) \in \Theta (1)$
+$\Rightarrow T(n) \in \Theta(log n)$
+
 \paragraph{c)}
 $T(n) = 2T( \dfrac{n}{2}) + n$
+
+\begin{itemize}
+\item $a = 2$
+\item $b = 2$
+\item $f(n) = n$
+\end{itemize}
+
+$n^{log_{2}(2)} = n^{1} = n$
+$\Rightarrow 2.Fall$
+$f(n) \in \Theta (1)$
+$\Rightarrow T(n) \in \Theta(log n)$
 
 %----------------------------------------------------------------------------
 \subsection*{Aufgabe 3: Rekursionen aus alten Klausuren und geometrische Summenformel}
@@ -305,7 +340,9 @@ Sei n eine Zweierpotenz, das heißt $n = 2^{k}$ für ein $k \epsilon \mathbb{N}$
 
 $$T(n) = A(n) + B(n) ,$$ wobei
 $$A(n)=A(\dfrac{n}{2}) + B( \dfrac{n}{2})$$ und
-$$B(n)=B(n-1)+2n-1.$$
+$$B(n)=B(n-1)
+
++2n-1.$$
 
 Die Endwerte seien $T(1)=1$, $B(1)=1$ und $A(1)=0$. Finden Sie für $T(n)$ eine geschlossene Form ohne das Mastertheorem zu verwenden und beweisen Sie die Korrektheit Ihrer Lösung.
 
