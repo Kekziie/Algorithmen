@@ -253,8 +253,6 @@ $1^{log_{2}1}=1 \Rightarrow2.Fall$
 
 Aus $f_{1}(n), f_{2}(n) = \mathcal{O}(g(n))$ folgt $f_{1}(n) + f_{2}(n) = \mathcal{O}(g(n))$ und $f_{1}(n) \cdot f_{2}(n) = \mathcal{O}(g(n)^{2})$. \\
 
-
-
 \paragraph{b)}
 Aus $f(n) = \mathcal{O}(g(n))$ und $g(n) = \mathcal{O}(h(n))$ folgt $f(n) = \mathcal{O}(h(n))$. \\
 
@@ -348,5 +346,186 @@ Die Endwerte seien $T(1)=1$, $B(1)=1$ und $A(1)=0$. Finden Sie für $T(n)$ eine 
 
 %----------------------------------------------------------------------------------------
 
+\section{Ternäre Suche}
+Bei der binären Suche ist der Input ein sortiertes Array $A$ und eine Zahl $x$ (die nicht notwendig im Array $A$ vorkommen muss). Dabei wird $A$ in zwei gleich große Teile $A_1$ und $A_2$ geteilt und ermittelt, in welchem der beiden Teile sich $x$ befinden müsste. Dieses Verfahren wird \emph{rekursiv} fortgesetzt. Betrachten Sie nun die \emph{ternäre Suche}, bei der $A$ statt in zwei Teile, in \emph{drei} etwa gleich große Teile $A_1$, $A_2$ und $A_3$ geteilt wird.
+
+
+\paragraph{a)}
+Geben Sie ein Array $A$ und ein zu suchendes Element $x$ an, so dass die binäre Suche mit weniger Vergleichen auskommt als die ternäre Suche. \\
+
+$A:= \begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+0 & 1 & 2 & 3 & 4 & 5 & 6\\
+\hline
+\end{tabular}$ \\
+ges: \textbf{3} \\
+
+binäre Suche: \\
+$\lceil \dfrac{6-0}{2} \rceil + 0 = 3.$ Position wird betrachtet \\
+$\rightarrow$ \textbf{3} gefunden \\
+
+ternäre Suche: \\
+$\lceil \dfrac{6-0}{3} \rceil + 0 $ und $\lceil \dfrac{6-0}{3} \rceil + (\lceil \dfrac{6-0}{3} \rceil + 0)$, also Position 2 und 4 betrachtet \\
+$\rightarrow$ \textbf{3} nicht gefunden \\
+$\rightarrow$ neues Sucharray von Position 3 bis 3 \\
+$\rightarrow$ Array Größe 1 \\
+$\rightarrow$ \textbf{3} wird gefunden \\
+
+Bei der binären Suche wird \textbf{3} also mit dem ersten Vergleich gefunden, bei der tertiären Suche jedoch erst nach dem drittem. 
+
+\paragraph{b)} 
+Geben Sie ein Array $A$ und ein zu suchendes Element $x$ an, so dass die ternäre Suche mit weniger Vergleichen auskommt als die binäre Suche. \\
+
+$A:= \begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+0 & 1 & 2 & 3 & 4 & 5 & 6\\
+\hline
+\end{tabular}$ \\
+ges: \textbf{2} \\
+
+binäre Suche: \\
+$\lceil \dfrac{6-0}{2} \rceil + 0 = 3.$ Position wird betrachtet \\
+$\rightarrow$ Sucharray bis Position 3 betrachten: $\lceil \dfrac{3-0}{2} \rceil + 0 = \lceil 1,5 \rceil = 2$ \\
+$\rightarrow$ Position 2 betrachten \\
+$\rightarrow$ \textbf{2} gefunden \\
+$\rightarrow$ 2 Vergleiche \\
+
+ternäre Suche: \\
+$\lceil \dfrac{6-0}{3} \rceil + 0 = \lceil 2 \rceil$ \\
+$\rightarrow$ Position 2 betrachten \\
+$\rightarrow$ \textbf{2} gefunden \\
+$\rightarrow$ ein Vergleich \\
+
+\paragraph{c)} 
+Geben Sie Pseudocode für die ternäre Suche an. Verwenden Sie dabei Rekursion. Nummerieren Sie die Zeilen in Ihrem Pseudocode und erklären Sie detailliert jede Zeile Ihres Codes. \\
+
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwIn{sortiertes Array A, Integer x}
+\KwOut{Integer [Postion von x in A]}
+$oben \leftarrow length(1)-1$\\
+$unten \leftarrow 0$\\
+\textbf{while} $(oben \geq unten)$ \\
+$a \leftarrow \lceil \dfrac{oben-unten}{3} \rceil$ \\
+\textbf{if} ($A(a+ unten) > x$) do \\
+$oben \leftarrow a+unten-1$ \\
+\textbf{else if} ($A(2a+unten) < x $) do\\
+$unten \leftarrow 2a+unten+1$ \\
+\textbf{else if} ($A(2a+unten) > x $) do\\
+$unten \leftarrow a+unten+1$ \\
+$oben \leftarrow 2a+unten-1$ \\
+\textbf{else if} ($A(a+unten) == x $) do\\
+\Return $(a+unten)$ \\
+\textbf{else} \Return -1 \\
+\textbf{end} while
+\end{algorithm}
+
+
+\underline{Erklärung:} \\
+Betrachte Array A \\
+Falls $x \in A_{1}$,so prüft das der if-case in Zeile 5 \\
+Falls $x \in A_{3}$,so prüft das der if-case in Zeile 7 \\
+Falls $x \in A_{2}$,so prüft das der if-case in Zeile 9 \\
+Falls $x=A$ oder $x=2a$, so prüfet das die if-cases in Zeile 12 und 14 \\
+Falls $x \notin A_{1},A_{2},A_{3}$ und $x \neq a, x \neq 2a$ so kann x nicht im geordneten Array A existieren.
+
+\paragraph{d)}
+Analysieren Sie die Zeitkomplexität der ternären Suche. Was können Sie über die asymptotische Laufzeit der ternären Suche im Vergleich zur binären Suche sagen? \\
+
+$T(n)=T( \dfrac{n}{3})+c$ mit $c \in {1,2,3,4,5}$ ist die passende Rekursionsgleichung, da der Suchbereich nach jedem Rekursionsschritt nur noch $\dfrac{1}{3}$ des vorherigen Suchbereiches groß ist. c ist eine Konstante (für die Vergleiche pro Rekursionsschritt) und ist immer 1,2 oder 3, außer das Element wird gefunden bzw. existiert nicht. \\
+Im Mittel wird $x \approx 2$ sein. \\
+Mit dem Master-Theorem: \\
+$n^{log_{3}(1)} = n^{0} = 1 \in c$ \\
+$\Rightarrow T(n) \in \Theta (n^{log_{3}(1)} log(n)) $ \\
+$T(n) \in \Theta(log (n))$ \\
+Die binäre und ternäre Suche sind also asymptotisch gleich. Es gibt also keine signifikanten Laufzeitunterschiede zur binären Suche.
+
+\paragraph{e)}
+Bei jedem Rekursionsschritt werden ein oder zwei Vergleiche benötigt, um zu entscheiden, in welchem Teil des Arrays $A$ das Element $x$ liegt. Was ist die minimale, die durchschnittliche und die maximale Anzahl an Vergleichen die benötigt wird, wenn $x$ nicht in $A$ liegt. \\
+
+Nehme an Array A hat Größen und $x \notin A$. \\
+Minimale Anzahl von Vergleiche (best case): 5 Vergleiche, falls $x \notin A_{1},A_{2},A_{3}$ und $x \neq a, x\neq 2a$ im ersten Schritt. \\
+Maximale Anzahl (worst case): $\dfrac{n}{3} * 3^{n}+2 = n * 3^{n-1}+2$, falls bis Arraygröße $n=1$ aufgelöst wird und dann erst festgestellt wird $x \notin A$. \\
+Durchschnittliche Anzahl (average case): $\dfrac{n*3^{n-1}+2+5}{2} = \dfrac{n}{2} *3^{n-1}+3,5$
+
+\section{Eine Anwendung der Binären Suche}
+Sei $A$ ein sortiertes Array der Größe $n$ und sei $z$ eine gegebene Zahl. Das Ziel dieser Übung ist es, folgdende Frage zu beantworten: Gibt es in $A$ zwei verschiedene Elemente $x$ und $y$, so dass $x+y=z$?
+
+\paragraph{a)}
+Es sollte nicht schwierig sein, einen Algorithmus zu finden, der diese Frage in quadratischer Zeit $\calO(n^2)$ beantwortet. Geben Sie Pseudocode für einen solchen Algorithmus an und erklären Sie warum Ihr Algorithmus die Laufzeit $\calO(n^2)$ hat. \\
+
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwIn{sortiertes Array A, Integer z}
+\KwOut{boolean[ob $x,y \in A$ mit $x+y=z$]}
+$counter \leftarrow 0$\\
+$counter2 \leftarrow 0$\\
+\textbf{while} $(counter2 \leq length(A)-1)$ \\
+\textbf{while} $(counter \leq length(A)-1)$ \\
+\textbf{if} $(A(counter)+A(counter2) == z)$ \\
+\textbf{if} $(counter =! counter2)$ \\
+\Return $true$ \\
+\textbf{else} counter++ \\
+\textbf{end} while \\
+counter2++ \\
+\textbf{end} while \\
+\Return $false$
+\end{algorithm}
+
+Der Algorithmus hat $\mathcal{O}(z)$ Laufzeit, weil hier jede Zelle des Arrays einmal mit jeder anderen addiert und anschließendauf Größe = z verglichen wird.
+
+\paragraph{b)}
+Verwenden Sie nun die binäre Suche, um einen effizienteren Algorithmus zu finden, der die obige Frage in einer Laufzeit von $\calO(n\log n)$ beantworten kann. Geben Sie auch hier Pseudocode an und begründen Sie die Korrektheit Ihres Algorithmus. Erklären Sie, warum Ihr Algorithmus die angegebene Laufzeit hat. \\
+
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwIn{sortiertes Array A, Integer z}
+\KwOut{}
+$counter \leftarrow 0$\\
+$oben \leftarrow length(A)-1$\\
+$unten \leftarrow 0$ \\
+\textbf{while} $(counter \leq length(A)-1)$ \\
+$y=z-A(counter)$ \\
+\textbf{if}$(binarySearch(y) > 0)$ \\
+\Return $true$ \\
+\textbf{end} while \\
+\Return $false$ \\
+\end{algorithm}
+
+Da nun das Komplementärelement von y (also x mit $x+y=z$) nicht mehr in linearer Suchzeit, sondern logarithmischer Suchzeit $log(n)$ gefunden wird, falls vorhanden, benötigt dieser Algorithmus für jede Rekursion nicht mehr $\mathcal{O}(n)$ sondern $\mathcal{log(n)}$ Schritte, was bei Tests für alle n Elemente des Input Arrays zu maximal $n*log(n)$ Schritten führt, was bedeutet, dass die Laufzeit in $\mathcal{O}(n*log(n))$ liegt.
+
+\paragraph{c)}
+Es ist klar, dass ein Algorithmus für die obige Frage mindestens die Laufzeit $\Omega(n)$ benötigt. Versuchen Sie, einen Algorithmus zu finden, der obige Frage in einer Laufzeit von $\calO(n)$ beantwortet. Geben Sie Pseudocode an und begründen Sie die Laufzeit und die Korrektheit Ihres Algorithmus. \\
+
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwIn{sortiertes Array A, Integer z}
+\KwOut{boolean[ob $x,y \in A$ mit $x+y=z$]}
+$counter \leftarrow 0$\\
+$oben \leftarrow length(A)-1$\\
+\textbf{while} $(counter \leq length(A)-1)$ \\
+$y=z-A(counter)$ \\
+\textbf{if}$(binarySearch(A ,y $; ab Counter +1 Index)$ > 0)$ \\
+\Return $true$ \\
+\textbf{end} while \\
+\Return $false$ \\
+\end{algorithm}
+
+Weil nun die Größe des binär durchsuchten Arrays in jedem Rekursionsschritt um 1 sinkt haben wir nicht mehr $log(n)$ Aufwand pro Rekursionsschritt, sondern $log(n-i)$ für das i-ten Rekursionsschritt. Das Array A(ab Counter +1) ist das Array ab der Position 5 (als untere Grenze für die binäre Suche) oder das Array ab Position 5 kopiert und als neues Array in die binarySearch mit gesuchtem y als Input gegeben. Das darf gemacht werden, weil ja die schon abgeleiteten A(Counter) sicher kein Komplementärelement haben und dementsprechend auch keines sein können und somit bei der Suche ignoriert werden.
+
+\section{Implementierung von Suchalgorithmen}
+Laden Sie die Java-Vorlage aus dem Moodle herunter und implementieren Sie die folgenden Methoden:
+
+\begin{enumerate}
+\item die Lineare Suche in \texttt{linearSearch(int[] array, int key)}. 
+\item die Binäre Suche in \texttt{binarySearch(int[] array, int key)}.
+\item die Interpolationssuche in \texttt{interpolationSearch(int[] array, int key)}.
+\end{enumerate}
+Für die Implementierung der Interpolationssuche benutzen Sie die folgende Variante aus der Vorlesung, um das jeweils nächste Element zu bestimmen:
+\[ next \leftarrow \left\lceil \frac{a-S[unten-1]}{S[oben+1]-S[unten-1]} \cdot (oben-unten+1) \right\rceil + (unten-1) \]
+
+siehe Main.java
+
+%----------------------------------------------------------------------------------------
 
 \end{document}
