@@ -527,5 +527,592 @@ Für die Implementierung der Interpolationssuche benutzen Sie die folgende Varia
 siehe Main.java
 
 %----------------------------------------------------------------------------------------
+\section{Sortieren}
+Betrachten Sie die Algorithmen \texttt{Insertionsort} und \texttt{Minimumsuche + Austausch} (Schematisch erklärt in Foliensatz 4, Seite 2).
+
+\paragraph{a)}
+Geben Sie jeweils Pseudocode für \texttt{Insertionsort} und \texttt{Minimumsuche + Austausch} an. \\
+
+\begin{lstlisting}
+Insertionsort:
+
+Input: Array A
+Output: Sortiertes Array S
+
+n = length(A) - 1
+g = 0
+
+while(g < n) do
+    ticker = g;
+    x = A[g+1];
+    while(A[g+1] <= A[ticker]) do
+        A[ticker + 1] = A[ticker];
+        if (ticker == 0) do
+            brake;
+        end if
+        ticker --;
+    end while
+    A[ticker + 1] = x;
+    g++;
+ end while
+ 
+ return A;
+
+\end{lstlisting}
+
+\begin{lstlisting}
+Minimumssuche + Austausch:
+
+Input: Array A
+Output: Sortiertes Array S
+
+n = length(A) - 1
+i = 0
+
+while (i < n) do
+    min = i;
+    j = i + 1;
+    while(j <= n) do
+        if(A[min]>A[j]) do
+            min =j;
+        end if
+        j++;
+    end while
+    x = A[i];
+    A[i]= A[min];
+    A[min] = x;
+    i++;
+end while
+
+return A;
+
+\end{lstlisting}
+
+\paragraph{b)}
+Argumentieren Sie, dass beide Sortierverfahren korrekt sortieren. \\
+
+Insertion-Sort:\\
+Bei Insertion Sort wird von einer aufsteigenden Grenze g bis n = length(A) - 1 immer abwärts verglichen ob das Element direkt nach g (also g+1) kleiner als einer seiner Vorgänger ist, bis dieses es schließlich nicht mehr ist.\\
+Dabei wird, bevor A[g+1] verglichen wird, dieses der Inhalt dieses Arrayfeldes als x gespeichert um später an die passende Position eingesetzt werden zu können und nach jedem Vergleich bei dem A[g+1] kleiner ist das betrachtete Element eine Position weiter nach rechts geschoben (weswegen A[g+1] auch gespeichert werden musste).\\
+Ganz grob/kurz gesagt:\\
+- Insertion Sort geht von links nach rechts durch\\
+- Grenze zunächst auf erstem Element (an Position 0)\\
+- Grenze steigt nach jedem Schritt um 1\\
+- bei jedem Schritt wird das Element direkt nach der Grenze mit jedem Element zuvor verglichen bis es größer ist und passen eingeordnet.\\
+
+
+Minimumsuche + Austausch:\\
+In Zeile 12 bis 17 wird das Minimum gesucht. In Zeile 18 bis 20 wird getauscht.\\
+Hierbei tickt i von 0 bis n = length(A)-1 hoch und vertauscht bei jedem Schleifendurchgang das gefundene Minimum (welches immer ab Position i linear gesucht wird) mit dem Element an der i-ten Position.\\
+Sobald i = n erreicht wird, ist das letzte Element automatisch richtig sortiert und daher wird schon bei while(i kleiner n) [Zeile 9] abgebrochen und anschließend das (sortierte) Array zurückgegeben.\\
+
+\paragraph{c)}
+Geben Sie die Anzahl der Vergleiche und die Anzahl der Vertauschungen auf einer vorsortierten Eingabe der Länge $n$ an. \\
+
+Insertion Sort:\\
+Vergleiche: 1 (erstes A[0] mit zweitem A[1]) + ... + 1 (vorletztes A[n-1] mit letztem A[n]) = n - 1 Vegleiche.\\
+Austausche: Theoretisch n - 1 mal, da das betrachete Element von A[g + 1] bei vor jedem g++ durch sich selbst überschrieben wird, wenn man das als Vertauschung zählt. Zählt man das "sich selbst austauschen/überschreiben" nicht, so sind es 0 Vertauschungen.\\
+\\
+Minimumsuche + Austausch:\\
+Vergleiche: Da bei der Minimumssuche jedes Element nach Position i im Array einmal komplett durchlaufen wird: n + (n - 1) + ... + 1 = $((n+1)*n)/2$ Vergleiche.\\
+Austausche: Da nach jeder Minimumssuche genau einmal (mit sich selbst vertauscht/durch sich selbst überschieben) Vertauscht wird, wird bei gesamtem Durchlauf des Arrays, wie oben theoretisch n mal getauscht. Zählt man eine Selbstüberschreibung jedoch nicht als Tausch, so sind es 0 Austausche, da die Folge bereits sortiert ist und jedes Element bereits an seinem einzufügenden Platz nach der Minimumssuche saß/sitzt.
+
+\paragraph{d)}
+Konstruieren Sie für allgemeines $n\in \mathbb N$ je ein Beispiel, auf denen die Algorithmen eine maximale Anzahl von \textit{Vergleichen} benötigt. Geben Sie diese Anzahl auch an. \\
+
+Array mit $a_{i}>a_{i+1}$:\\
+\\
+Insertion Sort:\\
+Weil der Reihe nach vorgegangen wird und die Eingabe von groß nach klein sortiert ist, werden für jeden Schritt i, genau i Vergleiche benötigt, um die richtige Position des Elements zu bestimmen:$\sum_{i=1}^n i = \frac{n^2+n}{2}$ Vergleiche.\\
+\\
+Minimumsuche + Austausch:\\
+Bei der Minimumssuche muss das Array immer vollständig durchlaufen werden. Es ergibt sich also $\sum_{i=1}^n i = \frac{n^2+n}{2}$ Vergleiche.
+
+\paragraph{e)} Konstruieren Sie für allgemeines $n\in \mathbb N$ je ein Beispiel, auf denen die Algorithmen eine maximale Anzahl von \textit{Vertauschungen} benötigt. Geben Sie diese Anzahl auch an. \\
+
+Array mit $a_{i}>a_{i+1}$:\\
+\\
+Insertion Sort:\\
+Weil der Reihe nach vorgegangen wird und die Eingabe von groß nach klein sortiert ist, werden für jedes g genau g Vertauschungen benötigt bis das Element sein passende Stelle gefunden hat und für jedes nächste g, das Element wieder ganz nach links geschoben wird.\\
+Es ergeben sich $\sum_{i=1}^n i = \frac{n^2+n}{2}$ Vertauschungen.\\
+\\
+Minimumsuche + Austausch:\\
+Die Anzahl der Vertauschungen liegt hier statisch bei n (außer man zählt nicht wenn ein Element mit sich selbst vertauscht wird und gerade dann wäre dies hier sicher n).
+
+%----------------------------------------------------------------------------
+\section{Heapsort}
+Gegeben sei das Array $A=\langle 4,2,12,10,18,14,6,16,8 \rangle$. 
+
+\paragraph{a)}
+Bilden Sie schrittweise (Element für Element) den Min-Heap $S$ für das Array $A$. Benutzen Sie dabei die Heap-Eigenschaft: Jeder Baumknoten $u$ ist mit einem Element $S[u]$ beschriftet und es gilt: Ist $u$ Elternknoten von $v$, so ist $S[u] \leq S[v]$. Veranschaulichen und kommentieren Sie alle Schritte. \\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.15]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (37.5,-7.9) circle (3);
+\draw (37.5,-7.9) node {$4$};
+\end{tikzpicture}
+\end{center}
+Schritt 1: 1. Array-Element wird in leeren Heap eingefügt.\\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.15]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (37.5,-7.9) circle (3);
+\draw [black] (30.8,-18.3) circle (3);
+\draw (37.5,-7.9) node {$4$};
+\draw (30.8,-18.3) node {$2$};
+\draw [black] (35.88,-10.42) -- (32.42,-15.78);
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.15]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (22.00,-13.00) -- (27.00,-13.00);
+\fill [black] (27.00,-13.00) -- (26.2,-12.5) -- (26.2,-13.5);
+\draw [black] (37.5,-7.9) circle (3);
+\draw [black] (30.8,-18.3) circle (3);
+\draw (37.5,-7.9) node {$2$};
+\draw (30.8,-18.3) node {$4$};
+\draw [black] (35.88,-10.42) -- (32.42,-15.78);
+\end{tikzpicture}
+\end{center}
+Schritt 2: 2. Array-Element wird in Heap eingefügt und Heap-Eingeschaft geprüft und hergestellt.\\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.15]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (34.5,-8.7) circle (3);
+\draw (34.5,-8.7) node {$2$};
+\draw [black] (24.7,-18.3) circle (3);
+\draw (24.7,-18.3) node {$4$};
+\draw [black] (44,-18.3) circle (3);
+\draw (44,-18.3) node {$12$};
+\draw [black] (32.36,-10.8) -- (26.84,-16.2);
+\draw [black] (36.61,-10.83) -- (41.89,-16.17);
+\end{tikzpicture}
+\end{center}
+Schritt 3: 3. Array-Element wird in Heap eingefügt. Heap-Eigenschaft erfüllt, kein Austausch.\\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.15]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (34.5,-8.7) circle (3);
+\draw (34.5,-8.7) node {$2$};
+\draw [black] (24.7,-18.3) circle (3);
+\draw (24.7,-18.3) node {$4$};
+\draw [black] (44,-18.3) circle (3);
+\draw (44,-18.3) node {$12$};
+\draw [black] (19.9,-29.8) circle (3);
+\draw (19.9,-29.8) node {$10$};
+\draw [black] (32.36,-10.8) -- (26.84,-16.2);
+\draw [black] (36.61,-10.83) -- (41.89,-16.17);
+\draw [black] (23.54,-21.07) -- (21.06,-27.03);
+\end{tikzpicture}
+\end{center}
+Schritt 4: 4. Array-Element in Heap einfügen. Heap-Eigenschaft erfüllt, kein Austausch.\\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.15]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (34.5,-8.7) circle (3);
+\draw (34.5,-8.7) node {$2$};
+\draw [black] (24.7,-18.3) circle (3);
+\draw (24.7,-18.3) node {$4$};
+\draw [black] (44,-18.3) circle (3);
+\draw (44,-18.3) node {$12$};
+\draw [black] (19.9,-29.8) circle (3);
+\draw (19.9,-29.8) node {$10$};
+\draw [black] (29.1,-29.8) circle (3);
+\draw (29.1,-29.8) node {$18$};
+\draw [black] (32.36,-10.8) -- (26.84,-16.2);
+\draw [black] (36.61,-10.83) -- (41.89,-16.17);
+\draw [black] (23.54,-21.07) -- (21.06,-27.03);
+\draw [black] (25.77,-21.1) -- (28.03,-27);
+\end{tikzpicture}
+\end{center}
+Schritt 5: 5. Array-Element wird in Heap eingefügt. Heap-Eigenschaft erfüllt, kein Austausch.\\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.15]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (34.5,-8.7) circle (3);
+\draw (34.5,-8.7) node {$2$};
+\draw [black] (24.7,-18.3) circle (3);
+\draw (24.7,-18.3) node {$4$};
+\draw [black] (44,-18.3) circle (3);
+\draw (44,-18.3) node {$12$};
+\draw [black] (19.9,-29.8) circle (3);
+\draw (19.9,-29.8) node {$10$};
+\draw [black] (29.1,-29.8) circle (3);
+\draw (29.1,-29.8) node {$18$};
+\draw [black] (40.7,-29.8) circle (3);
+\draw (40.7,-29.8) node {$14$};
+\draw [black] (32.36,-10.8) -- (26.84,-16.2);
+\draw [black] (36.61,-10.83) -- (41.89,-16.17);
+\draw [black] (23.54,-21.07) -- (21.06,-27.03);
+\draw [black] (25.77,-21.1) -- (28.03,-27);
+\draw [black] (43.17,-21.18) -- (41.53,-26.92);
+\end{tikzpicture}
+\end{center}
+Schritt 6: 6. Array-Element wird eingefügt. Heap-Eigenschaft erfüllt, kein Austausch.\\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.15]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (34.5,-8.7) circle (3);
+\draw (34.5,-8.7) node {$2$};
+\draw [black] (24.7,-18.3) circle (3);
+\draw (24.7,-18.3) node {$4$};
+\draw [black] (44,-18.3) circle (3);
+\draw (44,-18.3) node {$12$};
+\draw [black] (19.9,-29.8) circle (3);
+\draw (19.9,-29.8) node {$10$};
+\draw [black] (29.1,-29.8) circle (3);
+\draw (29.1,-29.8) node {$18$};
+\draw [black] (39.8,-29.8) circle (3);
+\draw (39.8,-29.8) node {$14$};
+\draw [black] (48.5,-29.8) circle (3);
+\draw (48.5,-29.8) node {$6$};
+\draw [black] (32.36,-10.8) -- (26.84,-16.2);
+\draw [black] (36.61,-10.83) -- (41.89,-16.17);
+\draw [black] (23.54,-21.07) -- (21.06,-27.03);
+\draw [black] (25.77,-21.1) -- (28.03,-27);
+\draw [black] (42.97,-21.12) -- (40.83,-26.98);
+\draw [black] (45.09,-21.09) -- (47.41,-27.01);
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.15]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (12.00,-17.00) -- (17.00,-17.00);
+\fill [black] (17.00,-17.00) -- (16.2,-16.5) -- (16.2,-17.5);
+\draw [black] (34.5,-8.7) circle (3);
+\draw (34.5,-8.7) node {$2$};
+\draw [black] (24.7,-18.3) circle (3);
+\draw (24.7,-18.3) node {$4$};
+\draw [black] (44,-18.3) circle (3);
+\draw (44,-18.3) node {$6$};
+\draw [black] (19.9,-29.8) circle (3);
+\draw (19.9,-29.8) node {$10$};
+\draw [black] (29.1,-29.8) circle (3);
+\draw (29.1,-29.8) node {$18$};
+\draw [black] (39.8,-29.8) circle (3);
+\draw (39.8,-29.8) node {$14$};
+\draw [black] (48.5,-29.8) circle (3);
+\draw (48.5,-29.8) node {$12$};
+\draw [black] (32.36,-10.8) -- (26.84,-16.2);
+\draw [black] (36.61,-10.83) -- (41.89,-16.17);
+\draw [black] (23.54,-21.07) -- (21.06,-27.03);
+\draw [black] (25.77,-21.1) -- (28.03,-27);
+\draw [black] (42.97,-21.12) -- (40.83,-26.98);
+\draw [black] (45.09,-21.09) -- (47.41,-27.01);
+\end{tikzpicture}
+\end{center}
+Schritt 7: 7. Array-Element wird in Heap eingefügt und Heap-Eigenschaft geprüft und hergestellt.\\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.15]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (34.5,-8.7) circle (3);
+\draw (34.5,-8.7) node {$2$};
+\draw [black] (24.7,-18.3) circle (3);
+\draw (24.7,-18.3) node {$4$};
+\draw [black] (44,-18.3) circle (3);
+\draw (44,-18.3) node {$6$};
+\draw [black] (19.9,-29.8) circle (3);
+\draw (19.9,-29.8) node {$10$};
+\draw [black] (29.1,-29.8) circle (3);
+\draw (29.1,-29.8) node {$18$};
+\draw [black] (39.8,-29.8) circle (3);
+\draw (39.8,-29.8) node {$14$};
+\draw [black] (48.5,-29.8) circle (3);
+\draw (48.5,-29.8) node {$12$};
+\draw [black] (15.7,-40.5) circle (3);
+\draw (15.7,-40.5) node {$16$};
+\draw [black] (32.36,-10.8) -- (26.84,-16.2);
+\draw [black] (36.61,-10.83) -- (41.89,-16.17);
+\draw [black] (23.54,-21.07) -- (21.06,-27.03);
+\draw [black] (25.77,-21.1) -- (28.03,-27);
+\draw [black] (42.97,-21.12) -- (40.83,-26.98);
+\draw [black] (45.09,-21.09) -- (47.41,-27.01);
+\draw [black] (18.8,-32.59) -- (16.8,-37.71);
+\end{tikzpicture}
+\end{center}
+Schritt 8: 8. Array-Element wird in Heap eingefügt. Heap-Eigenschaft erfüllt, kein Austausch.\\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.15]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (34.5,-8.7) circle (3);
+\draw (34.5,-8.7) node {$2$};
+\draw [black] (24.7,-18.3) circle (3);
+\draw (24.7,-18.3) node {$4$};
+\draw [black] (44,-18.3) circle (3);
+\draw (44,-18.3) node {$6$};
+\draw [black] (19.9,-29.8) circle (3);
+\draw (19.9,-29.8) node {$10$};
+\draw [black] (29.1,-29.8) circle (3);
+\draw (29.1,-29.8) node {$18$};
+\draw [black] (39.8,-29.8) circle (3);
+\draw (39.8,-29.8) node {$14$};
+\draw [black] (48.5,-29.8) circle (3);
+\draw (48.5,-29.8) node {$12$};
+\draw [black] (15.7,-40.5) circle (3);
+\draw (15.7,-40.5) node {$16$};
+\draw [black] (24.1,-40.5) circle (3);
+\draw (24.1,-40.5) node {$8$};
+\draw [black] (32.36,-10.8) -- (26.84,-16.2);
+\draw [black] (36.61,-10.83) -- (41.89,-16.17);
+\draw [black] (23.54,-21.07) -- (21.06,-27.03);
+\draw [black] (25.77,-21.1) -- (28.03,-27);
+\draw [black] (42.97,-21.12) -- (40.83,-26.98);
+\draw [black] (45.09,-21.09) -- (47.41,-27.01);
+\draw [black] (18.8,-32.59) -- (16.8,-37.71);
+\draw [black] (21,-32.59) -- (23,-37.71);
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.15]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (7.00,-23.00) -- (12.00,-23.00);
+\fill [black] (12.00,-23.00) -- (11.2,-22.5) -- (11.2,-23.5);
+\draw [black] (34.5,-8.7) circle (3);
+\draw (34.5,-8.7) node {$2$};
+\draw [black] (24.7,-18.3) circle (3);
+\draw (24.7,-18.3) node {$4$};
+\draw [black] (44,-18.3) circle (3);
+\draw (44,-18.3) node {$6$};
+\draw [black] (19.9,-29.8) circle (3);
+\draw (19.9,-29.8) node {$8$};
+\draw [black] (29.1,-29.8) circle (3);
+\draw (29.1,-29.8) node {$18$};
+\draw [black] (39.8,-29.8) circle (3);
+\draw (39.8,-29.8) node {$14$};
+\draw [black] (48.5,-29.8) circle (3);
+\draw (48.5,-29.8) node {$12$};
+\draw [black] (15.7,-40.5) circle (3);
+\draw (15.7,-40.5) node {$16$};
+\draw [black] (24.1,-40.5) circle (3);
+\draw (24.1,-40.5) node {$10$};
+\draw [black] (32.36,-10.8) -- (26.84,-16.2);
+\draw [black] (36.61,-10.83) -- (41.89,-16.17);
+\draw [black] (23.54,-21.07) -- (21.06,-27.03);
+\draw [black] (25.77,-21.1) -- (28.03,-27);
+\draw [black] (42.97,-21.12) -- (40.83,-26.98);
+\draw [black] (45.09,-21.09) -- (47.41,-27.01);
+\draw [black] (18.8,-32.59) -- (16.8,-37.71);
+\draw [black] (21,-32.59) -- (23,-37.71);
+\end{tikzpicture}
+\end{center}
+Schritt 9: 9. und letztes Array-Element wird in Heap einfügen und Heap-Eigenschaft wird geprüft und hergestellt. Min-Heap ist vollständig erstellt.
+
+\paragraph{b)}
+Wie sieht der Heap aus, wenn Sie eine \textsc{ExtractMin} Operation ausgeführt und dann die Heapeigenschaft wieder hergestellt haben? \\
+
+Nach ExtractMin:
+\begin{center}
+\begin{tikzpicture}[scale=0.15]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (34.5,-8.7) circle (3);
+\draw (34.5,-8.7) node {$4$};
+\draw [black] (24.7,-18.3) circle (3);
+\draw (24.7,-18.3) node {$8$};
+\draw [black] (44,-18.3) circle (3);
+\draw (44,-18.3) node {$6$};
+\draw [black] (19.9,-29.8) circle (3);
+\draw (19.9,-29.8) node {$10$};
+\draw [black] (29.1,-29.8) circle (3);
+\draw (29.1,-29.8) node {$18$};
+\draw [black] (39.8,-29.8) circle (3);
+\draw (39.8,-29.8) node {$14$};
+\draw [black] (48.5,-29.8) circle (3);
+\draw (48.5,-29.8) node {$12$};
+\draw [black] (15.7,-40.5) circle (3);
+\draw (15.7,-40.5) node {$16$};
+\draw [black] (32.36,-10.8) -- (26.84,-16.2);
+\draw [black] (36.61,-10.83) -- (41.89,-16.17);
+\draw [black] (23.54,-21.07) -- (21.06,-27.03);
+\draw [black] (25.77,-21.1) -- (28.03,-27);
+\draw [black] (42.97,-21.12) -- (40.83,-26.98);
+\draw [black] (45.09,-21.09) -- (47.41,-27.01);
+\draw [black] (18.8,-32.59) -- (16.8,-37.71);
+\end{tikzpicture}
+\end{center}
+
+Durch Extractmin wird die Wurzel entfernt, da Wurzel das kleinste Element ist.\\
+Dann wird 10 zur Wurzel und sinkt nach unten.\\
+Dabei wird erst 10  mit 4 getauscht und anschließend 10 mit 8 vertauscht.\\
+
+\paragraph{c)}
+Fügen Sie das neue Element $3$ zu dem Heap (aus b) hinzu. \\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.15]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (34.5,-8.7) circle (3);
+\draw (34.5,-8.7) node {$3$};
+\draw [black] (24.7,-18.3) circle (3);
+\draw (24.7,-18.3) node {$4$};
+\draw [black] (44,-18.3) circle (3);
+\draw (44,-18.3) node {$6$};
+\draw [black] (19.9,-29.8) circle (3);
+\draw (19.9,-29.8) node {$8$};
+\draw [black] (29.1,-29.8) circle (3);
+\draw (29.1,-29.8) node {$18$};
+\draw [black] (39.8,-29.8) circle (3);
+\draw (39.8,-29.8) node {$14$};
+\draw [black] (48.5,-29.8) circle (3);
+\draw (48.5,-29.8) node {$12$};
+\draw [black] (15.7,-40.5) circle (3);
+\draw (15.7,-40.5) node {$16$};
+\draw [black] (23.9,-40.5) circle (3);
+\draw (23.9,-40.5) node {$10$};
+\draw [black] (32.36,-10.8) -- (26.84,-16.2);
+\draw [black] (36.61,-10.83) -- (41.89,-16.17);
+\draw [black] (23.54,-21.07) -- (21.06,-27.03);
+\draw [black] (25.77,-21.1) -- (28.03,-27);
+\draw [black] (42.97,-21.12) -- (40.83,-26.98);
+\draw [black] (45.09,-21.09) -- (47.41,-27.01);
+\draw [black] (18.8,-32.59) -- (16.8,-37.71);
+\draw [black] (20.95,-32.61) -- (22.85,-37.69);
+\end{tikzpicture}
+\end{center}
+Das Element 3 wird am Ende des Arrays angehängt und anschließend die Heapeigenschaft getestet.\\
+3 steigt dabei nach dem Vergleich mit der 10, 8 und 4 bis zur Wurzel auf.\\
+
+\paragraph{d)}
+Analysieren Sie in $\mathcal{O}$-Notation die Laufzeit der Methode \textsc{ExtractMax}, die das maximale Element aus einem Min-Heap $S$ der Größe $n$ löscht. \\
+
+ExtractMax benötigt n - 1 Schritte, um alle Blätter des Heaps zu finden und dann noch einmal maximal $2^{Hoehe(H)}+1$ Schritte für den Vergleich der Blätter, das Finden und das Löschen des Maximums.\\
+Weil die Höhe des Heaps bei jeder nächsten Zweierpotenz um 1 steigt, haben wir $Hoehe(H) = \lfloor \log_2 n \rfloor$, also die Laufzeit $T(n) = n-1 + 2^{Hoehe(H)}+1 \leq n+2^{\log_2 n} = n + n = 2n \Rightarrow \mathcal{O}(n)$.
+
+%----------------------------------------------------------------------------
+\section{Eine Erweiterung von Heapsort}
+In der Vorlesung haben Sie das Sortierverfahren Heapsort kennengelernt. Wir betrachten nun eine Erweiterung dieses Verfahrens, das sogenannte \emph{$k$-Heapsort}. Dabei ist $k\ge2$ eine natürliche Zahl. Bei diesem Verfahren benutzt man statt einem Binärbaum einen $k$-nären Baum, bei dem jeder Knoten höchstens $k$ Kinder hat. Deshalb heißt der korrespondierende Heap $k$-Heap. 
+
+\paragraph{a)}
+Wie kann man einen $k$-Heap als ein Array repräsentieren? Wie effizient ist es, die Kinder bzw. den Elternknoten eines gegebenen Knoten zu finden? \\
+
+Array A$[a_0 ..... a_n]$
+
+Root: $a_0$\\
+1st Level: $a_1 ..... a_{2+k}$ \\
+2nd Level: $a_{1+k} ...... a_{2+k+k^2}$\\
+.\\
+.\\
+.\\
+nth Level: $a_{1+ \sum_{i=1}^{n-1} {k^i}} ... a_{\sum_{i=1}^{n} {k^i}}$\\
+
+Parent nodes of i: $\lfloor{(i-1)/k}\rfloor$\\
+Child nodes j of i: $i*k +j$ ($1\leq j \leq k$)\\
+
+
+\paragraph{b)} Geben Sie die Höhe eines $k$-Heaps an, wenn dieser $n$ Elemente enthält. \\
+
+h = $\lceil log_k((n * k) - (n + 1))\rceil - 1$
+
+\paragraph{c)} 
+Geben Sie Pseudocode für effiziente Implementierungen der Methoden \texttt{Insert} und \texttt{ExtractMin} an. Analysieren Sie die Komplexität der beiden Methoden in Abhängigkeit von $n$ und $k$. \\
+
+A = Array, X = Element, I = Index, k
+
+\begin{lstlisting}
+Insert(A, X, k) {
+    Increase length of A by 1
+    Insert X at A[length(A)]
+    HeapUp(A, length(A) - 1, k)
+}
+
+HeapUp(Array A, i, k) {
+    
+    while (i not root){
+    
+      if (array[i] > array[parent-position] {
+          Swap A[i] and A[parent-position]
+          i = parent
+          parent = (i-1)/k
+      }
+      else 
+      	break
+	}
+}
+
+\end{lstlisting}
+Complexity:\\
+Because we need a comparison for each tree-level: Insert() $\in \mathcal{O}(log_k((n*k) - (n+1))$\\
+	
+\begin{lstlisting}
+ExtractMin(Array A)
+{
+	Extract root
+    Set length(A)-1 (last element) as new root
+    Shorten array by 1
+    HeapDown(A, root)
+}
+
+HeapDown(array A, node n)
+{
+	for (n not leaf){
+    	compare n to its childs 1 - k step by step
+        	if(n < child){
+            	swap (n, child)                
+            }
+         HeapDown(A, child)
+             
+    }
+}
+
+\end{lstlisting}
+Complexity:\\
+We need k comparisons on every level, thats why extractMin() $\in \mathcal{O}(3 log_k(n*k - n) $.\\
+
+%----------------------------------------------------------------------------
+\section{Zwei-Drittel-Sortieren}
+Eine alternative Methode, um ein Array $A$ der Länge $n$ zu sortieren, ist die Folgende:
+
+\begin{algorithm}[H]
+	\If{$A[left] > A[right]$} {
+		exchange $A[left]$ and $A[right]$ \;
+	}
+	\If{$left + 1 \ge right$} {
+		\Return \;
+	}
+	$k \longleftarrow \left\lfloor \frac{right - left + 1}3 \right\rfloor$ \;
+	\texttt{ZweiDrittelSortieren}($A$, $left$, $right-k$)\;
+	\texttt{ZweiDrittelSortieren}($A$, $left+k$, $right$)\;
+	\texttt{ZweiDrittelSortieren}($A$, $left$, $right-k$)\;
+ \caption{\texttt{ZweiDrittelSortieren}($A$, $left$, $right$)}
+ \label{algo:ZweiDrittelSortieren}
+\end{algorithm}
+
+\paragraph{a)}
+Argumentieren Sie, dass \texttt{ZweiDrittelSortieren}($A$, $1$, $n$) das Array $A[1..n]$ korrekt sortiert. \\
+
+Argumentation, dass Zwei-Drittel-Sortieren korrekt ist, mithilfe von Induktion über die Länge des sortierten Teilarrays k: ($right-left+1$).\\
+Für Länge 1 ist das Array immer sortiert, für Länge 2 muss einmal verglichen und gegebenenfalls ausgetauscht werden.\\
+\\
+Für Längen > 2 sei $k = (right-left+1)/3$.\\
+Betrachte nun die k größten Elemente des Arrays von left bis right.\\
+$m \leq k$ Elemente sind in den ersten zwei Dritteln des Arrays und gleichzeitig sind $m$ die größten Elemente dieses Teilarrays.\\
+Nach der ersten Rekursion, die das Teilarray korrekt sortiert hat (Induktionsvoraussetzung korrekt), befinden sich diese $m$ Elemente im Teilarray A[$right-k-m+1$]...A[$right-k$] mit der Eigenschaft $right-k-m+1 \geq left+k$.\\
+\\
+Das mittlere Drittel besteht aus mindestens k Elementen und die k größten Elemente befinden sich zwischen $left + k$ und $right$, also sind diese auch nach dem zweiten Aufruf korrekt sortiert.\\
+Im letzten Drittel des Arrays die (übrigens) $\leq$ k größten Elemente, welche im letzten rekursiven Aufruf sortiert werden.
+
+\paragraph{b)}
+Analysieren Sie die Laufzeit von \texttt{ZweiDrittelSortieren} im worst-case. Geben Sie Ihre Angaben in $\mathcal{O}$-Notation an. \\
+
+Worst-Case: In jedem Rekursionsschritt werden zwei Elemente ($left$, $right$ des jeweiligen Teilarrays) getauscht werden und anschließend weiter gedrittelt, daher $T(n) = 3*T(\frac{n}{3})+2$.\\
+\\
+Mastertheorem:\\
+$a = 3,$ $b= 3,$ $f(n) = 2*n^0$\\
+$f(n) = 2*n^{1-1} = 2*n^{\log_3(3)-1} \in \mathcal{O}(n^{\log_3(3)-\epsilon})$ wobei $\epsilon = 1$\\
+$\Rightarrow T(n) \in \Theta(n^{\log_3(3)}) \in \Theta(n^1) \in \Theta(n)$
+
+\paragraph{c)}
+Ist Zwei-Drittel-Sortieren im worst-case effizienter als Insertsort, Minimumsuche+Austauschen, Quicksort oder Heapsort? Alle Antworten sollten jeweils ausreichend begründet werden. \\
+
+Insertion Sort Worst-Case Laufzeit:\\
+$T(n) = \frac{n^2+n}{2} = \mathcal{O}(n^2)$, zwei-Drittel-Sortieren ist also deutlich schneller.\\
+Minimumsuche + Austausch hat eine Worst-Case Laufzeit von $T(n) = \frac{n^2+n}{2} = \mathcal{O}(n^2)$, zwei-Drittel-Sortieren ist also deutlich schneller.\\
+Quicksort hat die Worst-Case Laufzeit $\mathcal{O}(n^2)$, zwei-Drittel-Sortieren ist also deutlich schneller.\\
+Heapsort hat die Worst-Case Laufzeit $\mathcal{O}(n \log n)$, zwei-Drittel-Sortieren ist also etwas schneller.
+
+%----------------------------------------------------------------------------
 
 \end{document}
