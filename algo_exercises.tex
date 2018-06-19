@@ -1750,6 +1750,463 @@ Die Klasse \texttt{BSTreeNode}, die das gegebene Interface \texttt{TreeNode} imp
 \paragraph{b)} 
 Die fünf Methoden der Klasse \texttt{BSTree}, die keine Implementierung haben.
 
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Blatt 07}
+%----------------------------------------------------------------------------
+\subsection{Anwendung von AVL-Bäumen}
+Betrachten Sie folgendes Problem: Gegeben eine Menge $C$ von Kreisen:
+\[ C = \{c_i = (x_i,y_i, r_i) \mid i = 1,\dots,n \}. \]
+Dabei ist $(x_i,y_i)$ der Mittelpunkt und $r_i>0$ der Radius des Kreises $c_i$.
+Sie können annehmen, dass sich keine drei Kreise in einem Punkt schneiden und dass es keinen Kreis gibt,
+der vollkommen in einem anderen Kreis enthalten ist.
+Gefragt ist nun nach dem \textit{Schnittproblem}, das heißt nach allen Schnittpunkten
+der Kreise in $C$. Für Ihre Analyse dürfen Sie annehmen, dass die Schnittpunkte von
+zwei Kreisen mit einer gegebenen Funktion \texttt{Schnitt($c_i$,$c_j$)} in Zeit $O(1)$ berechnet werden können.
+Geben Sie einen \textit{Plane-Sweep} Algorithmus für das Schnittproblem in Pseudocode an.
+Halten Sie sich dabei an folgende Hilfestellungen: Verwenden Sie eine $X$-Struktur
+und eine $Y$-Struktur (beides AVL-Bäume), die ,,wichtige'' $x$- und $y$-Werte enthalten.
+Geben Sie die Laufzeit Ihres Algorithmus an und begründen Sie die Korrektheit Ihres Algorithmus. \\
+
+\begin{algorithm}[H]
+\SetAlgoLined
+\textbf{Data} C (Menge von Kreisen)  \\
+\textbf{Result} gesamte Anzahl an Schnittpunkten der Kreise \\
+Sei A und B ein leerer AVL-Baum \\
+Sei v und w eine leere Liste \\
+Sortiere C nach x-Werten (x-Werte: $x=x_{i}-r_{i}$) \\
+\textbf{for} alle Kreise $c_{i}$ \textbf{do} \\
+ | Berechne linkesten und rechtesten x-Wert von $c_{i}$ \\
+ | Füge x-Werte nach ihren Werten in A ein \\
+ | Berechne obersten und untersten y-Wert von $c_{i}$ \\
+ | Füge y-Werte nach ihren Werten in B ein \\
+\textbf{end} \\
+v $\leftarrow$ InterceptionFinder(C,A,B) \\
+\textbf{for} alle Verbindungen von Kreisen in v \textbf{do} \\
+ | Schnitt$(c_{i},c_{j})$ schreibe in w \\
+\textbf{end} \\
+\textbf{return} w 
+\end{algorithm} \\
+
+\textbf{InterceptionFinder} 
+\begin{algorithm}[H]
+\SetAlgoLined
+\textbf{Data} C (Menge von Kreisen), A und B (AVL-Bäume) \\
+\textbf{Result} eine Liste R aller Verbindungen der Kreise \\
+\textbf{for} jedes $c_{i}$ in C \textbf{do} \\
+ | Suche linkeste und rechteste x-Wert in A \\
+ | Suche oberste und unterste y-Wert in B \\
+ | überprüfe alle Kanten von den vier Punkten \\
+\textbf{if} Kanten der Punkte in A und B die selben Kreise verbinden \\
+ | schreiben Verbindung in Liste v \\
+\textbf{end}\\
+\textbf{end}  
+\end{algorithm} \\
+
+n gibt Die Anzahl der Kreise in C an. Der Algorithmus sortiert einmal die Menge der Kreise nach dem am linkesten liegendem x-Wert mit einer Laufzeit von $O(n*log(n))$. Dann durchläuft er die Liste von links nach rechts und bestimmt für jeden Kreis vier Werte: die äußersten liegenden Werte (linkeste, rechteste,oberste, unterste) mit $O(4*n) \Rightarrow O(n)$. Die Werte werden dann in die AVL-Bäume eingetragen (worst case: $O (log(n))$). Danach wird unser 2.Algorithmus der InterceptionFinder aufgerufen: er findet Kantenverbindungen der Knoten im Baum eines Kreises zu den Knoten der anderen Kreise. Er speichert sie in einer Liste nur, wenn sie in beiden AVL-Bäume vorkommen. D.h. ein Kreis gilt als geschnitten, wenn einer der x-Werte des ersten Kreises mit einem der x-Werte des zweiten Kreises eine gemeinsame Kante besitzen und dasselbe muss auch für einen y-Wert gelten. Also hat man mit einer linearen Suche, weil die Liste unsortiert ist eine Laufzeit von $O(n)$. Das Finden der Kanten läuft hingegen in konstanter Zeit $O(1)$. Um die Liste aller Verbindungen aufzurufen, wird wieder eine konstante Laufzeit für das Problem gelöst. (Worst case: $O(n)$). \\
+
+Damit beträgt die Laufzeit: \\
+$O (n*log(n))+O (n)+O (log(n))+O (n)+O (1)+O} (n)=O (n*log(n))$
+
+%----------------------------------------------------------------------------
+\subsection{B-Bäume}
+In dieser Aufgabe geht es um B-Bäume der Ordnung 2, d.\,h. ein innerer Knoten hat mindestens zwei und höchstens drei Kinder. Gegeben ist der folgende B-Baum der Ordnung 2:
+
+
+\paragraph{a)}
+Fügen Sie die folgenden Elemente in den gegebenen B-Baum ein: Zuerst 14 und dann 1. \\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (38.1,-14.1) circle (3);
+\draw (38.1,-14.1) node {$28$};
+\draw [black] (26.4,-24.2) circle (3);
+\draw (26.4,-24.2) node {$9|16$};
+\draw [black] (51.7,-24.2) circle (3);
+\draw (51.7,-24.2) node {$37$};
+\draw [black] (15.9,-38.7) circle (3);
+\draw (15.9,-38.7) node {$2|6$};
+\draw [black] (26.4,-39.1) circle (3);
+\draw (26.4,-39.1) node {$13$};
+\draw [black] (35.7,-39.1) circle (3);
+\draw (35.7,-39.1) node {$19|23$};
+\draw [black] (58.5,-39.1) circle (3);
+\draw (58.5,-39.1) node {$40|48$};
+\draw [black] (45.8,-38.7) circle (3);
+\draw (45.8,-38.7) node {$30$};
+\draw [black] (52.95,-26.93) -- (57.25,-36.37);
+\draw [black] (40.5,-15.9) -- (49.29,-22.41);
+\draw [black] (50.57,-26.98) -- (46.93,-35.92);
+\draw [black] (36,-16.6) -- (28.75,-22.34);
+\draw [black] (27.99,-26.74) -- (34.11,-36.56);
+\draw [black] (26.4,-27.2) -- (26.4,-36.1);
+\draw [black] (24.5,-26.7) -- (17.65,-36.26);
+\end{tikzpicture}
+\end{center}
+
+14 einfügen \\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (38.1,-14.1) circle (3);
+\draw (38.1,-14.1) node {$28$};
+\draw [black] (26.4,-24.2) circle (3);
+\draw (26.4,-24.2) node {$9|16$};
+\draw [black] (51.7,-24.2) circle (3);
+\draw (51.7,-24.2) node {$37$};
+\draw [black] (15.9,-38.7) circle (3);
+\draw (15.9,-38.7) node {$2|6$};
+\draw [black] (26.4,-39.1) circle (3);
+\draw (26.4,-39.1) node {$13|14$};
+\draw [black] (35.7,-39.1) circle (3);
+\draw (35.7,-39.1) node {$19|23$};
+\draw [black] (58.5,-39.1) circle (3);
+\draw (58.5,-39.1) node {$40|48$};
+\draw [black] (45.8,-38.7) circle (3);
+\draw (45.8,-38.7) node {$30$};
+\draw [black] (52.95,-26.93) -- (57.25,-36.37);
+\draw [black] (40.5,-15.9) -- (49.29,-22.41);
+\draw [black] (50.57,-26.98) -- (46.93,-35.92);
+\draw [black] (36,-16.6) -- (28.75,-22.34);
+\draw [black] (27.99,-26.74) -- (34.11,-36.56);
+\draw [black] (26.4,-27.2) -- (26.4,-36.1);
+\draw [black] (24.5,-26.7) -- (17.65,-36.26);
+\end{tikzpicture}
+\end{center}
+
+1 einfügen \\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (38.1,-14.1) circle (3);
+\draw (38.1,-14.1) node {$28$};
+\draw [black] (26.4,-24.2) circle (3);
+\draw (26.4,-24.2) node {$9|16$};
+\draw [black] (51.7,-24.2) circle (3);
+\draw (51.7,-24.2) node {$37$};
+\draw [black] (15.9,-38.7) circle (3);
+\draw (15.9,-38.7) node {$1|2|6$};
+\draw [black] (26.4,-39.1) circle (3);
+\draw (26.4,-39.1) node {$13|14$};
+\draw [black] (35.7,-39.1) circle (3);
+\draw (35.7,-39.1) node {$19|23$};
+\draw [black] (58.5,-39.1) circle (3);
+\draw (58.5,-39.1) node {$40|48$};
+\draw [black] (45.8,-38.7) circle (3);
+\draw (45.8,-38.7) node {$30$};
+\draw [black] (52.95,-26.93) -- (57.25,-36.37);
+\draw [black] (40.5,-15.9) -- (49.29,-22.41);
+\draw [black] (50.57,-26.98) -- (46.93,-35.92);
+\draw [black] (36,-16.6) -- (28.75,-22.34);
+\draw [black] (27.99,-26.74) -- (34.11,-36.56);
+\draw [black] (26.4,-27.2) -- (26.4,-36.1);
+\draw [black] (24.5,-26.7) -- (17.65,-36.26);
+\end{tikzpicture}
+\end{center}
+
+Knoten $(1|2|6)$ hat zu viele Elemente $\rightarrow$ Ordnung 2 nicht mehr erfüllt \\
+
+teile den Knoten $(1|2|6)$  und lasse die 2 nach oben steigen \\
+
+Knoten $(2|9|16)$ hat dann wiederum auch zu viele Elemente \\
+$\rightarrow$ aufspalten und 9 nach oben wandern \\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (39.4,-14.3) circle (3);
+\draw (39.4,-14.3) node {$9|28$};
+\draw [black] (39.6,-28.2) circle (3);
+\draw (39.6,-28.2) node {$16$};
+\draw [black] (24.1,-29) circle (3);
+\draw (24.1,-29) node {$2$};
+\draw [black] (57.6,-28) circle (3);
+\draw (57.6,-28) node {$37$};
+\draw [black] (16.6,-40.1) circle (3);
+\draw (16.6,-40.1) node {$1$};
+\draw [black] (27.7,-40.1) circle (3);
+\draw (27.7,-40.1) node {$6$};
+\draw [black] (35,-40.6) circle (3);
+\draw (35,-40.6) node {$13|14$};
+\draw [black] (45.6,-40.6) circle (3);
+\draw (45.6,-40.6) node {$19|23$};
+\draw [black] (54.6,-38.2) circle (3);
+\draw (54.6,-38.2) node {$30$};
+\draw [black] (65,-38.2) circle (3);
+\draw (65,-38.2) node {$40|48$};
+\draw [black] (37.24,-16.38) -- (26.26,-26.92);
+\draw [black] (39.44,-17.3) -- (39.56,-25.2);
+\draw [black] (41.8,-16.1) -- (55.2,-26.2);
+\draw [black] (22.5,-31.6) -- (18.31,-37.64);
+\draw [black] (25.3,-31.8) -- (26.87,-37.22);
+\draw [black] (38.56,-31.01) -- (36.04,-37.79);
+\draw [black] (40.9,-31.1) -- (44.27,-37.91);
+\draw [black] (56.6,-31.1) -- (55.41,-35.31);
+\draw [black] (59.1,-30.8) -- (63.13,-35.85);
+\end{tikzpicture}
+\end{center}
+
+\paragraph{b)}
+Löschen Sie die folgenden Elemente aus dem B-Baum, den Sie in Teil (a) erhalten haben: 37, 40, 19, 23 (in dieser Reihenfolge).  \\
+
+Baum aus a) \\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (39.4,-14.3) circle (3);
+\draw (39.4,-14.3) node {$9|28$};
+\draw [black] (39.6,-28.2) circle (3);
+\draw (39.6,-28.2) node {$16$};
+\draw [black] (24.1,-29) circle (3);
+\draw (24.1,-29) node {$2$};
+\draw [black] (57.6,-28) circle (3);
+\draw (57.6,-28) node {$37$};
+\draw [black] (16.6,-40.1) circle (3);
+\draw (16.6,-40.1) node {$1$};
+\draw [black] (27.7,-40.1) circle (3);
+\draw (27.7,-40.1) node {$6$};
+\draw [black] (35,-40.6) circle (3);
+\draw (35,-40.6) node {$13|14$};
+\draw [black] (45.6,-40.6) circle (3);
+\draw (45.6,-40.6) node {$19|23$};
+\draw [black] (54.6,-38.2) circle (3);
+\draw (54.6,-38.2) node {$30$};
+\draw [black] (65,-38.2) circle (3);
+\draw (65,-38.2) node {$40|48$};
+\draw [black] (37.24,-16.38) -- (26.26,-26.92);
+\draw [black] (39.44,-17.3) -- (39.56,-25.2);
+\draw [black] (41.8,-16.1) -- (55.2,-26.2);
+\draw [black] (22.5,-31.6) -- (18.31,-37.64);
+\draw [black] (25.3,-31.8) -- (26.87,-37.22);
+\draw [black] (38.56,-31.01) -- (36.04,-37.79);
+\draw [black] (40.9,-31.1) -- (44.27,-37.91);
+\draw [black] (56.6,-31.1) -- (55.41,-35.31);
+\draw [black] (59.1,-30.8) -- (63.13,-35.85);
+\end{tikzpicture}
+\end{center}
+
+\textbf{lösche 37} und nehme 40 als Ersatzknoten \\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (39.4,-14.3) circle (3);
+\draw (39.4,-14.3) node {$9|28$};
+\draw [black] (39.6,-28.2) circle (3);
+\draw (39.6,-28.2) node {$16$};
+\draw [black] (24.1,-29) circle (3);
+\draw (24.1,-29) node {$2$};
+\draw [black] (57.6,-28) circle (3);
+\draw (57.6,-28) node {$40$};
+\draw [black] (16.6,-40.1) circle (3);
+\draw (16.6,-40.1) node {$1$};
+\draw [black] (27.7,-40.1) circle (3);
+\draw (27.7,-40.1) node {$6$};
+\draw [black] (35,-40.6) circle (3);
+\draw (35,-40.6) node {$13|14$};
+\draw [black] (45.6,-40.6) circle (3);
+\draw (45.6,-40.6) node {$19|23$};
+\draw [black] (54.6,-38.2) circle (3);
+\draw (54.6,-38.2) node {$30$};
+\draw [black] (65,-38.2) circle (3);
+\draw (65,-38.2) node {$48$};
+\draw [black] (37.24,-16.38) -- (26.26,-26.92);
+\draw [black] (39.44,-17.3) -- (39.56,-25.2);
+\draw [black] (41.8,-16.1) -- (55.2,-26.2);
+\draw [black] (22.5,-31.6) -- (18.31,-37.64);
+\draw [black] (25.3,-31.8) -- (26.87,-37.22);
+\draw [black] (38.56,-31.01) -- (36.04,-37.79);
+\draw [black] (40.9,-31.1) -- (44.27,-37.91);
+\draw [black] (56.6,-31.1) -- (55.41,-35.31);
+\draw [black] (59.1,-30.8) -- (63.13,-35.85);
+\end{tikzpicture}
+\end{center}
+
+\textbf{lösche 40}:
+30 oder 48 kann man nicht als Ersatzknoten wählen, da sonst die B-Baum Bedingungen nicht mehr erfüllt werden, d.h. verschmelze also $(30|48)$ zu einem Knoten und suche nach einem Vaterersatz: 28. Dieser sinkt ein Knoten nach unten und verschmilzt mit dem Knoten 16. \\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (24.1,-29) circle (3);
+\draw (24.1,-29) node {$2$};
+\draw [black] (16.6,-40.1) circle (3);
+\draw (16.6,-40.1) node {$1$};
+\draw [black] (27.7,-40.1) circle (3);
+\draw (27.7,-40.1) node {$6$};
+\draw [black] (40.4,-14.8) circle (3);
+\draw (40.4,-14.8) node {$9$};
+\draw [black] (50.1,-25.6) circle (3);
+\draw (50.1,-25.6) node {$16|28$};
+\draw [black] (42.2,-36.9) circle (3);
+\draw (42.2,-36.9) node {$13|14$};
+\draw [black] (51,-37.3) circle (3);
+\draw (51,-37.3) node {$19|23$};
+\draw [black] (61,-35.8) circle (3);
+\draw (61,-35.8) node {$30|48$};
+\draw [black] (22.5,-31.6) -- (18.31,-37.64);
+\draw [black] (25.3,-31.8) -- (26.87,-37.22);
+\draw [black] (38.14,-16.77) -- (26.36,-27.03);
+\draw [black] (42.4,-17.03) -- (48.1,-23.37);
+\draw [black] (48.38,-28.06) -- (43.92,-34.44);
+\draw [black] (50.4,-28.7) -- (50.79,-34.31);
+\draw [black] (52.29,-27.65) -- (58.81,-33.75);
+\end{tikzpicture}
+\end{center}
+
+\textbf{lösche 19} \\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (24.1,-29) circle (3);
+\draw (24.1,-29) node {$2$};
+\draw [black] (16.6,-40.1) circle (3);
+\draw (16.6,-40.1) node {$1$};
+\draw [black] (27.7,-40.1) circle (3);
+\draw (27.7,-40.1) node {$6$};
+\draw [black] (40.4,-14.8) circle (3);
+\draw (40.4,-14.8) node {$9$};
+\draw [black] (50.1,-25.6) circle (3);
+\draw (50.1,-25.6) node {$16|28$};
+\draw [black] (42.2,-36.9) circle (3);
+\draw (42.2,-36.9) node {$13|14$};
+\draw [black] (51,-37.3) circle (3);
+\draw (51,-37.3) node {$23$};
+\draw [black] (61,-35.8) circle (3);
+\draw (61,-35.8) node {$30|48$};
+\draw [black] (22.5,-31.6) -- (18.31,-37.64);
+\draw [black] (25.3,-31.8) -- (26.87,-37.22);
+\draw [black] (38.14,-16.77) -- (26.36,-27.03);
+\draw [black] (42.4,-17.03) -- (48.1,-23.37);
+\draw [black] (48.38,-28.06) -- (43.92,-34.44);
+\draw [black] (50.4,-28.7) -- (50.79,-34.31);
+\draw [black] (52.29,-27.65) -- (58.81,-33.75);
+\end{tikzpicture}
+\end{center}
+
+\textbf{lösche 23}:
+Wenn man den Knoten 23 löscht, dann würde dem Knoten $(16|28)$ ein Kind fehlen, d.h. wir löschen 23 lassen 28 nach unten wandern und 30 nach oben. \\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (24.1,-29) circle (3);
+\draw (24.1,-29) node {$2$};
+\draw [black] (16.6,-40.1) circle (3);
+\draw (16.6,-40.1) node {$1$};
+\draw [black] (27.7,-40.1) circle (3);
+\draw (27.7,-40.1) node {$6$};
+\draw [black] (40.4,-14.8) circle (3);
+\draw (40.4,-14.8) node {$9$};
+\draw [black] (50.1,-25.6) circle (3);
+\draw (50.1,-25.6) node {$16|30$};
+\draw [black] (42.2,-36.9) circle (3);
+\draw (42.2,-36.9) node {$13|14$};
+\draw [black] (51,-37.3) circle (3);
+\draw (51,-37.3) node {$28$};
+\draw [black] (61,-35.8) circle (3);
+\draw (61,-35.8) node {$48$};
+\draw [black] (22.5,-31.6) -- (18.31,-37.64);
+\draw [black] (25.3,-31.8) -- (26.87,-37.22);
+\draw [black] (38.14,-16.77) -- (26.36,-27.03);
+\draw [black] (42.4,-17.03) -- (48.1,-23.37);
+\draw [black] (48.38,-28.06) -- (43.92,-34.44);
+\draw [black] (50.4,-28.7) -- (50.79,-34.31);
+\draw [black] (52.29,-27.65) -- (58.81,-33.75);
+\end{tikzpicture}
+\end{center}
+
+%----------------------------------------------------------------------------
+\subsection{(2,4)-Bäume}
+Begründen Sie jeweils die Korrektheit und Laufzeit Ihres Algorithmus.
+
+\paragraph{a)} 
+Seien $S$ und $T$ zwei (2,4)-Bäume, wobei alle Elemente aus $S$ kleiner sind
+als die Elemente aus $T$, d.h. $\max S < \min T$.
+Geben Sie einen effizienten Pseudocode-Algorithmus \texttt{merge($S,T$)} an,
+der einen (2,4)-Baum aus der Vereinigung von $S$ und $T$ erstellt. \\
+
+\paragraph{b)}
+Geben Sie einen effizienten Pseudocode-Algorithmus \texttt{split($T,x$)} an, 
+der einen (2,4)-Baum $T$ am Wert $x$ in zwei (2,4)-Bäume $T_{\le x}$ und $T_{> x}$ aufspaltet. 
+Dabei soll $T_{\le x}$ alle Elemente aus $T$ enthalten,
+die kleiner oder gleich $x$ sind und $T_{> x}$ alle Elemente aus $T$, die größer als $x$ sind. \\
+
+%----------------------------------------------------------------------------
+\subsection{Amortisierte Analyse}
+Eine \emph{Queue} ist eine Datenstruktur, die die beiden Operationen \texttt{enqueue} und \texttt{dequeue} unterstützt:
+%
+\begin{itemize}
+\item \texttt{enqueue} zum Hinzufügen eines Objekts und
+\item \texttt{dequeue} zum Zurückholen und Entfernen eines Objektes.
+\end{itemize}
+
+\noindent Dabei wird nach dem Prinzip \emph{first-in-first-out} gearbeitet, das heißt, es wird von \texttt{dequeue} immer das Objekt aus der Queue zurückgegeben, welches von den in der Queue noch vorhandenen Objekten als erstes mit \texttt{enqueue} hineingelegt wurde. 
+
+\smallskip
+\noindent
+Ein \emph{Stack} ist eine Datenstruktur, die die drei Operationen
+\texttt{push}, \texttt{pop} und \texttt{empty} unterstützt:
+%
+\begin{itemize}
+\item \texttt{push} zum Hinzufügen eines Objekts,
+\item \texttt{pop} zum Zurückholen und Entfernen eines Objektes, und
+\item \texttt{empty} zum Prüfen, ob der Stack leer ist.
+\end{itemize}
+
+\noindent Dabei wird nach dem Prinzip \emph{last-in-first-out} gearbeitet, das heißt, es wird von \texttt{pop} immer das Objekt aus dem Stack zurückgegeben, welches von den in dem Stack noch vorhandenen Objekten als letztes mit \texttt{push} hineingelegt wurde. 
+
+\paragraph{a)} 
+Beschreiben Sie, wie man eine Queue mit Hilfe von zwei Stacks simulieren kann. \\
+
+\includegraphics[width=15cm,height=10cm]{QueueStack.png} \\
+
+Es gibt 2 Zustände für die Stacks: 
+\begin{itemize}
+\item readytoenqueue, wenn S2 leer ist
+\item readytodequeue, wenn S1 leer ist
+\end{itemize}
+
+Hierbei wird in S1 die Reihenfolge für das Hinzufügen festgelegt und S2 muss hierfür leer sein. Soll dequeued werden, so gilt FIFO, also muss S1 und S2 gepusht werden, falls S2 zu Beginn dieser Operation leer war und anschließend stehen in S2 die Elemente aus S1 in verkehrter Reihenfolge, so dass man im readytodequeue Zustand landet und beliebig oft hintereinander FIFO ausgeben kann. Soll nun wieder enqueued werden, muss S2 wieder nach S1 gepushed werden, um in den readytoenqueue Zustand zu gelangen. \\
+
+\textbf{enqueue(x):} \\
+\begin{algorithm}[H]
+\SetAlgoLined
+\textbf{if} (not(empty(S1))): \\
+\textbf{do} push(S2,S1) \\
+enqueue(x)\\
+\textbf{else} \\
+\textbf{do} push(x,S1)
+\end{algorithm}
+
+\textbf{dequeue(x):} \\
+\begin{algorithm}[H]
+\SetAlgoLined
+\textbf{if} (not(empty(S1))): \\
+\textbf{do} push(S1,S2) \\
+dequeue(x) \\
+\textbf{else} \\
+\textbf{do} pop(S2)
+\end{algorithm}
+
+
+\paragraph{b)} 
+Zeigen Sie, dass die amortisierte Laufzeit für jede \texttt{enqueue}- und
+\texttt{dequeue}-Operation von dieser simulierten Queue $O(1)$ ist. \\
+
+\begin{tabular}{c|c|c|c}
+& Einzahlung & Entsumme & Saldo/Ergebnis \\\hline
+readytoqueue & kostet push(S2,S1) und $O(1)*n$ & $O(1)*n$ & push(S2,S1) \\\hline
+readytodequeue & $O(1)*n$ & push(S1,S2) und $O(1)*n$ & push(S1,S2)
+\end{tabular}
+
+Da push$(s_{i},s_{j})$ n-SChritte für n Elemente benötigt ist die Laufzeit $O(1)$ \\
+$\Rightarrow$ Saldo/Ergebnis der Account Methode der armortisiertes Laufzeitanalyse liegt in O(1).
 %----------------------------------------------------------------------------
 
 \end{document}
