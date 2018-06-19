@@ -1113,6 +1113,215 @@ Minimumsuche + Austausch hat eine Worst-Case Laufzeit von $T(n) = \frac{n^2+n}{2
 Quicksort hat die Worst-Case Laufzeit $\mathcal{O}(n^2)$, zwei-Drittel-Sortieren ist also deutlich schneller.\\
 Heapsort hat die Worst-Case Laufzeit $\mathcal{O}(n \log n)$, zwei-Drittel-Sortieren ist also etwas schneller.
 
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Blatt 05}
+%----------------------------------------------------------------------------
+\subsection{Bucketsort}
+Gegeben seien $n$ Zahlen im Bereich $[0,\dots, n^k-1]$ für ein festes $k\in \mathbb N$.
+Zeigen Sie, dass mittels Bucketsort die Zahlen mit einer Worstcase-Laufzeit von $O(n)$ sortiert werden können.\\
+\textit{Hinweis: Stellen Sie die Zahlen zur Basis $n$ dar.} \\
+
+Bucketsort sortiert jede Zahl im ersten Schritt an der letzten Stelle in das passende von 10 Buckets.\\
+Für k = 1, 2, ... steigen die Längen der Zahlen für jeweiliges n>1 grob um 2*length($n^{k-1} - 1$).\\
+Also wird für höheres k häufiger in Buckets einsortiert wegen der Stellenlänge der höchsten Zahl im Array, genau der Stellenanzahl $n^k - 1$.\\
+Die Länge hierzu lässt sich mit $\prod_{i=Stellenlaenge von n^k - 1}^{k} i$ bei festem k bestimmen, was $Stellenlaenge * k!$ ist.\\
+Wir haben also $10 * Stellenlaenge * k! * n$ Suchläufe und da k fest ist, sowie auch die Stellenlänge kann dies als Konstante c dargestellt werden: $c * n \in \mathcal{O}(n)$.\\
+
+
+%----------------------------------------------------------------------------
+\subsection{Mediansuche in Linearzeit}
+
+\paragraph{a)}
+In der Vorlesung haben Sie gelernt, wie Sie den Median von fünf
+Zahlen mit 7 Vergleichen bestimmen können. Verallgemeinern Sie
+dieses (rekursive) Vorgehen für Eingaben ungerader Länge. Geben Sie
+die Anzahl benötigter Vergleiche für Listen der Länge $n$, mit $n\in \{7,9,11,13,15,17\}$ an. \\
+
+\begin{enumerate}
+\item Aufteilen der Menge in Paare $\rightarrow$ am Ende soll eine Zahl übrig bleiben. Die Zahlenpaare werden miteinander verglichen ($\lfloor \dfrac{n}{2} \rfloor$ Vergleiche)
+\item Bestimme das Minimum unter allen Zahlen, die im Zahlenpaar kleiner waren im Vergleich($\lfloor \dfrac{n}{2} \rfloor -1$ Vergleiche)
+\item das gleiche für das Maximum ($\lfloor \dfrac{n}{2} \rfloor -1$ Vergleiche)
+\item Minimum und Maximum aus dem Array nehmen und den Algorithmus auf das Array Größe n-2 aufrufen (V(n-2) Vergleiche)
+\end{enumerate}
+
+Es folgt: $V(n)=\lfloor \dfrac{n}{2} \rfloor + 2*(\lfloor \dfrac{n}{2} \rfloor -1) +V(n-2) $ \\
+
+Rekursionsende: V(5)=7 \\
+
+Daraus folgt folgende Anzahl an Vergleichen für Listen der Länge n: \\
+
+\begin{tabular}{|c|c|}
+\hline
+n & V(n) \\\hline
+7 & $\lfloor \dfrac{7}{2} \rfloor + 2*(\lfloor \dfrac{7}{2} \rfloor -1) +V(5) = 14$ \\\hline
+9 & $\lfloor \dfrac{9}{2} \rfloor + 2*(\lfloor \dfrac{9}{2} \rfloor -1) +V(7) = 24$ \\\hline
+11 & $\lfloor \dfrac{11}{2} \rfloor + 2*(\lfloor \dfrac{11}{2} \rfloor -1) +V(9) = 37$ \\\hline
+13 & $\lfloor \dfrac{13}{2} \rfloor + 2*(\lfloor \dfrac{13}{2} \rfloor -1) +V(11) = 53$ \\\hline
+15 & $\lfloor \dfrac{15}{2} \rfloor + 2*(\lfloor \dfrac{15}{2} \rfloor -1) +V(13) = 72$ \\\hline
+17 & $\lfloor \dfrac{17}{2} \rfloor + 2*(\lfloor \dfrac{17}{2} \rfloor -1) +V(15) = 94$ \\\hline
+\end{tabular}
+
+\paragraph{b)}
+Für die Laufzeitanalyse der Medianbestimmung ergab sich bei einer Unterteilung in Fünfergruppen die folgende Rekursionsgleichung:
+\[
+T(n) \leq T
+\left(
+  \frac{n}{5}
+\right) + T
+\left(
+  \frac{7}{10}n
+\right) + c \cdot n
+\]
+
+\paragraph{I)}
+Geben Sie eine möglichst gute Konstante $c$ an. \\
+
+z.z. $T(n) \leq T(\dfrac{n}{5})+T(\dfrac{7n}{10} *n)+c_{1} * n$ \\
+
+in Vorlesung bewiesen, dass $T(n) \leq c_{2} * \dfrac{n}{5} + c_{2} * \dfrac{7n}{10}$ ist; $d= \dfrac{c_{2}}{10}$ \\
+
+damit gilt: $d=c_{1}$ \\
+
+somit ist $c_{2}* \dfrac{n}{5} + c_{2} * \dfrac{7n}{10} + d*n = \dfrac{n}{5} + \dfrac{7n}{10} + c_{1}*n$ \\
+
+$\dfrac{n}{5} + \dfrac{7n}{10} + c_{1}*n$ \\
+
+$= \dfrac{9n}{10} + d*n$ \\
+
+$\Rightarrow c_{2}=1$ \\
+
+$\Rightarrow d= \dfrac{1}{10}$ \\
+
+$\Rightarrow c_{1} = \dfrac{1}{10}$
+
+\paragraph{II)} 
+Wie verändert sich die Rekursionsgleichung, wenn die Liste in Siebener- statt in Fünfergruppen geteilt wird?
+Geben Sie auch hier eine möglichst gute Abschätzung der Konstante $c$ an. \\
+
+z.z. $T(n) \leq T(\dfrac{n}{7})+T( \dfrac{10}{14}*n) + c_{1} * n$ \\
+
+dieselbe Berechnung wie oben \\
+
+$\dfrac{n}{7} + \dfrac{10n}{14} + d*n$ \\
+
+$= \dfrac{12n}{14} + d*n$ \\
+
+$\Rightarrow c_{2}=2$ \\
+
+$\Rightarrow d= \dfrac{2}{14}$ \\
+
+$\Rightarrow c_{1} = \dfrac{2}{14}$
+
+%----------------------------------------------------------------------------
+\subsection{Median in sortierten Arrays}
+Seien $A[1..n]$ und $B[1..n]$ zwei sorrtierte Arrays der Größe $n$.
+
+\paragraph{a)}
+Beschreiben Sie einen Algorithmus, der den Median aller $2n$ Elemente aus A und B in Zeit $O(\log n)$ findet. \\
+
+\begin{algorithm}[H]
+\SetAlgoLined
+\textbf{Data} Array A, Array B (beide mit Länge n) \\
+\textbf{Result} Median m aller 2n Elemente aus A und B \\
+make new Array C mit Größe 2n \\
+int k = 0 (Position in A) \\
+int l = 0 (Position in B) \\
+\textbf{for} 0 to 2n-1 do \\
+\textbf{if} A[k] $\leq$ B[l] \\
+C[i] $\leftarrow$ A[k] \\
+k++ \\
+\textbf{else} \\
+C[i] $\leftarrow$ B[l] \\
+l++ \\
+end if \\
+end for \\
+int $d= \dfrac{2n}{2} -1$ \\
+int $m = \dfrac{C[d]+C[d+1]}{2} $ \\
+return m
+\end{algorithm}
+
+\paragraph{b)}
+Begründen Sie die Laufzeit und die Korrektheit Ihres Algorithmus. \\
+
+Laufzeit O(n)
+
+%----------------------------------------------------------------------------
+\subsection{Konvexe Hülle}
+Gegeben sei eine Menge $M=\{(x_i, y_i)\in \mathbb Q^2 \mid 1 \leq i \leq n\}$. Die konvexe Hülle $\operatorname{conv}(M)$ einer Menge $M$ ist der kleinste Polyeder der alle Punkte in $M$ enthält. Eine einfache Repräsentation der konvexen Hülle ist die kleinste Menge $N \subseteq M$ von Punkten, so dass $\operatorname{conv}(N)=\operatorname{conv}(M)$. Bildlich gesprochen: die \textit{Eckpunkte} der Menge $M$. Eine \textit{zyklische Sortierung} der Eckpunkte ist eine Ordnung der Punkte in $N$ so, dass beim Ablaufen der Punkte nach der Sortierung ein Weg um das Polygon entsteht.
+
+\medskip\noindent Nehmen Sie an, dass Sie einen Algorithmus haben der in Zeit $T(n)$, gegeben eine Menge $M$ (wie oben), eine zyklische Sortierung der Eckpunkte der konvexen Hülle ausgibt. Zeigen Sie, dass $\Omega(n \log n)$ eine untere Schranke für die worst-case Laufzeit des Algorithmus ist.
+
+\begin{figure}[htp!]
+\begin{center}
+  \begin{tikzpicture}
+    \draw[fill] (0,0) circle(1.5pt) node[left]{$x_1$};
+    \draw[fill] (1,1) circle(1.5pt) node[left]{$x_2$};
+    \draw[fill] (.5,2) circle(1.5pt) node[left]{$x_6$};
+    \draw[fill] (2,1) circle(1.5pt) node[right]{$x_3$};
+    \draw[fill] (-1,3) circle(1.5pt) node[left]{$x_4$};
+    \draw[fill] (2,3) circle(1.5pt) node[right]{$x_5$};   
+    \draw (0,0) -- (2,1) -- (2,3) -- (-1,3)-- (0,0);
+    \draw[fill=black, opacity=.2] (0,0) -- (2,1) -- (2,3) -- (-1,3)-- (0,0);
+  \end{tikzpicture}\\
+\end{center}
+\caption{Der Algorithmus erhält die Punktemenge $\{x_1,\dots,x_6\}$ und gibt die Punkteliste $(x_1,x_4,x_5,x_3)$ aus. Der grau gefärbte Bereich ist die konvexe Hülle.
+}\end{figure}
+
+geg: 
+\begin{itemize}
+\item Algorithmus in Zeit T(n)
+\item Menge $M= {(x_{i},y_{i}) \in \mathbb{Q}^{2} | 1 \leq i \leq n}$
+\item zyklische Sortierung der Eckpunkte der konvexen Hülle
+\end{itemize} \\
+
+z.z. $\Omega$ (n log n) ist eine untere Schranke für worst-case Laufzeit des Algorithmus \\
+
+Probleme:
+\begin{enumerate}
+\item konvexe Hülle bestimmen
+\item Verwendung des vergleichsbasierenden Sortierens; läuft also bestenfalls auch n log n
+\end{enumerate} \\
+
+Problemlösung:
+\begin{itemize}
+\item transformieren einer Instanz I(B) (ein Array X) zu einer Instanz I(A)\\
+generieren zu jeder Zahl aus X einen Punkt $(x_{i},x_{i}^{2})$ \\
+läuft in Zeit O(n) $\rightarrow$ einmaliges Durchlaufen des Arrays und währenddessen das Erzeugen des jeweiligen Punktes 
+\item man erhält n Punkte, welche alle auf einer Parabel liegen \\
+die konvexe Hülle besteht dann genau aus diesen Punkten
+\item Algorithmus soll Instanz I(A)lösen \\
+in angegebener Zeit T(n)
+\item Lösung soll nun zu einer Lösung von Instanz I(B) transformiert werden \\
+soll eine sortierte Liste werden \\
+zuerst wird der Eckpunkt mit der kleinsten x-Koordinate ausgewählt \\
+x- Koordinate dieses Punktes kommt an die erste Stelle des Ergebnisarrays \\
+alle folgenden Werte werden von der Parabel (von links nach rechts) abgelesen
+\end{itemize}
+
+
+%----------------------------------------------------------------------------
+\subsection{Untere Schranke}
+Sei $A$ eine sortierte Liste der Größe $n$.
+
+\paragraph{a)}
+Das erste Problem besteht daraus, zu entscheiden, ob in der Liste $A$ Duplikate vorkommen.
+Beweisen Sie, dass $n-1$ eine untere Schranke für die Anzahl der Vergleiche ist, die man dafür braucht. \\
+
+3 Fälle:
+\begin{enumerate}
+\item Fall \\
+Abgleichen des ersten Elementes mit der Liste und finden des erstes Elementes an der letzten Stelle in der Liste. Dann muss man n-1 mal vergleichen, also das Erste mit jedem Element der Liste, außer mit sich selbst.
+\item Fall \\
+Abgleichen des ersten Elementes mit der Liste und finden des erstes Elementes an der letzten Stelle in der Liste. Hierbei muss man n-(n-Anzahl Stellen vor Listenende) vergleichen. Da aber $\Omega(n-(n-1)) \in \Omega(n-1)$, auch hier untere Grenze von $\Omega(n-1)$
+\item Fall \\
+\end{enumerate}
+
+\paragraph{b)}
+Das zweite Problem ist es, zu entscheiden, ob in der Liste $A$ ein beliebiger Wert $x$ vorkommt.
+Beweisen Sie, dass im worst-case $\Omega(\log n)$ Vergleiche dafür benötigt werden (unabhängig vom verwendeten
+Algorithmus). \\
+
 %----------------------------------------------------------------------------
 
 \end{document}
