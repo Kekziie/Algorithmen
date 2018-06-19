@@ -1692,32 +1692,59 @@ Ein binärer Suchbaum, der folgende Eigenschaften erfüllt, ist ein Rot-Schwarz-
 Färben Sie den angegebenen Suchbaum so, dass es sich um einen Rot-Schwarz-Baum handelt. \\
 
 \begin{center}
-\begin{tikzpicture}[level/.style={sibling distance=60mm/#1}]
-\node [circle,draw] (z){$9S$}
-  child {node [circle,draw] (a) {$2S$}
-    child {node [circle,draw] (b) {nil}}
-    child {node [circle,draw] (c) {nil}}
-  }
-  child {node [circle,draw] (d) {$17R$}
-    child {node [circle,draw] (e) {$12S$}
-       child {node [circle,draw] (f) {$10R$}
-          child {node [circle,draw] (g) {nil}}
-          child {node [circle,draw] (h) {nil}}
-       }
-       child {node [circle,draw] (i) {$15R$}
-          child {node [circle,draw] (j) {nil}}
-          child {node [circle,draw] (k) {nil}}
-       }
-    }
-    child {node [circle,draw] (l) {$21S$}
-       child {node [circle,draw] (m) {nil}}
-       child {node [circle,draw] (n) {$25R$}
-          child {node [circle,draw] (o) {nil}}
-          child {node [circle,draw] (p) {nil}}
-       }
-    }
-  };
-\end{tikzpicture}}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (33.4,-8.2) circle (3);
+\draw (33.4,-8.2) node {$9$};
+\draw [black] (16,-18.4) circle (3);
+\draw (16,-18.4) node {$2$};
+\draw [black] (12.4,-28.8) circle (3);
+\draw (12.4,-28.8) node {$nil$};
+\draw [black] (20.3,-28.8) circle (3);
+\draw (20.3,-28.8) node {$nil$};
+\draw [red] (50.8,-18.4) circle (3);
+\draw (50.8,-18.4) node {$17$};
+\draw [black] (37.9,-27.4) circle (3);
+\draw (37.9,-27.4) node {$12$};
+\draw [black] (63.2,-27.4) circle (3);
+\draw (63.2,-27.4) node {$21$};
+\draw [red] (30.9,-35.6) circle (3);
+\draw (30.9,-35.6) node {$10$};
+\draw [red] (44,-35.6) circle (3);
+\draw (44,-35.6) node {$15$};
+\draw [black] (56.5,-35.6) circle (3);
+\draw (56.5,-35.6) node {$nil$};
+\draw [red] (70.2,-34.6) circle (3);
+\draw (70.2,-34.6) node {$25$};
+\draw [black] (65.4,-45.4) circle (3);
+\draw (65.4,-45.4) node {$nil$};
+\draw [black] (74.8,-45.4) circle (3);
+\draw (74.8,-45.4) node {$nil$};
+\draw [black] (49.5,-45.4) circle (3);
+\draw (49.5,-45.4) node {$nil$};
+\draw [black] (41.3,-45.4) circle (3);
+\draw (41.3,-45.4) node {$nil$};
+\draw [black] (35,-45.4) circle (3);
+\draw (35,-45.4) node {$nil$};
+\draw [black] (26.9,-45.4) circle (3);
+\draw (26.9,-45.4) node {$nil$};
+\draw [black] (30.81,-9.72) -- (18.59,-16.88);
+\draw [black] (14.8,-21.3) -- (13.31,-25.94);
+\draw [black] (17.4,-21.2) -- (19.23,-26);
+\draw [black] (36.6,-9.1) -- (48.29,-16.76);
+\draw [black] (48.3,-20.4) -- (40.39,-25.72);
+\draw [black] (53,-20.7) -- (60.69,-25.75);
+\draw [black] (61.4,-29.8) -- (58.44,-33.31);
+\draw [black] (65.7,-29.7) -- (68.17,-32.39);
+\draw [black] (68.5,-37.2) -- (66.46,-42.59);
+\draw [black] (71.6,-37.3) -- (73.7,-42.61);
+\draw [black] (45.6,-38.8) -- (47.97,-42.82);
+\draw [black] (43.2,-38.49) -- (42.1,-42.51);
+\draw [black] (33,-38) -- (34.22,-42.5);
+\draw [black] (29.4,-38.3) -- (27.9,-42.57);
+\draw [black] (35.5,-29.5) -- (32.71,-33.2);
+\draw [black] (40.6,-30) -- (42.44,-33.04);
+\end{tikzpicture}
 \end{center}
 
 \paragraph{b)} 
