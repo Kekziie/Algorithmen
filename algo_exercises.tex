@@ -1810,13 +1810,61 @@ $O (n*log(n))+O (n)+O (log(n))+O (n)+O (1)+O} (n)=O (n*log(n))$
 
 \subsubsection{Korrektur}
 
+\textbf{in X-Structure we save events ordered by x-value}
+\begin{itemize}
+\item start of circle
+\item end of cirlce
+\item intersections of different circles
+\end{itemize} \\
+
+\textbf{in Y-Structure we save semi-circles ordered by y-value}
+\begin{itemize}
+\item start of circle
+divide the circle into two semi-circles $c_{l}$ and $c_{u}$ \\
+insert both into Y-structure \\
+determine the intersections with predecessor and successor in Y-structure \\
+insert new intersection-events into X-structure 
+\item end of circle
+determine intersections of predecessor and successor of current circle \\
+new intersection-events into X-structure \\
+delete the current circle in the Y-structure
+\item intersection of different circles
+save intersections \\
+suppose two semi-circles $c_{i}$ and $c_{j}$ are intersecting, where $c_{j}$ is successor of $c_{i}$ \\
+determine intersections \\
+switch $c_{i}$ and $c_{j}$ in the Y-structure
+\end{itemize}
+
 \textbf{intersections(C)} 
 \begin{algorithm}[H]
 \SetAlgoLined
-Sei P leere Liste (zum Speichern der Schnittpunkte) \\
-Sei X AVL-Baum (Start und Endpunkte aller Kreise) \\
+initialize list P \\
+fill X-Structure with start and end points of all circles \\
 \While{X not empty} {
+  get and remove first event e in X \;
+  \eIF{e is start of circle} {
+  create lower circle $c_{l}$ and upper circle $c_{u}$ from current circle \;
+  insert $c_{l}$ and $c_{u}$ into Y-strcture \;
+  determine intersections of $c_{l}$ with its predecessor in Y-structure \;
+  add intersections events to X \;
+  determine intersections of $c_{r}$ with ist successor in Y-structure \;
+  add intersection events to X \;
+  } {
+     \eIF{e is end of circle} {
+     let c be current circle \;
+     determine intersections of predecessor $c_{l}$ with successor $c_{u}$ \;
+     insert new intersection evens to X \;
+     delete current circle from Y-structure \;
+     }{
+     e is intersection of different circles \;
+     add the new intersection to P \;
+     let $c_{i}$ and $c_{j}$ = successor $c_{i}$ be the corresponding crossing semi-sircles \;
+     determine intersections of $c_{i}$ with successor $c_{j}$ \;
+     add new intersection events to X \;
+     switch $c_{i}$ and $c_{j}$ in Y-structure \;
+     }
 }
+\textbf{return} P;
 \end{algorithm} \\
 
 %----------------------------------------------------------------------------
