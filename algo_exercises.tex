@@ -2207,6 +2207,24 @@ readytodequeue & $O(1)*n$ & push(S1,S2) und $O(1)*n$ & push(S1,S2)
 
 Da push$(s_{i},s_{j})$ n-SChritte für n Elemente benötigt ist die Laufzeit $O(1)$ \\
 $\Rightarrow$ Saldo/Ergebnis der Account Methode der armortisiertes Laufzeitanalyse liegt in O(1).
+
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Tutorium 18.06.2018: Dynamisches Programmieren}
+
+\textbf{Beispiel: Fibonacci}
+
+\begin{algorithm}[H]
+\SetAlgoLined
+Fib(x) \\
+fibarr[] = new Int[x] \\
+fibarr[0]=0 \\
+fibarr[1]=1 \\
+\textbf{for}(i=2 to x) \\
+      fibarr[i]=fibarr[i-1]+fibarr[i-2] \\
+\textbf{return} fibarr[x]      
+\end{algorithm}
+
 %----------------------------------------------------------------------------
 
 \end{document}
