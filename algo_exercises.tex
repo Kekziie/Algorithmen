@@ -2217,6 +2217,31 @@ als die Elemente aus $T$, d.h. $\max S < \min T$.
 Geben Sie einen effizienten Pseudocode-Algorithmus \texttt{merge($S,T$)} an,
 der einen (2,4)-Baum aus der Vereinigung von $S$ und $T$ erstellt. \\
 
+\textbf{merge(S,T)} \\
+\begin{algorithm}[H]
+\SetAlgoLined
+m $\leftarrow$ biggest element in tree S \\
+\eIF{height(S) $\leq$ height(T)} {
+   T' $\leftarrow$ T \;
+   \While{height(S) $\neq$ height(T')} {
+   T' $\leftarrow$ leftmost child of root(T') \;
+   }
+   merge root(S) \;
+   m and v= root(T') \;
+   split tree T starting from v \;
+   \textbf{return} T \;
+} {
+   S' $\leftarrow$ S \;
+   \While {height(S') $\neq$ height(T)} {
+   S' $\leftarrow$ rightmost child of root(S') \;
+   }
+   merge root(T) \;
+   m and u=root(S') \;
+   split the tree S starting from u \;
+   \textbf{return} S \;
+}
+\end{algorithm}
+
 \paragraph{b)}
 Geben Sie einen effizienten Pseudocode-Algorithmus \texttt{split($T,x$)} an, 
 der einen (2,4)-Baum $T$ am Wert $x$ in zwei (2,4)-Bäume $T_{\le x}$ und $T_{> x}$ aufspaltet. 
