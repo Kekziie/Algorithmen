@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.23)  23 APR 2018 22:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.23)  19 JUN 2018 10:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1135,34 +1135,1960 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 279.
+ne 312.
 
-[7] [8] (./algo_exercises.aux) ) 
+[7]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.342 
+      
+? 
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.342 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.344 
+      
+? 
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.344 
+      
+? 
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
+
+ []
+
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 361.
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--362
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--373
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--385
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--392
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--398
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
+
+ []
+
+
+! LaTeX Error: Environment algorithm undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \begin{algorithm}
+                       [H]
+? 
+! Undefined control sequence.
+l.403 \SetAlgoLined
+                   
+? 
+! Undefined control sequence.
+l.404 \KwIn
+           {sortiertes Array A, Integer x}
+? 
+! Undefined control sequence.
+l.405 \KwOut
+            {Integer [Postion von x in A]}
+? 
+! Undefined control sequence.
+<recently read> \Return 
+                        
+l.418 \Return
+              $(a+unten)$ \\
+? 
+! Undefined control sequence.
+l.419 \textbf{else} \Return
+                            -1 \\
+? 
+
+! LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.421 \end{algorithm}
+                     
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
+
+ []
+
+! Undefined control sequence.
+<recently read> \calO 
+                      
+l.455 ... diese Frage in quadratischer Zeit $\calO
+                                                  (n^2)$ beantwortet. Geben ...
+
+? 
+! Undefined control sequence.
+<recently read> \calO 
+                      
+l.455 ...warum Ihr Algorithmus die Laufzeit $\calO
+                                                  (n^2)$ hat. \\
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
+
+ []
+
+
+! LaTeX Error: Environment algorithm undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.457 \begin{algorithm}
+                       [H]
+? 
+! Undefined control sequence.
+l.458 \SetAlgoLined
+                   
+? 
+! Undefined control sequence.
+l.459 \KwIn
+           {sortiertes Array A, Integer z}
+? 
+! Undefined control sequence.
+l.460 \KwOut
+            {boolean[ob $x,y \in A$ mit $x+y=z$]}
+? 
+! Undefined control sequence.
+<recently read> \Return 
+                        
+l.467 \Return
+              $true$ \\
+? 
+! Undefined control sequence.
+<recently read> \Return 
+                        
+l.472 \Return
+              $false$
+? 
+
+! LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.473 \end{algorithm}
+                     
+? 
+! Undefined control sequence.
+<recently read> \calO 
+                      
+l.478 ... obige Frage in einer Laufzeit von $\calO
+                                                  (n\log n)$ beantworten kan...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 478--479
+
+ []
+
+[11]
+
+! LaTeX Error: Environment algorithm undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.480 \begin{algorithm}
+                       [H]
+? 
+! Undefined control sequence.
+l.481 \SetAlgoLined
+                   
+? 
+! Undefined control sequence.
+l.482 \KwIn
+           {sortiertes Array A, Integer z}
+? 
+! Undefined control sequence.
+l.483 \KwOut
+            {}
+? 
+! Undefined control sequence.
+<recently read> \Return 
+                        
+l.490 \Return
+              $true$ \\
+? 
+! Undefined control sequence.
+<recently read> \Return 
+                        
+l.492 \Return
+              $false$ \\
+? 
+
+! LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.493 \end{algorithm}
+                     
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--494
+
+ []
+
+! Undefined control sequence.
+<recently read> \calO 
+                      
+l.498 ... obige Frage in einer Laufzeit von $\calO
+                                                  (n)$ beantwortet. Geben Si...
+
+? 
+
+Overfull \hbox (2.07004pt too wide) in paragraph at lines 498--499
+ \T1/futs/m/sc/10.95 c)[] \T1/futs/m/n/10.95 Es ist klar, dass ein Al-go-rith-m
+us für die obige Frage min-destens die Laufzeit $\FML/futm/m/it/10.95 
+\T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 n\T1/futs/m/n/10.95 )$ benötigt.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 498--499
+
+ []
+
+
+! LaTeX Error: Environment algorithm undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.500 \begin{algorithm}
+                       [H]
+? 
+! Undefined control sequence.
+l.501 \SetAlgoLined
+                   
+? 
+! Undefined control sequence.
+l.502 \KwIn
+           {sortiertes Array A, Integer z}
+? 
+! Undefined control sequence.
+l.503 \KwOut
+            {boolean[ob $x,y \in A$ mit $x+y=z$]}
+? 
+! Undefined control sequence.
+<recently read> \Return 
+                        
+l.509 \Return
+              $true$ \\
+? 
+! Undefined control sequence.
+<recently read> \Return 
+                        
+l.511 \Return
+              $false$ \\
+? 
+
+! LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.512 \end{algorithm}
+                     
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--513
+
+ []
+
+[12]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 520.
+
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Overfull \hbox (0.39099pt too wide) in paragraph at lines 531--532
+\T1/futs/m/n/10.95 Betrachten Sie die Al-go-rith-men \T1/cmtt/m/n/10.95 Inserti
+onsort \T1/futs/m/n/10.95 und \T1/cmtt/m/n/10.95 Minimumsuche + Austausch \T1/f
+uts/m/n/10.95 (Schema-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 534--535
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 592--593
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 594--602
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 604--608
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--611
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 612--619
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 621--622
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 623--630
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 623--630
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 633--641
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 633--641
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 647--648
+
+ []
+
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.650 \begin{tikzpicture}
+                         [scale=0.15]
+? 
+! Undefined control sequence.
+l.651 \tikzstyle
+                {every node}+=[inner sep=0pt]
+? 
+! Undefined control sequence.
+l.652 \draw
+            [black] (37.5,-7.9) circle (3);
+? 
+! Undefined control sequence.
+l.653 \draw
+            (37.5,-7.9) node {$4$};
+? 
+
+! LaTeX Error: \begin{center} on input line 649 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.654 \end{tikzpicture}
+                       
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--657
+
+ []
+
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.659 \begin{tikzpicture}
+                         [scale=0.15]
+? 
+! Undefined control sequence.
+l.660 \tikzstyle
+                {every node}+=[inner sep=0pt]
+? 
+! Undefined control sequence.
+l.661 \draw
+            [black] (37.5,-7.9) circle (3);
+? 
+! Undefined control sequence.
+l.662 \draw
+            [black] (30.8,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.663 \draw
+            (37.5,-7.9) node {$4$};
+? 
+! Undefined control sequence.
+l.664 \draw
+            (30.8,-18.3) node {$2$};
+? 
+! Undefined control sequence.
+l.665 \draw
+            [black] (35.88,-10.42) -- (32.42,-15.78);
+? 
+
+! LaTeX Error: \begin{center} on input line 658 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.666 \end{tikzpicture}
+                       
+? 
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.667 \begin{tikzpicture}
+                         [scale=0.15]
+? 
+! Undefined control sequence.
+l.668 \tikzstyle
+                {every node}+=[inner sep=0pt]
+? 
+! Undefined control sequence.
+l.669 \draw
+            [black] (22.00,-13.00) -- (27.00,-13.00);
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   [
+l.670 \fill [
+             black] (27.00,-13.00) -- (26.2,-12.5) -- (26.2,-13.5);
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   [
+l.670 \fill [
+             black] (27.00,-13.00) -- (26.2,-12.5) -- (26.2,-13.5);
+? 
+! Undefined control sequence.
+l.671 \draw
+            [black] (37.5,-7.9) circle (3);
+? 
+! Undefined control sequence.
+l.672 \draw
+            [black] (30.8,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.673 \draw
+            (37.5,-7.9) node {$2$};
+? 
+! Undefined control sequence.
+l.674 \draw
+            (30.8,-18.3) node {$4$};
+? 
+! Undefined control sequence.
+l.675 \draw
+            [black] (35.88,-10.42) -- (32.42,-15.78);
+? 
+
+! LaTeX Error: \begin{center} on input line 658 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.676 \end{tikzpicture}
+                       
+? 
+
+Overfull \hbox (15.29044pt too wide) in paragraph at lines 678--679
+\T1/futs/m/n/10.95 Schritt 2: 2. Array-Element wird in Heap einge-fügt und Heap
+-Eingeschaft geprüft und hergestellt. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 678--679
+
+ []
+
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.681 \begin{tikzpicture}
+                         [scale=0.15]
+? 
+! Undefined control sequence.
+l.682 \tikzstyle
+                {every node}+=[inner sep=0pt]
+? 
+! Undefined control sequence.
+l.683 \draw
+            [black] (34.5,-8.7) circle (3);
+? 
+! Undefined control sequence.
+l.684 \draw
+            (34.5,-8.7) node {$2$};
+? 
+! Undefined control sequence.
+l.685 \draw
+            [black] (24.7,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.686 \draw
+            (24.7,-18.3) node {$4$};
+? 
+! Undefined control sequence.
+l.687 \draw
+            [black] (44,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.688 \draw
+            (44,-18.3) node {$12$};
+? 
+! Undefined control sequence.
+l.689 \draw
+            [black] (32.36,-10.8) -- (26.84,-16.2);
+? 
+! Undefined control sequence.
+l.690 \draw
+            [black] (36.61,-10.83) -- (41.89,-16.17);
+? 
+
+! LaTeX Error: \begin{center} on input line 680 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.691 \end{tikzpicture}
+                       
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--694
+
+ []
+
+[16]
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.696 \begin{tikzpicture}
+                         [scale=0.15]
+? 
+! Undefined control sequence.
+l.697 \tikzstyle
+                {every node}+=[inner sep=0pt]
+? 
+! Undefined control sequence.
+l.698 \draw
+            [black] (34.5,-8.7) circle (3);
+? 
+! Undefined control sequence.
+l.699 \draw
+            (34.5,-8.7) node {$2$};
+? 
+! Undefined control sequence.
+l.700 \draw
+            [black] (24.7,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.701 \draw
+            (24.7,-18.3) node {$4$};
+? 
+! Undefined control sequence.
+l.702 \draw
+            [black] (44,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.703 \draw
+            (44,-18.3) node {$12$};
+? 
+! Undefined control sequence.
+l.704 \draw
+            [black] (19.9,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.705 \draw
+            (19.9,-29.8) node {$10$};
+? 
+! Undefined control sequence.
+l.706 \draw
+            [black] (32.36,-10.8) -- (26.84,-16.2);
+? 
+! Undefined control sequence.
+l.707 \draw
+            [black] (36.61,-10.83) -- (41.89,-16.17);
+? 
+! Undefined control sequence.
+l.708 \draw
+            [black] (23.54,-21.07) -- (21.06,-27.03);
+? 
+
+! LaTeX Error: \begin{center} on input line 695 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.709 \end{tikzpicture}
+                       
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 711--712
+
+ []
+
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.714 \begin{tikzpicture}
+                         [scale=0.15]
+? 
+! Undefined control sequence.
+l.715 \tikzstyle
+                {every node}+=[inner sep=0pt]
+? 
+! Undefined control sequence.
+l.716 \draw
+            [black] (34.5,-8.7) circle (3);
+? 
+! Undefined control sequence.
+l.717 \draw
+            (34.5,-8.7) node {$2$};
+? 
+! Undefined control sequence.
+l.718 \draw
+            [black] (24.7,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.719 \draw
+            (24.7,-18.3) node {$4$};
+? 
+! Undefined control sequence.
+l.720 \draw
+            [black] (44,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.721 \draw
+            (44,-18.3) node {$12$};
+? 
+! Undefined control sequence.
+l.722 \draw
+            [black] (19.9,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.723 \draw
+            (19.9,-29.8) node {$10$};
+? 
+! Undefined control sequence.
+l.724 \draw
+            [black] (29.1,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.725 \draw
+            (29.1,-29.8) node {$18$};
+? 
+! Undefined control sequence.
+l.726 \draw
+            [black] (32.36,-10.8) -- (26.84,-16.2);
+? 
+! Undefined control sequence.
+l.727 \draw
+            [black] (36.61,-10.83) -- (41.89,-16.17);
+? 
+! Undefined control sequence.
+l.728 \draw
+            [black] (23.54,-21.07) -- (21.06,-27.03);
+? 
+! Undefined control sequence.
+l.729 \draw
+            [black] (25.77,-21.1) -- (28.03,-27);
+? 
+
+! LaTeX Error: \begin{center} on input line 713 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.730 \end{tikzpicture}
+                       
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 732--733
+
+ []
+
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.735 \begin{tikzpicture}
+                         [scale=0.15]
+? 
+! Undefined control sequence.
+l.736 \tikzstyle
+                {every node}+=[inner sep=0pt]
+? 
+! Undefined control sequence.
+l.737 \draw
+            [black] (34.5,-8.7) circle (3);
+? 
+! Undefined control sequence.
+l.738 \draw
+            (34.5,-8.7) node {$2$};
+? 
+! Undefined control sequence.
+l.739 \draw
+            [black] (24.7,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.740 \draw
+            (24.7,-18.3) node {$4$};
+? 
+! Undefined control sequence.
+l.741 \draw
+            [black] (44,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.742 \draw
+            (44,-18.3) node {$12$};
+? 
+! Undefined control sequence.
+l.743 \draw
+            [black] (19.9,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.744 \draw
+            (19.9,-29.8) node {$10$};
+? 
+! Undefined control sequence.
+l.745 \draw
+            [black] (29.1,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.746 \draw
+            (29.1,-29.8) node {$18$};
+? 
+! Undefined control sequence.
+l.747 \draw
+            [black] (40.7,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.748 \draw
+            (40.7,-29.8) node {$14$};
+? 
+! Undefined control sequence.
+l.749 \draw
+            [black] (32.36,-10.8) -- (26.84,-16.2);
+? 
+! Undefined control sequence.
+l.750 \draw
+            [black] (36.61,-10.83) -- (41.89,-16.17);
+? 
+! Undefined control sequence.
+l.751 \draw
+            [black] (23.54,-21.07) -- (21.06,-27.03);
+? 
+! Undefined control sequence.
+l.752 \draw
+            [black] (25.77,-21.1) -- (28.03,-27);
+? 
+! Undefined control sequence.
+l.753 \draw
+            [black] (43.17,-21.18) -- (41.53,-26.92);
+? 
+
+! LaTeX Error: \begin{center} on input line 734 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.754 \end{tikzpicture}
+                       
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 756--757
+
+ []
+
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.759 \begin{tikzpicture}
+                         [scale=0.15]
+? 
+! Undefined control sequence.
+l.760 \tikzstyle
+                {every node}+=[inner sep=0pt]
+? 
+! Undefined control sequence.
+l.761 \draw
+            [black] (34.5,-8.7) circle (3);
+? 
+! Undefined control sequence.
+l.762 \draw
+            (34.5,-8.7) node {$2$};
+? 
+! Undefined control sequence.
+l.763 \draw
+            [black] (24.7,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.764 \draw
+            (24.7,-18.3) node {$4$};
+? 
+! Undefined control sequence.
+l.765 \draw
+            [black] (44,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.766 \draw
+            (44,-18.3) node {$12$};
+? 
+! Undefined control sequence.
+l.767 \draw
+            [black] (19.9,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.768 \draw
+            (19.9,-29.8) node {$10$};
+? 
+! Undefined control sequence.
+l.769 \draw
+            [black] (29.1,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.770 \draw
+            (29.1,-29.8) node {$18$};
+? 
+! Undefined control sequence.
+l.771 \draw
+            [black] (39.8,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.772 \draw
+            (39.8,-29.8) node {$14$};
+? 
+! Undefined control sequence.
+l.773 \draw
+            [black] (48.5,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.774 \draw
+            (48.5,-29.8) node {$6$};
+? 
+! Undefined control sequence.
+l.775 \draw
+            [black] (32.36,-10.8) -- (26.84,-16.2);
+? 
+! Undefined control sequence.
+l.776 \draw
+            [black] (36.61,-10.83) -- (41.89,-16.17);
+? 
+! Undefined control sequence.
+l.777 \draw
+            [black] (23.54,-21.07) -- (21.06,-27.03);
+? 
+! Undefined control sequence.
+l.778 \draw
+            [black] (25.77,-21.1) -- (28.03,-27);
+? 
+! Undefined control sequence.
+l.779 \draw
+            [black] (42.97,-21.12) -- (40.83,-26.98);
+? 
+! Undefined control sequence.
+l.780 \draw
+            [black] (45.09,-21.09) -- (47.41,-27.01);
+? 
+
+! LaTeX Error: \begin{center} on input line 758 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.781 \end{tikzpicture}
+                       
+? 
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.782 \begin{tikzpicture}
+                         [scale=0.15]
+? 
+! Undefined control sequence.
+l.783 \tikzstyle
+                {every node}+=[inner sep=0pt]
+? 
+! Undefined control sequence.
+l.784 \draw
+            [black] (12.00,-17.00) -- (17.00,-17.00);
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   [
+l.785 \fill [
+             black] (17.00,-17.00) -- (16.2,-16.5) -- (16.2,-17.5);
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   [
+l.785 \fill [
+             black] (17.00,-17.00) -- (16.2,-16.5) -- (16.2,-17.5);
+? 
+! Undefined control sequence.
+l.786 \draw
+            [black] (34.5,-8.7) circle (3);
+? 
+! Undefined control sequence.
+l.787 \draw
+            (34.5,-8.7) node {$2$};
+? 
+! Undefined control sequence.
+l.788 \draw
+            [black] (24.7,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.789 \draw
+            (24.7,-18.3) node {$4$};
+? 
+! Undefined control sequence.
+l.790 \draw
+            [black] (44,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.791 \draw
+            (44,-18.3) node {$6$};
+? 
+! Undefined control sequence.
+l.792 \draw
+            [black] (19.9,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.793 \draw
+            (19.9,-29.8) node {$10$};
+? 
+! Undefined control sequence.
+l.794 \draw
+            [black] (29.1,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.795 \draw
+            (29.1,-29.8) node {$18$};
+? 
+! Undefined control sequence.
+l.796 \draw
+            [black] (39.8,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.797 \draw
+            (39.8,-29.8) node {$14$};
+? 
+! Undefined control sequence.
+l.798 \draw
+            [black] (48.5,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.799 \draw
+            (48.5,-29.8) node {$12$};
+? 
+! Undefined control sequence.
+l.800 \draw
+            [black] (32.36,-10.8) -- (26.84,-16.2);
+? 
+! Undefined control sequence.
+l.801 \draw
+            [black] (36.61,-10.83) -- (41.89,-16.17);
+? 
+! Undefined control sequence.
+l.802 \draw
+            [black] (23.54,-21.07) -- (21.06,-27.03);
+? 
+! Undefined control sequence.
+l.803 \draw
+            [black] (25.77,-21.1) -- (28.03,-27);
+? 
+! Undefined control sequence.
+l.804 \draw
+            [black] (42.97,-21.12) -- (40.83,-26.98);
+? 
+! Undefined control sequence.
+l.805 \draw
+            [black] (45.09,-21.09) -- (47.41,-27.01);
+? 
+
+! LaTeX Error: \begin{center} on input line 758 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.806 \end{tikzpicture}
+                       
+? 
+[17]
+Overfull \hbox (15.29044pt too wide) in paragraph at lines 808--809
+\T1/futs/m/n/10.95 Schritt 7: 7. Array-Element wird in Heap einge-fügt und Heap
+-Eigenschaft geprüft und hergestellt. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 808--809
+
+ []
+
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.811 \begin{tikzpicture}
+                         [scale=0.15]
+? 
+! Undefined control sequence.
+l.812 \tikzstyle
+                {every node}+=[inner sep=0pt]
+? 
+! Undefined control sequence.
+l.813 \draw
+            [black] (34.5,-8.7) circle (3);
+? 
+! Undefined control sequence.
+l.814 \draw
+            (34.5,-8.7) node {$2$};
+? 
+! Undefined control sequence.
+l.815 \draw
+            [black] (24.7,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.816 \draw
+            (24.7,-18.3) node {$4$};
+? 
+! Undefined control sequence.
+l.817 \draw
+            [black] (44,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.818 \draw
+            (44,-18.3) node {$6$};
+? 
+! Undefined control sequence.
+l.819 \draw
+            [black] (19.9,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.820 \draw
+            (19.9,-29.8) node {$10$};
+? 
+! Undefined control sequence.
+l.821 \draw
+            [black] (29.1,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.822 \draw
+            (29.1,-29.8) node {$18$};
+? 
+! Undefined control sequence.
+l.823 \draw
+            [black] (39.8,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.824 \draw
+            (39.8,-29.8) node {$14$};
+? 
+! Undefined control sequence.
+l.825 \draw
+            [black] (48.5,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.826 \draw
+            (48.5,-29.8) node {$12$};
+? 
+! Undefined control sequence.
+l.827 \draw
+            [black] (15.7,-40.5) circle (3);
+? 
+! Undefined control sequence.
+l.828 \draw
+            (15.7,-40.5) node {$16$};
+? 
+! Undefined control sequence.
+l.829 \draw
+            [black] (32.36,-10.8) -- (26.84,-16.2);
+? 
+! Undefined control sequence.
+l.830 \draw
+            [black] (36.61,-10.83) -- (41.89,-16.17);
+? 
+! Undefined control sequence.
+l.831 \draw
+            [black] (23.54,-21.07) -- (21.06,-27.03);
+? 
+! Undefined control sequence.
+l.832 \draw
+            [black] (25.77,-21.1) -- (28.03,-27);
+? 
+! Undefined control sequence.
+l.833 \draw
+            [black] (42.97,-21.12) -- (40.83,-26.98);
+? 
+! Undefined control sequence.
+l.834 \draw
+            [black] (45.09,-21.09) -- (47.41,-27.01);
+? 
+! Undefined control sequence.
+l.835 \draw
+            [black] (18.8,-32.59) -- (16.8,-37.71);
+? 
+
+! LaTeX Error: \begin{center} on input line 810 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.836 \end{tikzpicture}
+                       
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 838--839
+
+ []
+
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.841 \begin{tikzpicture}
+                         [scale=0.15]
+? 
+! Undefined control sequence.
+l.842 \tikzstyle
+                {every node}+=[inner sep=0pt]
+? 
+! Undefined control sequence.
+l.843 \draw
+            [black] (34.5,-8.7) circle (3);
+? 
+! Undefined control sequence.
+l.844 \draw
+            (34.5,-8.7) node {$2$};
+? 
+! Undefined control sequence.
+l.845 \draw
+            [black] (24.7,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.846 \draw
+            (24.7,-18.3) node {$4$};
+? 
+! Undefined control sequence.
+l.847 \draw
+            [black] (44,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.848 \draw
+            (44,-18.3) node {$6$};
+? 
+! Undefined control sequence.
+l.849 \draw
+            [black] (19.9,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.850 \draw
+            (19.9,-29.8) node {$10$};
+? 
+! Undefined control sequence.
+l.851 \draw
+            [black] (29.1,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.852 \draw
+            (29.1,-29.8) node {$18$};
+? 
+! Undefined control sequence.
+l.853 \draw
+            [black] (39.8,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.854 \draw
+            (39.8,-29.8) node {$14$};
+? 
+! Undefined control sequence.
+l.855 \draw
+            [black] (48.5,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.856 \draw
+            (48.5,-29.8) node {$12$};
+? 
+! Undefined control sequence.
+l.857 \draw
+            [black] (15.7,-40.5) circle (3);
+? 
+! Undefined control sequence.
+l.858 \draw
+            (15.7,-40.5) node {$16$};
+? 
+! Undefined control sequence.
+l.859 \draw
+            [black] (24.1,-40.5) circle (3);
+? 
+! Undefined control sequence.
+l.860 \draw
+            (24.1,-40.5) node {$8$};
+? 
+! Undefined control sequence.
+l.861 \draw
+            [black] (32.36,-10.8) -- (26.84,-16.2);
+? 
+! Undefined control sequence.
+l.862 \draw
+            [black] (36.61,-10.83) -- (41.89,-16.17);
+? 
+! Undefined control sequence.
+l.863 \draw
+            [black] (23.54,-21.07) -- (21.06,-27.03);
+? 
+! Undefined control sequence.
+l.864 \draw
+            [black] (25.77,-21.1) -- (28.03,-27);
+? 
+! Undefined control sequence.
+l.865 \draw
+            [black] (42.97,-21.12) -- (40.83,-26.98);
+? 
+! Undefined control sequence.
+l.866 \draw
+            [black] (45.09,-21.09) -- (47.41,-27.01);
+? 
+! Undefined control sequence.
+l.867 \draw
+            [black] (18.8,-32.59) -- (16.8,-37.71);
+? 
+! Undefined control sequence.
+l.868 \draw
+            [black] (21,-32.59) -- (23,-37.71);
+? 
+
+! LaTeX Error: \begin{center} on input line 840 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.869 \end{tikzpicture}
+                       
+? 
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.870 \begin{tikzpicture}
+                         [scale=0.15]
+? 
+! Undefined control sequence.
+l.871 \tikzstyle
+                {every node}+=[inner sep=0pt]
+? 
+! Undefined control sequence.
+l.872 \draw
+            [black] (7.00,-23.00) -- (12.00,-23.00);
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   [
+l.873 \fill [
+             black] (12.00,-23.00) -- (11.2,-22.5) -- (11.2,-23.5);
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   [
+l.873 \fill [
+             black] (12.00,-23.00) -- (11.2,-22.5) -- (11.2,-23.5);
+? 
+! Undefined control sequence.
+l.874 \draw
+            [black] (34.5,-8.7) circle (3);
+? 
+! Undefined control sequence.
+l.875 \draw
+            (34.5,-8.7) node {$2$};
+? 
+! Undefined control sequence.
+l.876 \draw
+            [black] (24.7,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.877 \draw
+            (24.7,-18.3) node {$4$};
+? 
+! Undefined control sequence.
+l.878 \draw
+            [black] (44,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.879 \draw
+            (44,-18.3) node {$6$};
+? 
+! Undefined control sequence.
+l.880 \draw
+            [black] (19.9,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.881 \draw
+            (19.9,-29.8) node {$8$};
+? 
+! Undefined control sequence.
+l.882 \draw
+            [black] (29.1,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.883 \draw
+            (29.1,-29.8) node {$18$};
+? 
+! Undefined control sequence.
+l.884 \draw
+            [black] (39.8,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.885 \draw
+            (39.8,-29.8) node {$14$};
+? 
+! Undefined control sequence.
+l.886 \draw
+            [black] (48.5,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.887 \draw
+            (48.5,-29.8) node {$12$};
+? 
+! Undefined control sequence.
+l.888 \draw
+            [black] (15.7,-40.5) circle (3);
+? 
+! Undefined control sequence.
+l.889 \draw
+            (15.7,-40.5) node {$16$};
+? 
+! Undefined control sequence.
+l.890 \draw
+            [black] (24.1,-40.5) circle (3);
+? 
+! Undefined control sequence.
+l.891 \draw
+            (24.1,-40.5) node {$10$};
+? 
+! Undefined control sequence.
+l.892 \draw
+            [black] (32.36,-10.8) -- (26.84,-16.2);
+? 
+! Undefined control sequence.
+l.893 \draw
+            [black] (36.61,-10.83) -- (41.89,-16.17);
+? 
+! Undefined control sequence.
+l.894 \draw
+            [black] (23.54,-21.07) -- (21.06,-27.03);
+? 
+! Undefined control sequence.
+l.895 \draw
+            [black] (25.77,-21.1) -- (28.03,-27);
+? 
+! Undefined control sequence.
+l.896 \draw
+            [black] (42.97,-21.12) -- (40.83,-26.98);
+? 
+! Undefined control sequence.
+l.897 \draw
+            [black] (45.09,-21.09) -- (47.41,-27.01);
+? 
+! Undefined control sequence.
+l.898 \draw
+            [black] (18.8,-32.59) -- (16.8,-37.71);
+? 
+! Undefined control sequence.
+l.899 \draw
+            [black] (21,-32.59) -- (23,-37.71);
+? 
+
+! LaTeX Error: \begin{center} on input line 840 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.900 \end{tikzpicture}
+                       
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 905--906
+
+ []
+
+[18]
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.909 \begin{tikzpicture}
+                         [scale=0.15]
+? 
+! Undefined control sequence.
+l.910 \tikzstyle
+                {every node}+=[inner sep=0pt]
+? 
+! Undefined control sequence.
+l.911 \draw
+            [black] (34.5,-8.7) circle (3);
+? 
+! Undefined control sequence.
+l.912 \draw
+            (34.5,-8.7) node {$4$};
+? 
+! Undefined control sequence.
+l.913 \draw
+            [black] (24.7,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.914 \draw
+            (24.7,-18.3) node {$8$};
+? 
+! Undefined control sequence.
+l.915 \draw
+            [black] (44,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.916 \draw
+            (44,-18.3) node {$6$};
+? 
+! Undefined control sequence.
+l.917 \draw
+            [black] (19.9,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.918 \draw
+            (19.9,-29.8) node {$10$};
+? 
+! Undefined control sequence.
+l.919 \draw
+            [black] (29.1,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.920 \draw
+            (29.1,-29.8) node {$18$};
+? 
+! Undefined control sequence.
+l.921 \draw
+            [black] (39.8,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.922 \draw
+            (39.8,-29.8) node {$14$};
+? 
+! Undefined control sequence.
+l.923 \draw
+            [black] (48.5,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.924 \draw
+            (48.5,-29.8) node {$12$};
+? 
+! Undefined control sequence.
+l.925 \draw
+            [black] (15.7,-40.5) circle (3);
+? 
+! Undefined control sequence.
+l.926 \draw
+            (15.7,-40.5) node {$16$};
+? 
+! Undefined control sequence.
+l.927 \draw
+            [black] (32.36,-10.8) -- (26.84,-16.2);
+? 
+! Undefined control sequence.
+l.928 \draw
+            [black] (36.61,-10.83) -- (41.89,-16.17);
+? 
+! Undefined control sequence.
+l.929 \draw
+            [black] (23.54,-21.07) -- (21.06,-27.03);
+? 
+! Undefined control sequence.
+l.930 \draw
+            [black] (25.77,-21.1) -- (28.03,-27);
+? 
+! Undefined control sequence.
+l.931 \draw
+            [black] (42.97,-21.12) -- (40.83,-26.98);
+? 
+! Undefined control sequence.
+l.932 \draw
+            [black] (45.09,-21.09) -- (47.41,-27.01);
+? 
+! Undefined control sequence.
+l.933 \draw
+            [black] (18.8,-32.59) -- (16.8,-37.71);
+? 
+
+! LaTeX Error: \begin{center} on input line 908 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.934 \end{tikzpicture}
+                       
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 937--940
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 942--943
+
+ []
+
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.945 \begin{tikzpicture}
+                         [scale=0.15]
+? 
+! Undefined control sequence.
+l.946 \tikzstyle
+                {every node}+=[inner sep=0pt]
+? 
+! Undefined control sequence.
+l.947 \draw
+            [black] (34.5,-8.7) circle (3);
+? 
+! Undefined control sequence.
+l.948 \draw
+            (34.5,-8.7) node {$3$};
+? 
+! Undefined control sequence.
+l.949 \draw
+            [black] (24.7,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.950 \draw
+            (24.7,-18.3) node {$4$};
+? 
+! Undefined control sequence.
+l.951 \draw
+            [black] (44,-18.3) circle (3);
+? 
+! Undefined control sequence.
+l.952 \draw
+            (44,-18.3) node {$6$};
+? 
+! Undefined control sequence.
+l.953 \draw
+            [black] (19.9,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.954 \draw
+            (19.9,-29.8) node {$8$};
+? 
+! Undefined control sequence.
+l.955 \draw
+            [black] (29.1,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.956 \draw
+            (29.1,-29.8) node {$18$};
+? 
+! Undefined control sequence.
+l.957 \draw
+            [black] (39.8,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.958 \draw
+            (39.8,-29.8) node {$14$};
+? 
+! Undefined control sequence.
+l.959 \draw
+            [black] (48.5,-29.8) circle (3);
+? 
+! Undefined control sequence.
+l.960 \draw
+            (48.5,-29.8) node {$12$};
+? 
+! Undefined control sequence.
+l.961 \draw
+            [black] (15.7,-40.5) circle (3);
+? 
+! Undefined control sequence.
+l.962 \draw
+            (15.7,-40.5) node {$16$};
+? 
+! Undefined control sequence.
+l.963 \draw
+            [black] (23.9,-40.5) circle (3);
+? 
+! Undefined control sequence.
+l.964 \draw
+            (23.9,-40.5) node {$10$};
+? 
+! Undefined control sequence.
+l.965 \draw
+            [black] (32.36,-10.8) -- (26.84,-16.2);
+? 
+! Undefined control sequence.
+l.966 \draw
+            [black] (36.61,-10.83) -- (41.89,-16.17);
+? 
+! Undefined control sequence.
+l.967 \draw
+            [black] (23.54,-21.07) -- (21.06,-27.03);
+? 
+! Undefined control sequence.
+l.968 \draw
+            [black] (25.77,-21.1) -- (28.03,-27);
+? 
+! Undefined control sequence.
+l.969 \draw
+            [black] (42.97,-21.12) -- (40.83,-26.98);
+? 
+! Undefined control sequence.
+l.970 \draw
+            [black] (45.09,-21.09) -- (47.41,-27.01);
+? 
+! Undefined control sequence.
+l.971 \draw
+            [black] (18.8,-32.59) -- (16.8,-37.71);
+? 
+! Undefined control sequence.
+l.972 \draw
+            [black] (20.95,-32.61) -- (22.85,-37.69);
+? 
+
+! LaTeX Error: \begin{center} on input line 944 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.973 \end{tikzpicture}
+                       
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 975--977
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 979--980
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 989--990
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 993--1000
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1003
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1006
+
+ []
+
+
+Overfull \hbox (36.2665pt too wide) in paragraph at lines 1010--1011
+ \T1/futs/m/sc/10.95 c)[] \T1/futs/m/n/10.95 Geben Sie Pseu-docode für ef-fizie
+nte Im-ple-men-tierun-gen der Meth-o-den \T1/cmtt/m/n/10.95 Insert \T1/futs/m/n
+/10.95 und \T1/cmtt/m/n/10.95 ExtractMin
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1011
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1038
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1063
+
+ []
+
+
+! LaTeX Error: Environment algorithm undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1068 \begin{algorithm}
+                        [H]
+? 
+! Undefined control sequence.
+l.1069 	\If
+           {$A[left] > A[right]$} {
+? 
+! Undefined control sequence.
+l.1072 	\If
+           {$left + 1 \ge right$} {
+? 
+! Undefined control sequence.
+l.1073 		\Return
+                 \;
+? 
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1079  \caption
+                {\texttt{ZweiDrittelSortieren}($A$, $left$, $right$)}
+? 
+
+! LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1081 \end{algorithm}
+                      
+? 
+
+Overfull \hbox (13.24295pt too wide) in paragraph at lines 1068--1082
+[]\T1/futs/m/n/10.95 [H] $\FML/futmi/m/it/10.95 A\T1/futs/m/n/10.95 [\FML/futmi
+/m/it/10.95 left\T1/futs/m/n/10.95 ] \FMS/futm/m/n/10.95 ƒ \FML/futmi/m/it/10.9
+5 A\T1/futs/m/n/10.95 [\FML/futmi/m/it/10.95 right\T1/futs/m/n/10.95 ]$  ex-cha
+nge $\FML/futmi/m/it/10.95 A\T1/futs/m/n/10.95 [\FML/futmi/m/it/10.95 left\T1/f
+uts/m/n/10.95 ]$ and $\FML/futmi/m/it/10.95 A\T1/futs/m/n/10.95 [\FML/futmi/m/i
+t/10.95 right\T1/futs/m/n/10.95 ]$   $\FML/futmi/m/it/10.95 left \FMS/futm/m/n/
+10.95 € \T1/futs/m/n/10.95 1 \FMS/futm/m/n/10.95 ^^U \FML/futmi/m/it/10.95 righ
+t$    $k \FMS/futm/m/n/10.95  [][] []$
+ []
+
+
+Overfull \hbox (9.0883pt too wide) in paragraph at lines 1084--1085
+ \T1/futs/m/sc/10.95 a)[] \T1/futs/m/n/10.95 Ar-gu-men-tieren Sie, dass \T1/cmt
+t/m/n/10.95 ZweiDrittelSortieren\T1/futs/m/n/10.95 ($\FML/futmi/m/it/10.95 A$\T
+1/futs/m/n/10.95 , $1$, $\FML/futmi/m/it/10.95 n$\T1/futs/m/n/10.95 ) das Ar-ra
+y $\FML/futmi/m/it/10.95 A\T1/futs/m/n/10.95 [1\FML/futmi/m/it/10.95 ::n\T1/fut
+s/m/n/10.95 ]$ ko-r-rekt sortiert. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1084--1085
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 1086--1096
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1086--1096
+
+ []
+
+
+Overfull \hbox (3.2418pt too wide) in paragraph at lines 1086--1096
+\T1/futs/m/n/10.95 Das mit-tlere Drit-tel besteht aus min-destens k El-e-menten
+ und die k gröÿten El-e-mente befinden
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1099
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1106
+
+ []
+
+
+Overfull \hbox (32.51114pt too wide) in paragraph at lines 1108--1109
+ \T1/futs/m/sc/10.95 c)[] \T1/futs/m/n/10.95 Ist Zwei-Drittel-Sortieren im wors
+t-case ef-fizien-ter als In-sert-sort, Min-i-mum-suche+Austauschen,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1108--1109
+
+ []
+
+
+Overfull \hbox (0.56514pt too wide) in paragraph at lines 1110--1115
+\T1/futs/m/n/10.95 Quicksort hat die Worst-Case Laufzeit $\FMS/futm/m/n/10.95 O
+\T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 n[]\T1/futs/m/n/10.95 )$, zwei-Dritte
+l-Sortieren ist also deut-lich schneller. 
+ []
+
+
+Overfull \hbox (4.58365pt too wide) in paragraph at lines 1110--1115
+\T1/futs/m/n/10.95 Heapsort hat die Worst-Case Laufzeit $\FMS/futm/m/n/10.95 O\
+T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 n [] n\T1/futs/m/n/10.95 )$, zwei-Drit
+tel-Sortieren ist also et-was schneller. 
+ []
+
+[22] (./algo_exercises.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 7636 strings out of 492995
- 114826 string characters out of 6132703
- 358924 words of memory out of 5000000
- 11014 multiletter control sequences out of 15000+600000
- 91713 words of font info for 109 fonts, out of 8000000 for 9000
+ 7933 strings out of 492995
+ 117629 string characters out of 6132703
+ 365924 words of memory out of 5000000
+ 11300 multiletter control sequences out of 15000+600000
+ 101091 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,11n,51p,8852b,241s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/d
-vips/base/8r.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/c
-m-super-t1.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/f
-ourier-bb.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fo
-urier-mcl.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fo
-urier-mex.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fo
-urier-ml.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fou
-rier-mlit.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fo
-urier-ms.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/sy
-mbols/msbm10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/p
-utr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/putri8a.
-pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pf
-b>
-Output written on algo_exercises.pdf (8 pages, 87527 bytes).
+ 48i,11n,51p,8852b,1601s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2017/texmf-dist
+/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on algo_exercises.pdf (22 pages, 168405 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

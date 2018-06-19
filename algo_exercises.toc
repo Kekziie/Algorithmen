@@ -29,7 +29,37 @@
 \contentsline {paragraph}{\nonumberline a)}{7}
 \contentsline {paragraph}{\nonumberline b)}{7}
 \contentsline {paragraph}{\nonumberline c)}{7}
-\contentsline {paragraph}{\nonumberline a)}{7}
-\contentsline {paragraph}{\nonumberline b)}{7}
+\contentsline {paragraph}{\nonumberline a)}{8}
+\contentsline {paragraph}{\nonumberline b)}{8}
 \contentsline {paragraph}{\nonumberline c)}{8}
 \contentsline {paragraph}{\nonumberline d)}{8}
+\contentsline {section}{\numberline {4}Tern\IeC {\"a}re Suche}{9}
+\contentsline {paragraph}{\nonumberline a)}{9}
+\contentsline {paragraph}{\nonumberline b)}{9}
+\contentsline {paragraph}{\nonumberline c)}{10}
+\contentsline {paragraph}{\nonumberline d)}{10}
+\contentsline {paragraph}{\nonumberline e)}{11}
+\contentsline {section}{\numberline {5}Eine Anwendung der Bin\IeC {\"a}ren Suche}{11}
+\contentsline {paragraph}{\nonumberline a)}{11}
+\contentsline {paragraph}{\nonumberline b)}{12}
+\contentsline {paragraph}{\nonumberline c)}{12}
+\contentsline {section}{\numberline {6}Implementierung von Suchalgorithmen}{13}
+\contentsline {section}{\numberline {7}Sortieren}{13}
+\contentsline {paragraph}{\nonumberline a)}{13}
+\contentsline {paragraph}{\nonumberline b)}{14}
+\contentsline {paragraph}{\nonumberline c)}{15}
+\contentsline {paragraph}{\nonumberline d)}{15}
+\contentsline {paragraph}{\nonumberline e)}{16}
+\contentsline {section}{\numberline {8}Heapsort}{16}
+\contentsline {paragraph}{\nonumberline a)}{16}
+\contentsline {paragraph}{\nonumberline b)}{19}
+\contentsline {paragraph}{\nonumberline c)}{19}
+\contentsline {paragraph}{\nonumberline d)}{19}
+\contentsline {section}{\numberline {9}Eine Erweiterung von Heapsort}{20}
+\contentsline {paragraph}{\nonumberline a)}{20}
+\contentsline {paragraph}{\nonumberline b)}{20}
+\contentsline {paragraph}{\nonumberline c)}{20}
+\contentsline {section}{\numberline {10}Zwei-Drittel-Sortieren}{21}
+\contentsline {paragraph}{\nonumberline a)}{22}
+\contentsline {paragraph}{\nonumberline b)}{22}
+\contentsline {paragraph}{\nonumberline c)}{22}
