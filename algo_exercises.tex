@@ -1808,6 +1808,17 @@ n gibt Die Anzahl der Kreise in C an. Der Algorithmus sortiert einmal die Menge 
 Damit beträgt die Laufzeit: \\
 $O (n*log(n))+O (n)+O (log(n))+O (n)+O (1)+O} (n)=O (n*log(n))$
 
+\subsubsection{Korrektur}
+
+\textbf{intersections(C)} 
+\begin{algorithm}[H]
+\SetAlgoLined
+Sei P leere Liste (zum Speichern der Schnittpunkte) \\
+Sei X AVL-Baum (Start und Endpunkte aller Kreise) \\
+\While{X not empty} {
+}
+\end{algorithm} \\
+
 %----------------------------------------------------------------------------
 \subsection{B-Bäume}
 In dieser Aufgabe geht es um B-Bäume der Ordnung 2, d.\,h. ein innerer Knoten hat mindestens zwei und höchstens drei Kinder. Gegeben ist der folgende B-Baum der Ordnung 2:
@@ -2205,7 +2216,7 @@ readytoqueue & kostet push(S2,S1) und $O(1)*n$ & $O(1)*n$ & push(S2,S1) \\\hline
 readytodequeue & $O(1)*n$ & push(S1,S2) und $O(1)*n$ & push(S1,S2)
 \end{tabular}
 
-Da push$(s_{i},s_{j})$ n-SChritte für n Elemente benötigt ist die Laufzeit $O(1)$ \\
+Da push$(s_{i},s_{j})$ n-Schritte für n Elemente benötigt ist die Laufzeit $O(1)$ \\
 $\Rightarrow$ Saldo/Ergebnis der Account Methode der armortisiertes Laufzeitanalyse liegt in O(1).
 
 %----------------------------------------------------------------------------------------
