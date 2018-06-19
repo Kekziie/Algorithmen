@@ -345,8 +345,10 @@ $$B(n)=B(n-1)
 Die Endwerte seien $T(1)=1$, $B(1)=1$ und $A(1)=0$. Finden Sie für $T(n)$ eine geschlossene Form ohne das Mastertheorem zu verwenden und beweisen Sie die Korrektheit Ihrer Lösung.
 
 %----------------------------------------------------------------------------------------
-
-\section{Ternäre Suche}
+\newpage
+\section{Blatt 02}
+%----------------------------------------------------------------------------
+\subsection{Ternäre Suche}
 Bei der binären Suche ist der Input ein sortiertes Array $A$ und eine Zahl $x$ (die nicht notwendig im Array $A$ vorkommen muss). Dabei wird $A$ in zwei gleich große Teile $A_1$ und $A_2$ geteilt und ermittelt, in welchem der beiden Teile sich $x$ befinden müsste. Dieses Verfahren wird \emph{rekursiv} fortgesetzt. Betrachten Sie nun die \emph{ternäre Suche}, bei der $A$ statt in zwei Teile, in \emph{drei} etwa gleich große Teile $A_1$, $A_2$ und $A_3$ geteilt wird.
 
 
@@ -448,7 +450,7 @@ Minimale Anzahl von Vergleiche (best case): 5 Vergleiche, falls $x \notin A_{1},
 Maximale Anzahl (worst case): $\dfrac{n}{3} * 3^{n}+2 = n * 3^{n-1}+2$, falls bis Arraygröße $n=1$ aufgelöst wird und dann erst festgestellt wird $x \notin A$. \\
 Durchschnittliche Anzahl (average case): $\dfrac{n*3^{n-1}+2+5}{2} = \dfrac{n}{2} *3^{n-1}+3,5$
 
-\section{Eine Anwendung der Binären Suche}
+\subsection{Eine Anwendung der Binären Suche}
 Sei $A$ ein sortiertes Array der Größe $n$ und sei $z$ eine gegebene Zahl. Das Ziel dieser Übung ist es, folgdende Frage zu beantworten: Gibt es in $A$ zwei verschiedene Elemente $x$ und $y$, so dass $x+y=z$?
 
 \paragraph{a)}
@@ -513,7 +515,7 @@ $y=z-A(counter)$ \\
 
 Weil nun die Größe des binär durchsuchten Arrays in jedem Rekursionsschritt um 1 sinkt haben wir nicht mehr $log(n)$ Aufwand pro Rekursionsschritt, sondern $log(n-i)$ für das i-ten Rekursionsschritt. Das Array A(ab Counter +1) ist das Array ab der Position 5 (als untere Grenze für die binäre Suche) oder das Array ab Position 5 kopiert und als neues Array in die binarySearch mit gesuchtem y als Input gegeben. Das darf gemacht werden, weil ja die schon abgeleiteten A(Counter) sicher kein Komplementärelement haben und dementsprechend auch keines sein können und somit bei der Suche ignoriert werden.
 
-\section{Implementierung von Suchalgorithmen}
+\subsection{Implementierung von Suchalgorithmen}
 Laden Sie die Java-Vorlage aus dem Moodle herunter und implementieren Sie die folgenden Methoden:
 
 \begin{enumerate}
@@ -527,7 +529,10 @@ Für die Implementierung der Interpolationssuche benutzen Sie die folgende Varia
 siehe Main.java
 
 %----------------------------------------------------------------------------------------
-\section{Sortieren}
+\newpage
+\section{Blatt 03}
+%----------------------------------------------------------------------------
+\subsection{Sortieren}
 Betrachten Sie die Algorithmen \texttt{Insertionsort} und \texttt{Minimumsuche + Austausch} (Schematisch erklärt in Foliensatz 4, Seite 2).
 
 \paragraph{a)}
@@ -640,7 +645,7 @@ Minimumsuche + Austausch:\\
 Die Anzahl der Vertauschungen liegt hier statisch bei n (außer man zählt nicht wenn ein Element mit sich selbst vertauscht wird und gerade dann wäre dies hier sicher n).
 
 %----------------------------------------------------------------------------
-\section{Heapsort}
+\subsection{Heapsort}
 Gegeben sei das Array $A=\langle 4,2,12,10,18,14,6,16,8 \rangle$. 
 
 \paragraph{a)}
@@ -982,7 +987,7 @@ ExtractMax benötigt n - 1 Schritte, um alle Blätter des Heaps zu finden und da
 Weil die Höhe des Heaps bei jeder nächsten Zweierpotenz um 1 steigt, haben wir $Hoehe(H) = \lfloor \log_2 n \rfloor$, also die Laufzeit $T(n) = n-1 + 2^{Hoehe(H)}+1 \leq n+2^{\log_2 n} = n + n = 2n \Rightarrow \mathcal{O}(n)$.
 
 %----------------------------------------------------------------------------
-\section{Eine Erweiterung von Heapsort}
+\subsection{Eine Erweiterung von Heapsort}
 In der Vorlesung haben Sie das Sortierverfahren Heapsort kennengelernt. Wir betrachten nun eine Erweiterung dieses Verfahrens, das sogenannte \emph{$k$-Heapsort}. Dabei ist $k\ge2$ eine natürliche Zahl. Bei diesem Verfahren benutzt man statt einem Binärbaum einen $k$-nären Baum, bei dem jeder Knoten höchstens $k$ Kinder hat. Deshalb heißt der korrespondierende Heap $k$-Heap. 
 
 \paragraph{a)}
@@ -1062,7 +1067,7 @@ Complexity:\\
 We need k comparisons on every level, thats why extractMin() $\in \mathcal{O}(3 log_k(n*k - n) $.\\
 
 %----------------------------------------------------------------------------
-\section{Zwei-Drittel-Sortieren}
+\subsection{Zwei-Drittel-Sortieren}
 Eine alternative Methode, um ein Array $A$ der Länge $n$ zu sortieren, ist die Folgende:
 
 \begin{algorithm}[H]
@@ -1321,6 +1326,429 @@ Abgleichen des ersten Elementes mit der Liste und finden des erstes Elementes an
 Das zweite Problem ist es, zu entscheiden, ob in der Liste $A$ ein beliebiger Wert $x$ vorkommt.
 Beweisen Sie, dass im worst-case $\Omega(\log n)$ Vergleiche dafür benötigt werden (unabhängig vom verwendeten
 Algorithmus). \\
+
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Blatt 06}
+%----------------------------------------------------------------------------
+\subsection{AVL-Bäume}
+
+\paragraph{a)}
+ Fügen Sie die Zahlen 63, 30, 36, 31, 12, 50, 35, 5, 27, 59, 43, 17 (in dieser Reihenfolge) in einen (zu Beginn leeren) AVL-Baum ein. Sie dürfen die Schritte, in denen nicht rotiert, sondern nur eingefügt wird, zusammenfassen. \\
+ 
+\textbf{Schritt 1} 
+
+\begin{center}
+ \begin{tikzpicture}[level/.style={sibling distance=60mm/#1}]
+\node [circle,draw] (z){$63$}
+\end{tikzpicture}}
+ \end{center} 
+
+\textbf{Schritt 2,3} 
+
+\begin{center}
+\begin{tikzpicture}[level/.style={sibling distance=60mm/#1}]
+\node [circle,draw] (z){$63$}
+  child {node [circle,draw] (a) {$30$}  
+    child {node [circle,draw] (b) {}} 
+    child {node [circle,draw] (c) {$36$}}  
+  }
+  child {node [circle,draw] (d) {}}  
+\end{tikzpicture}}
+\end{center} 
+
+$bal(63)=-2,bal(30)=1$ \\
+$\Rightarrow$ VZ ungleich \\
+$\Rightarrow$ Doppelrotation \\
+
+\textbf{Schritt 4}
+
+\begin{center}
+\begin{tikzpicture}[level/.style={sibling distance=60mm/#1}]
+\node [circle,draw] (z){$63$}
+  child {node [circle,draw] (a) {$30$}  
+    child {node [circle,draw] (c) {$36$}}  
+    child {node [circle,draw] (b) {}} 
+  }
+  child {node [circle,draw] (d) {}}  
+\end{tikzpicture}}
+\end{center} 
+
+\begin{center}
+\begin{tikzpicture}[level/.style={sibling distance=60mm/#1}]
+\node [circle,draw] (z){$36$}
+  child {node [circle,draw] (a) {$30$}
+  }
+  child {node [circle,draw] (j) {$63$}
+};
+\end{tikzpicture}}
+\end{center}
+
+\textbf{Schritt 5,6,7,8,9,10,11}
+
+\begin{center}
+\begin{tikzpicture}[level/.style={sibling distance=60mm/#1}]
+\node [circle,draw] (z){$36$}
+  child {node [circle,draw] (a) {$30$}
+    child {node [circle,draw] (b) {$12$}
+       child {node [circle,draw] (c) {$5$}}
+       child {node [circle,draw] (d) {$27$}}
+    }
+    child {node [circle,draw] (e) {$31$}
+       child {node [circle,draw] (j) {}} 
+       child {node [circle,draw] (d) {$35$}}
+    }
+  }
+  child {node [circle,draw] (g) {$63$}
+    child {node [circle,draw] (h) {$50$}
+       child {node [circle,draw] (l) {}} 
+       child {node [circle,draw] (i) {$59$}}
+    }
+    child {node [circle,draw] (k) {}} 
+  };
+\end{tikzpicture}}
+\end{center}
+
+$bal(63)=-2,bal(50)=1$\\
+$\Rightarrow$ VZ ungleich \\
+$\Rightarrow$ Doppelrotation \\
+
+\textbf{Schritt 12}
+
+\begin{center}
+\begin{tikzpicture}[level/.style={sibling distance=60mm/#1}]
+\node [circle,draw] (z){$36$}
+  child {node [circle,draw] (a) {$30$}
+    child {node [circle,draw] (b) {$12$}
+       child {node [circle,draw] (c) {$5$}}
+       child {node [circle,draw] (d) {$27$}}
+    }
+    child {node [circle,draw] (e) {$31$}
+       child {node [circle,draw] (j) {}} 
+       child {node [circle,draw] (d) {$35$}}
+    }
+  }
+  child {node [circle,draw] (g) {$63$}
+    child {node [circle,draw] (k) {}} 
+    child {node [circle,draw] (h) {$59$}
+       child {node [circle,draw] (l) {}} 
+       child {node [circle,draw] (i) {$50$}}
+    }
+  };
+\end{tikzpicture}}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[level/.style={sibling distance=60mm/#1}]
+\node [circle,draw] (z){$36$}
+  child {node [circle,draw] (a) {$30$}
+    child {node [circle,draw] (b) {$12$}
+       child {node [circle,draw] (c) {$5$}}
+       child {node [circle,draw] (d) {$27$}}
+    }
+    child {node [circle,draw] (e) {$31$}
+       child {node [circle,draw] (j) {}} 
+       child {node [circle,draw] (f) {$35$}}
+    }
+  }
+  child {node [circle,draw] (g) {$59$}
+    child {node [circle,draw] (h) {$50$}}
+    child {node [circle,draw] (i) {$63$}}
+  };
+\end{tikzpicture}}
+\end{center}
+
+\textbf{Schritt 13,14}
+
+\begin{center}
+\begin{tikzpicture}[level/.style={sibling distance=60mm/#1}]
+\node [circle,draw] (z){$36$}
+  child {node [circle,draw] (a) {$30$}
+    child {node [circle,draw] (b) {$12$}
+       child {node [circle,draw] (c) {$5$}}
+       child {node [circle,draw] (d) {$27$}
+          child {node [circle,draw] (e) {$17$}}
+          child {node [circle,draw] (l) {}} 
+       }
+    }
+    child {node [circle,draw] (f) {$31$}
+       child {node [circle,draw] (m) {}} 
+       child {node [circle,draw] (g) {$35$}}
+    }
+  }
+  child {node [circle,draw] (h) {$59$}
+    child {node [circle,draw] (i) {$50$}
+       child {node [circle,draw] (j) {$43$}}
+       child {node [circle,draw] (n) {}} 
+    }
+    child {node [circle,draw] (k) {$63$}}
+  };
+\end{tikzpicture}}
+\end{center}
+
+$|bal(u) \leq 1|: \forall n$, n Knoten $\Rightarrow$ fertig
+
+\paragraph{b)} 
+Löschen Sie die Zahlen 36, 43 wieder aus dem Baum. Geben Sie die Schritte an. \\
+
+Lösche 36 und hefte 43 an Baum
+
+\begin{center}
+\begin{tikzpicture}[level/.style={sibling distance=60mm/#1}]
+\node [circle,draw] (z){$ $}
+  child {node [circle,draw] (a) {$30$}
+    child {node [circle,draw] (b) {$12$}
+       child {node [circle,draw] (c) {$5$}}
+       child {node [circle,draw] (d) {$27$}
+          child {node [circle,draw] (e) {$17$}}
+          child {node [circle,draw] (l) {}}
+       }
+    }
+    child {node [circle,draw] (f) {$31$}
+       child {node [circle,draw] (m) {}}
+       child {node [circle,draw] (g) {$35$}}
+    }
+  }
+  child {node [circle,draw] (h) {$59$}
+    child {node [circle,draw] (i) {$50$}
+       child {node [circle,draw] (j) {$43$}}
+       child {node [circle,draw] (n) {}}
+    }
+    child {node [circle,draw] (k) {$63$}}
+  };
+\end{tikzpicture}}
+\end{center}
+
+nachdem 36 gelöscht
+
+\begin{center}
+\begin{tikzpicture}[level/.style={sibling distance=60mm/#1}]
+\node [circle,draw] (z){$43$}
+  child {node [circle,draw] (a) {$30$}
+    child {node [circle,draw] (b) {$12$}
+       child {node [circle,draw] (c) {$5$}}
+       child {node [circle,draw] (d) {$27$}
+          child {node [circle,draw] (e) {$17$}}
+          child {node [circle,draw] (l) {}}
+       }
+    }
+    child {node [circle,draw] (f) {$31$}
+       child {node [circle,draw] (m) {}}
+       child {node [circle,draw] (g) {$35$}}
+    }
+  }
+  child {node [circle,draw] (h) {$59$}
+    child {node [circle,draw] (i) {$50$}}
+    child {node [circle,draw] (k) {$63$}}
+  };
+\end{tikzpicture}}
+\end{center}
+
+Rotation 
+
+\begin{center}
+\begin{tikzpicture}[level/.style={sibling distance=60mm/#1}]
+\node [circle,draw] (z){$30$}
+  child {node [circle,draw] (a) {$12$}
+    child {node [circle,draw] (b) {$5$}
+    }
+    child {node [circle,draw] (f) {$27$}
+       child {node [circle,draw] (g) {$17$}}
+       child {node [circle,draw] (n) {}}
+    }
+  }
+  child {node [circle,draw] (h) {$ $}
+    child {node [circle,draw] (i) {$31$}
+       child {node [circle,draw] (o) {}}
+       child {node [circle,draw] (j) {$35$}}
+    }
+    child {node [circle,draw] (k) {$59$}
+       child {node [circle,draw] (l) {$30$}}
+       child {node [circle,draw] (m) {$63$}}
+    }
+  };
+\end{tikzpicture}}
+\end{center}
+
+nach 43 gelöscht
+
+\begin{center}
+\begin{tikzpicture}[level/.style={sibling distance=60mm/#1}]
+\node [circle,draw] (z){$30$}
+  child {node [circle,draw] (a) {$12$}
+    child {node [circle,draw] (b) {$5$}
+    }
+    child {node [circle,draw] (f) {$27$}
+       child {node [circle,draw] (g) {$17$}}
+       child {node [circle,draw] (l) {}}
+    }
+  }
+  child {node [circle,draw] (h) {$50$}
+    child {node [circle,draw] (i) {$31$}
+       child {node [circle,draw] (n) {}}
+       child {node [circle,draw] (j) {$35$}}
+    }
+    child {node [circle,draw] (k) {$59$}
+       child {node [circle,draw] (o) {}}
+       child {node [circle,draw] (m) {$63$}}
+    }
+  };
+\end{tikzpicture}}
+\end{center}
+
+\paragraph{c)} 
+Leiten Sie eine Eingabefolge von $n$ Zahlen für einen AVL-Baum ab, die keine Rotationen erfordert. \\
+
+Nehme an die Eingabe ist oder wurde zuvor sortiert. Wähle nun als Einfüge-Element  den Median und teile die Eingabe in zwei weitere sortierte Eingaben. Wähle nun als Einfüge-Element zuerst den linken, dann den rechten Median. Nun gibt es vier Eingaben (sortiert) von denen wieder zuerst die Mediane bestimmt werden müssen und ausschließend nacheinander eingefügt werden.
+
+Die Eingabefolge ergibt sich nur aus der Einfüge-Reihenfolge der Elemente der sortierten Eingabe: Sortiere eine sortierte Eingabefolge um, dass die Mediane der sortierten Teilfolge von links nach rechts aufgereiht werden. Falls die Eingabefolge keine eindeutigen Mediane hat, füge beide Median-Element hinzu.
+
+
+%----------------------------------------------------------------------------
+\subsection{Binäre Suchbäume}
+
+\paragraph{a)}
+ Gegeben ein Pfad $P$ von der Wurzel zum Blatt eines binären Suchbaumes. Sei $B$ die Menge der Knoten auf diesem Pfad,
+$A$ alle Knoten links von $P$ und $C$ alle Knoten rechts von $P$. Gilt dann $a\le b\le c$ für alle $a\in A$, $b\in B$ und $c\in C$? \\
+
+\textbf{Nein} Gegenbeispiel:
+
+\begin{center}
+\begin{tikzpicture}[level/.style={sibling distance=60mm/#1}]
+\node [circle,draw] (z){$50$}
+  child {node [circle,draw] (a) {$40$}}
+  child {node [circle,draw] (g) {$60$}
+    child {node [circle,draw] (h) {$55$}}
+    child {node [circle,draw] (h) {$70$}
+       child {node [circle,draw] (i) {}}
+       child {node [circle,draw] (j) {$80$}}
+    }
+  };
+\end{tikzpicture}}
+\end{center}
+
+ist binärer Suchbaum, weil $\forall$ Knoten n gilt:
+\begin{itemize}
+\item $childr(n) \geq n$
+\item $childl(n) < n$
+\end{itemize} \\
+
+Wähle Pfad $P=(50,60,70,80)$ \\
+$\Rightarrow A=(40,55); C = \emptyset$ \\
+$|P|=4,|A|=2, |C| = 0$ \\
+$|A| \leq |P| > |B| \neq |A| \leq |P| \leq C$ \\
+$a \leq b \leq c$ mit $a \in A, b \in B, c \in C$ gilt nicht\\
+
+\paragraph{b)} Zeigen Sie: Hat ein Knoten in einem binären Suchbaum zwei Kinder, so hat sein Nachfolger kein linkes Kind und sein Vorgänger kein rechtes Kind. Gilt diese Aussage auch für ein Knoten mit nur einem Kind? \\
+
+Sei $x_{i} \in \mathbb{Z}$ und $x_{0} < x_{1} < ... < x_{n}$ \\
+
+\textbf{Geg}: \begin{itemize}
+\item $x_{i}$ 2 Kinder
+\item $x_{i-1}$ Vorgänger von $x_{i}$
+\item $x_{i+1}$ Nachfolger
+\end{itemize} 
+
+\textbf{Beh}: $x_{i-1}$ hat kein rechtes Kind, $x_{i+1}$ hat kein linkes Kind \\
+
+\textbf{Bew} 
+Da $x_{i-1}$ Vorgänger von $x_{i}$: \\
+
+$\Rightarrow x_{i-1} < x_{i} \wedge \nexists x_{j} \in [x_{i-1};x_{i}]$ \\
+
+Da nun $x_{i-1}$ nicht Kind von $x_{i}$ (weil $x_{i}$ schon 2 Kinder hat) sein kann, existiert kein $x_{j}$ zwischen $x_{i-1}$ und $x_{i}$ \\
+
+$\Rightarrow x_{i-1}$ Vorgänger kann kein rechtes Kind $x_{j}$ mehr erhalten \\
+
+Da $x_{i+1}$ Nachfolger von $x_{i}$: \\
+
+$\Rightarrow x_{i+1} > x_{i} \wedge \nexists x_{j} \in [x_{i};x_{i+1}]$ \\
+
+Da $x_{i}$ schon 2 Kinder hat \\
+
+$\Rightarrow x_{i+1}$ Nachfolger kann kein rechtes Kind $x_{j}$ mehr erhalten \\
+
+Diese Aussage gilt für Knoten mit nur einem Kind, aber nur falls Knoten bereits linkes Kind besitzt bei Vorgänger-Einfügung. Ebenso gilt die Aussage falls Knoten bereits rechtes Kind besitzt für den Nachfolger.
+
+\paragraph{c)}Zeigen oder widerlegen Sie: Sei $T$ ein binärer Suchbaum und seien $x$ und $y$ Elemente in $T$. Der binäre Suchbaum, der sich nach Löschen von $x$ und $y$ (in dieser Reihenfolge) ergibt ist derselbe Suchbaum, der sich nach Löschen von $y$ und $x$ (in dieser Reihenfolge) ergibt. \\
+
+T Bin. SB, $x,y \in binSB$ \\
+
+Da beim Löschen immer das kleinste Element des rechte oder das größte des linken TB gewählt werden, wird immer ein Blatt für x oder y als Ersatz gewählt, welches anschließend gelöscht wird. Da sich dadurch die Reihenfolge innerhalb des Baumes dadruch nicht verändert kann in beliebiger Reihenfolge gelöscht werden.
+
+%----------------------------------------------------------------------------
+\subsection{Rot-Schwarz-Bäume}
+Rot-Schwarz-Bäume sind eine Möglichkeit, um balancierte Suchbäume zu implementieren. Wir betrachten nun binäre Suchbäume, deren Knoten folgende Felder enthalten: {\em color, key, left, right} und {\em p} (Parent). Alle Knoten werden als innere Knoten betrachtet, die Blätter durch Zeiger auf \texttt{nil} dargestellt. 
+Ein binärer Suchbaum, der folgende Eigenschaften erfüllt, ist ein Rot-Schwarz-Baum:
+\begin{enumerate}
+\item Jeder Knoten ist schwarz oder rot.
+\item Die Wurzel ist schwarz.
+\item Jedes Blatt (\texttt{nil}) ist schwarz.
+\item Falls ein Knoten rot ist, so sind beide Kinder schwarz.
+\item Für jeden Knoten gilt: Alle Pfade zu den Nachfahren, die Blätter (\texttt{nil}) sind, haben die gleiche Anzahl von schwarzen Knoten.
+\end{enumerate}
+
+\paragraph{a)} 
+Färben Sie den angegebenen Suchbaum so, dass es sich um einen Rot-Schwarz-Baum handelt. \\
+
+\begin{center}
+\begin{tikzpicture}[level/.style={sibling distance=60mm/#1}]
+\node [circle,draw] (z){$9S$}
+  child {node [circle,draw] (a) {$2S$}
+    child {node [circle,draw] (b) {nil}}
+    child {node [circle,draw] (c) {nil}}
+  }
+  child {node [circle,draw] (d) {$17R$}
+    child {node [circle,draw] (e) {$12S$}
+       child {node [circle,draw] (f) {$10R$}
+          child {node [circle,draw] (g) {nil}}
+          child {node [circle,draw] (h) {nil}}
+       }
+       child {node [circle,draw] (i) {$15R$}
+          child {node [circle,draw] (j) {nil}}
+          child {node [circle,draw] (k) {nil}}
+       }
+    }
+    child {node [circle,draw] (l) {$21S$}
+       child {node [circle,draw] (m) {nil}}
+       child {node [circle,draw] (n) {$25R$}
+          child {node [circle,draw] (o) {nil}}
+          child {node [circle,draw] (p) {nil}}
+       }
+    }
+  };
+\end{tikzpicture}}
+\end{center}
+
+\paragraph{b)} 
+In einem Rot-Schwarz-Baum ist das Einfügen von Elementen eine komplizierte Operation,
+die eventuell Rebalancierungen und Umfärbungen nach sich zieht.
+Fügen Sie zwei geeignete Elemente so in den Suchbaum ein, dass Ihre Färbung aus Teil (a)
+erhalten bleibt und trotzdem ein gültiger Rot-Schwarz-Baum entstehen. \\
+
+\includegraphics[width=10cm,height=5cm]{baum06A3b.jpg} \\
+
+\paragraph{c)}
+Zeigen Sie, dass ein Red-Black-Tree höchstens Tiefe $2\log(n+1)$ hat. Dabei ist
+$n$ die Anzahl der (inneren) Knoten. \\
+
+Da die Rot-Schwarz Bedingung des Baums zur halben Ausgeglichenheit zwingst wegen E.5(-E.1) (gleiche Anzahl schwarzer Knoten im Baum $\forall$ Pfade), gilt es bei fast voller Ausgeglichenheit $log(n+1)$ Tiefe (wegen der Wurzel die schwarz sein muss und keinen linken Teilbaum haben könnte.) Da nun aber jeder zweite Teilbaum aber lineare Liste werden kann, kann die doppelte Tiefe, also $2*log(n+1)$ erreicht werden.
+
+\paragraph{d)} 
+Ist jeder Rot-Schwarz-Baum auch ein AVL-Baum? Begründen Sie Ihre Antwort. \\
+
+\textbf{Nein}
+Gegenbeispiel siehe geg. Rot-Schwarz-Baum aus a)
+
+%----------------------------------------------------------------------------
+\subsection{Implementation von Binären Suchbäumen}
+Laden Sie die Java-Vorlage aus dem Moodle herunter und implementieren Sie:
+
+\paragraph{a)} 
+Die Klasse \texttt{BSTreeNode}, die das gegebene Interface \texttt{TreeNode} implementiert.
+
+\paragraph{b)} 
+Die fünf Methoden der Klasse \texttt{BSTree}, die keine Implementierung haben.
 
 %----------------------------------------------------------------------------
 
