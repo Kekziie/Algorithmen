@@ -2352,7 +2352,7 @@ fibarr[1]=1 \\
 \newpage
 \section{Blatt 08}
 %----------------------------------------------------------------------------
-\section{Skiplists}
+\subsection{Skiplists}
 Fügen Sie folgenden Elemente in eine Skiplist ein:
 \[ 17,3,7,11,13,19,2,23,27. \]
 Es stehen ihnen dazu folgende Zufallsbits zur Verfügung (von links nach rechts verbrauchen):
@@ -2718,7 +2718,7 @@ Bemerkung: Leider hat es uns zeitlich nicht gereicht, alle Querlinien einzufüge
 \end{tikzpicture} \\ 
 
 %----------------------------------------------------------------------------
-\section{Skiplists und Binäre Suchbäume}
+\subsection{Skiplists und Binäre Suchbäume}
 Sei $T$ ein binärer Suchbaum der Größe $n$, der nicht notwendigerweise balanciert ist.
 Beschreiben Sie einen Algorithmus in Pseudocode, der in Zeit $\calO(n)$ aus $T$ eine Skipliste $S$ bildet.
 Dabei soll $S$ so aufgebaut sein, dass die Suche in $S$ eine deterministische
@@ -2754,7 +2754,7 @@ sorted-list $\leftarrow$ list(sort-to-list(left child),root,sort-to-list(right c
 In to-skiplist(T) wird sort-to-list aufgerufen, welches den binären Suchbaum T rekursiv in ein (flache) Skipliste S in n Schritten einfügt und das Ergebnis an level-up(S) weitergibtm welches in (log n)-Schritten die Skiplisten Level von S anpasst. Wir haben also eine Laufzeit von $O(n)+O(log n) \in O(n)$.
  
 %----------------------------------------------------------------------------
-\section{Dynamisches Programmieren}
+\subsection{Dynamisches Programmieren}
 Gegeben ein Baum $T=(V,E)$, wobei $V$ die Menge der Knoten und $E$ die Menge der Kanten zwischen diesen
 Knoten sind. Eine \emph{unabhängige Menge} ist eine Menge $M \subseteq V$, sodass
 für alle $v \in M$ gilt, dass $w \notin M$, falls es eine Kante $\{v,w\} \in E$ gibt.
@@ -2774,7 +2774,7 @@ Beschreiben Sie einen Algorithmus mit Dynamischem Programmieren, der eine maxima
  Wie ist die Laufzeit Ihres Verfahrens? \\
 
 %----------------------------------------------------------------------------
-\section{Dynamisches Prog.: Palindrom}
+\subsection{Dynamisches Prog.: Palindrom}
 Ein \emph{Palindrom} ist eine Zeichenfolge, die vorwärts und rückwärts gelesen gleich ist. Beispiele für Palindrome sind alle Zeichenfolgen
 der Länge 1, \texttt{KAJAK}, \texttt{REITTIER}, \texttt{SEI FIES} und \texttt{DREH MAL AM HERD}.
 
