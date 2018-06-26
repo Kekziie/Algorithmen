@@ -2352,7 +2352,537 @@ fibarr[1]=1 \\
 \newpage
 \section{Blatt 08}
 %----------------------------------------------------------------------------
+\section{Skiplists}
+Fügen Sie folgenden Elemente in eine Skiplist ein:
+\[ 17,3,7,11,13,19,2,23,27. \]
+Es stehen ihnen dazu folgende Zufallsbits zur Verfügung (von links nach rechts verbrauchen):
+\[ 1101100101000110001. \]
+Erhöhen Sie $L_i$ so lange bis das Zufallsbit $1$ ist. Geben Sie Ihre Datenstruktur nach jeder Ein\-füge\-operation an. \\
 
+Bemerkung: Leider hat es uns zeitlich nicht gereicht, alle Querlinien einzufügen.  \\
+
+\textbf{leere Skiplist} \\
+
+\begin{tikzpicture}
+\SetGraphUnit{1.5}
+\SetVertexNormal[Shape    = rectangle,MinSize=.8 cm]
+\Vertex[L=$-\infty$] {0;0}
+
+\foreach \num/\label [count=\n from 0] in  
+    {1/+\infty}
+      {\EA[L=$\label$](\n;0){\num;0}} 
+      
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1}  
+ {\Edge(\lastnum;0)(\num;0)}       
+\end{tikzpicture} \\
+
+\textbf{17,ZB:1} verbleibende ZB: 1011 0010 1000 1100 01 \\
+
+\begin{tikzpicture}
+\SetGraphUnit{1.5}
+\SetVertexNormal[Shape    = rectangle,MinSize=.8 cm]
+\Vertex[L=$-\infty$] {0;0}
+
+\foreach \num/\label [count=\n from 0] in  
+    {1/17 ,2/+\infty}
+      {\EA[L=$\label$](\n;0){\num;0}} 
+      
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,2}  
+ {\Edge(\lastnum;0)(\num;0)}       
+\end{tikzpicture} \\ 
+
+\textbf{3, ZB:1} verbleibende ZB: 0110 0101 0001 1000 1 \\
+
+\begin{tikzpicture}
+\SetGraphUnit{1.5}
+\SetVertexNormal[Shape    = rectangle,MinSize=.8 cm]
+\Vertex[L=$-\infty$] {0;0}
+
+\foreach \num/\label [count=\n from 0] in  
+    {1/3, 2/17 ,3/+\infty}
+      {\EA[L=$\label$](\n;0){\num;0}} 
+      
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,2,3}  
+ {\Edge(\lastnum;0)(\num;0)}       
+\end{tikzpicture} \\ 
+
+
+\textbf{7, ZB:01} $\rightarrow$ Levelerhöhung um 1; ZB: 1001 0100 0110 001 \\
+
+\begin{tikzpicture}
+\SetGraphUnit{1.5}
+\SetVertexNormal[Shape    = rectangle,MinSize=.8 cm]
+\Vertex[L=$-\infty$] {0;0}
+
+\foreach \num [count=\n from 0] in  {1}
+ {\NO[L=$-\infty$](0;\n){0;\num}}    
+       
+\foreach \num/\label [count=\n from 0] in  
+    {1/3, 2/7, 3/17 ,4/+\infty}
+      {\EA[L=$\label$](\n;0){\num;0}}   
+      
+\foreach \num [count=\n from 0] in  {1}{%
+     \NO[L=$+\infty$](4;\n){4;\num}}  
+     
+\foreach \num [count=\n from 0] in  {1} {%
+    \NO[L=$7$](2;\n){2;\num}}      
+    
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {2,4}  
+ {\Edge(\lastnum;1)(\num;1)}   
+ 
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,2,3,4}  
+ {\Edge(\lastnum;0)(\num;0)}       
+ 
+\foreach \num  in  {0,2,4} {\Edge(\num;0)(\num;1)}                        
+\end{tikzpicture} \\ 
+
+
+\textbf{11, ZB:1} v. ZB: 0010 1000 1100 01 \\
+
+\begin{tikzpicture}
+\SetGraphUnit{1.5}
+\SetVertexNormal[Shape    = rectangle,MinSize=.8 cm]
+\Vertex[L=$-\infty$] {0;0}
+
+\foreach \num [count=\n from 0] in  {1}
+ {\NO[L=$-\infty$](0;\n){0;\num}}    
+       
+\foreach \num/\label [count=\n from 0] in  
+    {1/3, 2/7, 3/11 ,4/17 ,5/+\infty}
+      {\EA[L=$\label$](\n;0){\num;0}}   
+      
+\foreach \num [count=\n from 0] in  {1}{%
+     \NO[L=$+\infty$](5;\n){5;\num}}  
+     
+\foreach \num [count=\n from 0] in  {1} {%
+    \NO[L=$7$](2;\n){2;\num}} 
+    
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {2,5}  
+ {\Edge(\lastnum;1)(\num;1)}   
+ 
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,2,3,4,5}  
+ {\Edge(\lastnum;0)(\num;0)}  
+ 
+\foreach \num  in  {0,2,5} {\Edge(\num;0)(\num;1)}                                    
+\end{tikzpicture} \\ 
+
+\textbf{13, ZB: 001} $\rightarrow$ Levelerhöhung um 1, v. ZB: 0100 0110 001 \\
+
+\begin{tikzpicture}
+\SetGraphUnit{1.5}
+\SetVertexNormal[Shape    = rectangle,MinSize=.8 cm]
+\Vertex[L=$-\infty$] {0;0}
+
+\foreach \num [count=\n from 0] in  {1,2}
+ {\NO[L=$-\infty$](0;\n){0;\num}}    
+       
+\foreach \num/\label [count=\n from 0] in  
+    {1/3, 2/7, 3/11 ,4/13 ,5/17  ,6/+\infty}
+      {\EA[L=$\label$](\n;0){\num;0}}   
+      
+\foreach \num [count=\n from 0] in  {1,2}{%
+     \NO[L=$+\infty$](6;\n){6;\num}}  
+     
+\foreach \num [count=\n from 0] in  {1} {%
+    \NO[L=$7$](2;\n){2;\num}}    
+    
+\foreach \num [count=\n from 0] in  {1,2}{%
+     \NO[L=$13$](4;\n){4;\num}}   
+     
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {4,6}  
+ {\Edge(\lastnum;2)(\num;2)}    
+   
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {2,4,6}  
+ {\Edge(\lastnum;1)(\num;1)}   
+ 
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,2,3,4,5,6}  
+ {\Edge(\lastnum;0)(\num;0)}    
+ 
+\foreach \num  in  {2} {\Edge(\num;0)(\num;1)}           
+ 
+\foreach \num [count=\n from 1] in  {0,...,1}  
+ {\Edge(0;\num)(0;\n)  \Edge(4;\num)(4;\n) \Edge(6;\num)(6;\n)}                                                  
+\end{tikzpicture} \\ 
+
+\textbf{19, ZB:01} v ZB: 0001 1000 1 \\
+
+\begin{tikzpicture}
+\SetGraphUnit{1.5}
+\SetVertexNormal[Shape    = rectangle,MinSize=.8 cm]
+\Vertex[L=$-\infty$] {0;0}
+
+\foreach \num [count=\n from 0] in  {1,2}
+ {\NO[L=$-\infty$](0;\n){0;\num}}    
+       
+\foreach \num/\label [count=\n from 0] in  
+    {1/3, 2/7, 3/11 ,4/13 ,5/17 ,6/19 ,7/+\infty}
+      {\EA[L=$\label$](\n;0){\num;0}}   
+      
+\foreach \num [count=\n from 0] in  {1,2}{%
+     \NO[L=$+\infty$](7;\n){7;\num}}  
+     
+\foreach \num [count=\n from 0] in  {1} {%
+    \NO[L=$7$](2;\n){2;\num}}    
+    
+\foreach \num [count=\n from 0] in  {1,2}{%
+     \NO[L=$13$](4;\n){4;\num}} 
+     
+\foreach \num [count=\n from 0] in  {1} {%
+    \NO[L=$19$](6;\n){6;\num}}   
+    
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {4,7}  
+ {\Edge(\lastnum;2)(\num;2)}    
+   
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {2,4,6,7}  
+ {\Edge(\lastnum;1)(\num;1)}   
+ 
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,2,3,4,5,6,7}  
+ {\Edge(\lastnum;0)(\num;0)}   
+ 
+\foreach \num  in  {2,6} {\Edge(\num;0)(\num;1)}    
+ 
+\foreach \num [count=\n from 1] in  {0,...,1}  
+ {\Edge(0;\num)(0;\n)  \Edge(4;\num)(4;\n) \Edge(7;\num)(7;\n)}                                                                                
+\end{tikzpicture} \\ 
+
+\textbf{2, ZB: 0001} Levelerhöhung um 1; v. ZB: 10001 \\
+
+\begin{tikzpicture}
+\SetGraphUnit{1.5}
+\SetVertexNormal[Shape    = rectangle,MinSize=.8 cm]
+\Vertex[L=$-\infty$] {0;0}
+
+\foreach \num [count=\n from 0] in  {1,2,3}
+ {\NO[L=$-\infty$](0;\n){0;\num}}    
+       
+\foreach \num/\label [count=\n from 0] in  
+    {1/2, 2/3, 3/7, 4/11 ,5/13 ,6/17 ,7/19 ,8/+\infty}
+      {\EA[L=$\label$](\n;0){\num;0}}   
+      
+\foreach \num [count=\n from 0] in  {1,2,3}{%
+     \NO[L=$+\infty$](8;\n){8;\num}}  
+     
+\foreach \num [count=\n from 0] in  {1} {%
+    \NO[L=$7$](3;\n){3;\num}}    
+    
+\foreach \num [count=\n from 0] in  {1,2}{%
+     \NO[L=$13$](5;\n){5;\num}} 
+     
+\foreach \num [count=\n from 0] in  {1} {%
+    \NO[L=$19$](7;\n){7;\num}}    
+    
+\foreach \num [count=\n from 0] in  {1,2,3}{%
+     \NO[L=$2$](1;\n){1;\num}}    
+     
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,8}  
+ {\Edge(\lastnum;3)(\num;3)}   
+    
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,5,8}  
+ {\Edge(\lastnum;2)(\num;2)}    
+   
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,3,5,7,8}  
+ {\Edge(\lastnum;1)(\num;1)}   
+ 
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,2,3,4,5,6,7,8}  
+ {\Edge(\lastnum;0)(\num;0)}     
+ 
+\foreach \num  in  {3,7} {\Edge(\num;0)(\num;1)}  
+ 
+\foreach \num [count=\n from 1] in  {0,...,1}  
+ {  \Edge(5;\num)(5;\n) }                                                                                 
+ 
+\foreach \num [count=\n from 1] in  {0,...,2}  
+ {\Edge(0;\num)(0;\n)  \Edge(1;\num)(1;\n) \Edge(8;\num)(8;\n)}                                                                                                      
+\end{tikzpicture} \\ 
+
+\textbf{23, ZB:1} v. ZB: 0001 \\
+
+\begin{tikzpicture}
+\SetGraphUnit{1.5}
+\SetVertexNormal[Shape    = rectangle,MinSize=.8 cm]
+\Vertex[L=$-\infty$] {0;0}
+
+\foreach \num [count=\n from 0] in  {1,2,3}
+ {\NO[L=$-\infty$](0;\n){0;\num}}    
+       
+\foreach \num/\label [count=\n from 0] in  
+    {1/2, 2/3, 3/7, 4/11 ,5/13 ,6/17 ,7/19 ,8/23, 9/+\infty}
+      {\EA[L=$\label$](\n;0){\num;0}}   
+      
+\foreach \num [count=\n from 0] in  {1,2,3}{%
+     \NO[L=$+\infty$](9;\n){9;\num}}  
+     
+\foreach \num [count=\n from 0] in  {1} {%
+    \NO[L=$7$](3;\n){3;\num}}    
+    
+\foreach \num [count=\n from 0] in  {1,2}{%
+     \NO[L=$13$](5;\n){5;\num}} 
+     
+\foreach \num [count=\n from 0] in  {1} {%
+    \NO[L=$19$](7;\n){7;\num}}    
+    
+\foreach \num [count=\n from 0] in  {1,2,3}{%
+     \NO[L=$2$](1;\n){1;\num}}  
+     
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,9}  
+ {\Edge(\lastnum;3)(\num;3)}   
+    
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,5,9}  
+ {\Edge(\lastnum;2)(\num;2)}    
+   
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,3,5,7,9}  
+ {\Edge(\lastnum;1)(\num;1)}   
+ 
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,2,3,4,5,6,7,8,9}  
+ {\Edge(\lastnum;0)(\num;0)}
+ 
+\foreach \num  in  {3,7} {\Edge(\num;0)(\num;1)}   
+
+\foreach \num [count=\n from 1] in  {0,...,1}  
+ {  \Edge(5;\num)(5;\n) }                                                                                 
+ 
+\foreach \num [count=\n from 1] in  {0,...,2}  
+ {\Edge(0;\num)(0;\n)  \Edge(1;\num)(1;\n) \Edge(9;\num)(9;\n)}                                                                       
+\end{tikzpicture} \\ 
+
+\textbf{27, ZB 0001} v.ZB: empty \\
+
+\begin{tikzpicture}
+\SetGraphUnit{1.5}
+\SetVertexNormal[Shape    = rectangle,MinSize=.8 cm]
+\Vertex[L=$-\infty$] {0;0}
+
+% --- Knoten ---
+% in {x/y} = x gibt die Position des Kästchen an, y ist der Wert
+% \NO ... gibt die Stelle an wo das Kästchen darüber gezeichnet werden soll
+% \EA ... gibt an, an welcher Stelle angefangen wird zu zählen 
+
+% setzt 3mal - unendlich übereinander an der Stelle 0
+\foreach \num [count=\n from 0] in  {1,2,3}
+ {\NO[L=$-\infty$](0;\n){0;\num}}    
+       
+% setzt eine Reihe Zahlen (unterste Reihe)       
+\foreach \num/\label [count=\n from 0] in  
+    {1/2, 2/3, 3/7, 4/11 ,5/13 ,6/17 ,7/19 ,8/23, 9/27, 10/+\infty}
+      {\EA[L=$\label$](\n;0){\num;0}}   
+
+% setzt 3mal + unendlich übereinander an der Stelle 10      
+\foreach \num [count=\n from 0] in  {1,2,3}{%
+     \NO[L=$+\infty$](10;\n){10;\num}}  
+     
+% setzt 1mal 7 über die andere 7 an der Stelle 3   
+\foreach \num [count=\n from 0] in  {1} {%
+    \NO[L=$7$](3;\n){3;\num}}    
+
+% setzt 2mal 13 übereinander an der Stelle 5    
+\foreach \num [count=\n from 0] in  {1,2}{%
+     \NO[L=$13$](5;\n){5;\num}} 
+     
+\foreach \num [count=\n from 0] in  {1} {%
+    \NO[L=$19$](7;\n){7;\num}}    
+    
+\foreach \num [count=\n from 0] in  {1,2,3}{%
+     \NO[L=$2$](1;\n){1;\num}}     
+     
+\foreach \num [count=\n from 0] in  {1,2,3}{%
+     \NO[L=$27$](9;\n){9;\num}}   
+     
+% --- horizontale Linie ---     
+% in {...} = Zahlen geben Position der Kästchen an
+% \Edge ... gibt die Zeile an
+     
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,9,10}  
+ {\Edge(\lastnum;3)(\num;3)}   
+    
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,5,9,10}  
+ {\Edge(\lastnum;2)(\num;2)}    
+   
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,3,5,7,9,10}  
+ {\Edge(\lastnum;1)(\num;1)}   
+ 
+% unterste Linie 
+\foreach \num [remember=\num as \lastnum (initially 0)] in  {1,2,3,4,5,6,7,8,9,10}  
+ {\Edge(\lastnum;0)(\num;0)}     
+ 
+% --- vertikale Linie ---     
+ % Querlinie, die ein Kästchen darüber haben
+\foreach \num  in  {3,7} {\Edge(\num;0)(\num;1)}   
+
+% Querlinie, die 2 Kästchen darüber haben
+\foreach \num [count=\n from 1] in  {0,...,1}  
+ {  \Edge(5;\num)(5;\n) }                                                                                 
+
+% Querlinie, die 3 Kästchen darüber haben
+\foreach \num [count=\n from 1] in  {0,...,2}  
+ {\Edge(0;\num)(0;\n)  \Edge(1;\num)(1;\n) \Edge(9;\num)(9;\n)  \Edge(10;\num)(10;\n)}                                   
+\end{tikzpicture} \\ 
+
+%----------------------------------------------------------------------------
+\section{Skiplists und Binäre Suchbäume}
+Sei $T$ ein binärer Suchbaum der Größe $n$, der nicht notwendigerweise balanciert ist.
+Beschreiben Sie einen Algorithmus in Pseudocode, der in Zeit $\calO(n)$ aus $T$ eine Skipliste $S$ bildet.
+Dabei soll $S$ so aufgebaut sein, dass die Suche in $S$ eine deterministische
+worst-case Laufzeit von $\calO(\log n)$ hat.
+Begründen Sie die Korrektheit Ihres Algorithmus. \\
+
+Für $O(log n)$ Laufzeit in Skiplist wird folgende Levelverteilung der Elemente benötigt: 
+\begin{itemize}
+\item das Mitteelement muss das höchste Level n erreichen
+\item die erhaltenen zwei Skiplisten am Mitteelement erreichen das nächsthöchste Level n-1
+\item mit dem nächsten 4 erhaltenen Skiplisten wird auf diese Weise verfahren, bis die Skiplisten der Länge 1 schließlich als unterstes Level 1 erreichen
+\end{itemize}
+Durch die unterschiedlichen Levelhöhen der immer mittleren Elemente wird durch Abwärtsbewegung von oberstes Level oder Vorwärtsbewegung effizient indirekt immer $\dfrac{n}{2}+1$ der Skipliste verworfen, so dass die Suche in solch einer Skiplistenverteilung genau der binären Suche entspricht, welche $O(log n)$ Laufzeit hat.
+
+\begin{algorithm}[H]
+\SetAlgoLined
+// function to-skiplist(T)
+S $\leftarrow$ sort-to-list(T) \\
+level-up(S) \\
+
+// function sort-to-list(T) \\
+sorted-list $\leftarrow$ list(sort-to-list(left child),root,sort-to-list(right child))
+\Return sorted-list
+
+// function level-up(S) \\
+\For {i=0, i++,$i < log(i)$}{
+  raise-level-of: median(S) $\leftarrow$ log(i)-i \;
+  continue-with-new-lists-$S_{i}$ \;
+}
+\Return S
+\end{algorithm} \\
+
+In to-skiplist(T) wird sort-to-list aufgerufen, welches den binären Suchbaum T rekursiv in ein (flache) Skipliste S in n Schritten einfügt und das Ergebnis an level-up(S) weitergibtm welches in (log n)-Schritten die Skiplisten Level von S anpasst. Wir haben also eine Laufzeit von $O(n)+O(log n) \in O(n)$.
+ 
+%----------------------------------------------------------------------------
+\section{Dynamisches Programmieren}
+Gegeben ein Baum $T=(V,E)$, wobei $V$ die Menge der Knoten und $E$ die Menge der Kanten zwischen diesen
+Knoten sind. Eine \emph{unabhängige Menge} ist eine Menge $M \subseteq V$, sodass
+für alle $v \in M$ gilt, dass $w \notin M$, falls es eine Kante $\{v,w\} \in E$ gibt.
+Die unabhängige Menge $M$ ist maximal, falls es keine andere unabhängige Menge gibt, die mehr
+Knoten als $M$ enthält.
+
+\paragraph{a)}
+ Geben Sie eine maximale unabhängige Menge für das folgende Beispiel an: \\
+
+\paragraph{b)} 
+Beschreiben Sie einen Algorithmus mit Dynamischem Programmieren, der eine maximale unabhängige Menge von $T$ berechnet. \\
+
+\paragraph{c)}
+ Begründen Sie die Korrektheit Ihres Algorithmus. \\
+ 
+\paragraph{d)}
+ Wie ist die Laufzeit Ihres Verfahrens? \\
+
+%----------------------------------------------------------------------------
+\section{Dynamisches Prog.: Palindrom}
+Ein \emph{Palindrom} ist eine Zeichenfolge, die vorwärts und rückwärts gelesen gleich ist. Beispiele für Palindrome sind alle Zeichenfolgen
+der Länge 1, \texttt{KAJAK}, \texttt{REITTIER}, \texttt{SEI FIES} und \texttt{DREH MAL AM HERD}.
+
+\smallskip\noindent
+Gegeben sei eine Zeichenfolge $S[1..n]$. Eine \emph{Teilfolge} $S'$ von $S$ besteht aus Buchstaben,
+die in $S'$ in der selben Reihenfolge auftreten wie in $S$. Zum Beispiel ist
+\texttt{ATMEN} eine Teilfolge von \texttt{ALGORITHMEN}. Das \emph{längste Palindrom} in $S$ ist
+die längste Teilfolge von $S$, die ein Palindrom darstellt.
+
+\paragraph{a)}
+Geben Sie einen Algorithmus in Pseudocode an, der die Länge des längste Palindrom in $S$ berechnet. Verwenden Sie dabei Dynamische Programmierung. \\
+
+\textbf{Länge des längsten Palindrom} \\
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwIn{String S}
+\KwOut{int Länge des längsten Palindroms in S}
+ // löschen aller Leerzeichen \\
+\For {I=1 ... length(S)}{
+ \If {i-tes Zeichen von S ist Leerzeichen}{
+ S $\leftarrow$ konkateniere die ersten i-1 Zeichen von S mit den letzten length(S)-i Zeichen
+ }
+}
+int i $\leftarrow$ 1 \\
+int j $\leftarrow$ length(S) \\
+\Return LLPWorker(S,i,j)
+\end{algorithm} \\
+
+\textbf{LLPWorker} \\
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwIn{String S, int i, int j}
+\KwOut{int Länge des längsten Palindroms in S}
+ // nur ein Zeichen $\rightarrow$ palindromisch\\
+\If {i == y}{
+  \Return 1
+}
+
+// nur 2 gleiche Zeichen $\rightarrow$ palindromisch\\
+\If {length(S) == 2 und S[i] == S[j]}{
+  \Return 2
+} 
+
+// erstes und letztes Zeichen gleich \\
+\If {S[i] == S[j]}{
+  \Return LLPWorker(S, i+1,j-1) +2
+}
+
+// erstes und letztes Zeichen verschieden \\
+\Return max(LLPWorker(S,i,j-1),LLPWorker(S,i+1,j))
+\end{algorithm} \\
+
+\textbf{max} \\
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwIn{int x, int y}
+\KwOut{int (max von a und b)}
+\eIf {a > b}{
+  \Return a
+}{
+  \Return b
+}
+\end{algorithm} \\
+
+\paragraph{b)}
+Begründen Sie die Korrektheit und die Laufzeit Ihres Algorithmus aus (a). \\
+
+\textbf{Korrektheit} \\
+Zuerst müssen alle Leerzeichen aus dem Ausgabestring gelöscht werden. Für die beiden trivialen Fälle liefert unser Algorithmus das richtige Ergebnis, da alle Wörter der Länge 1 palindromisch sind und ein Wort der Länge 2 ebenfalls palindromisch ist, falls die Zeichen übereinstimmen. Wenn die Zeichen aber verschieden sind und wir noch ein Wort der Länge 2 haben so landen wir im 4.Fall, so wird das Maximum aus dem längsten Palindrom zweier einbuchstabiger Wörter gebildet.
+
+Um den dritten Fall zu erklären, wo das erste und letzte Zeichen identisch sind, müssen wir LLPWorker, auf den String zwischen dem ersten und letzten Zeichen, aufrufen und 2 addieren. 
+
+Beim letzten Fall, sind das erste und das letzte Zeichen verschieden, d.h. sie verlängern nicht die Länge des Polyndroms. Also überprüfen wir das Maximum aus den LLPWorker von dem String aus dem ersten Zeichen bis zum vorletzten Zeichen und dem LLPWorker vom String vom 2. Zeichen bis zum letzten. \\
+
+\textbf{Laufzeit} \\
+\begin{itemize}
+\item Leerzeichen löschen mit Laufzeit $O(n)$
+\item LLPWorker 
+  \begin{itemize}
+  \item 1.Fall 
+  T(1)=1
+  \item 2.Fall
+  T(2)=1
+  \item 3.Fall
+  T(n-2)
+  \item 4.Fall
+  T(n-1)
+  \end{itemize}
+Um also die Laufzeit für den worst case abschätzen zu können, brauchen wir eigentlich nur den 4. Fall anschauen, so das der String sozusagen immer weiter in den 4.Fall kommt und die Zeichen nicht identisch werden. \\
+
+Daraus folgt das Rekursionsschema:
+$$T(n)=2T(n-1)$$
+$$=2*2T(n-2)$$
+$$=2*2*2T(n-3)$$
+$$=2^{i}*T(n-i)$$
+
+Jetzt brauchen wir das Rekursionsende:
+$$T(n)_{n-2}=2^{n-2}T(n-(n-2))=2^{n-2}T(n-n+2)=2^{n-2}T(2)=2^{n-2}$$ \\
+
+D.h. wir gehen von einer Laufzeit von $O(2^{n-2}) \in O(2^{n})$ aus.
+\end{itemize}
+
+\paragraph{c)}
+Geben Sie einen Algorithmus in Pseudocode an, der mit Hilfe von (a) das längste Palindrom in $S$ berechnet und
+begründen Sie die Korrektheit und die Laufzeit Ihres Algorithmus. \\
+
+\paragraph{d)}
+Demonstrieren Sie die Funktionsweise Ihrer Algorithmen an der Zeichenfolge \texttt{DADBBCAA}. \\
 
 %----------------------------------------------------------------------------------------
 
