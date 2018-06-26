@@ -2763,9 +2763,72 @@ Knoten als $M$ enthält.
 
 \paragraph{a)}
  Geben Sie eine maximale unabhängige Menge für das folgende Beispiel an: \\
+ 
+ \includegraphics[width=10cm,height=10cm]{treeA.png} \\
+ 
+ Beispiel für eine maximal unabhängige Menge: M={c,d,g,h,i}
 
 \paragraph{b)} 
 Beschreiben Sie einen Algorithmus mit Dynamischem Programmieren, der eine maximale unabhängige Menge von $T$ berechnet. \\
+
+First we develop an algorithm to calculate the number of nodes in a maximum independent set. To this end we use variables $v.max$, which will contain the number of nodes of a maximum independent set of the subtree rooted at a node $v \in V$. For our algorithm we observe the following. For a node $v \in V$, there are two possibilities: \\
+
+\subparagraph{1.}
+Either v is int the independent set. In this case no children of v can be in the independent set, but the children of the children of v can. Thus, if the grandchildren of v are $w_{1} ... w_{k}$ we conclude
+
+$$v.max=1+ \sum^{k}_{i=1} w_{i}.max$$
+
+in this case assuming that we already know the values $w_{i}.max$ for all $i=1 ... k$.
+
+\subparagraph{2.}
+Otherwise v is not contained in the independent set. In this case the children of v might be in the independent set. Let $c_{1} ... c_{l}$ be the children of v. Then we have
+
+$$v.max= \sum^{l}_{i=1}c_{i}.max.$$
+
+To calculate the maximum set of v, we have to use the possibility, where we can obtain the higher value for v.max: 
+
+$$c.max=max { \sum^{l}_{i=1} c_{i}.max.1 + \sum^{k}_{i=1} w_{k}.max}$$
+
+\textbf{SizeMaxIndependentSet(T)} \\
+\begin{algorithm}[H]
+\SetAlgoLined
+ // initizalize v.max to 0 for all nodes in the tree T: \\
+\While {not all nodes of T are visited in a post-order walk}{
+  \eIf {e has no children}{
+  v.max $\leftarrow$ 1 \;
+  } {
+  \eIf{v has no grandchildren}{
+  v.max $\leftarrow \sum c.max$ 
+  } {
+  v.max $\leftarrow max {\sum c.max.1 + \sum w.max}$
+  }}
+}
+\end{algorithm} \\
+
+\textbf{MaxIndependentSet(T)} \\
+\begin{algorithm}[H]
+\SetAlgoLined
+// initialize an empty set M \\
+// initialize an empty list l and insert the root of T into it: \\
+\While {l is not empty}{
+v $\leftarrow$ first element of l \;
+delete the first element of l \;
+\eIf {r has no children }{
+  M $\leftarrow M \cup {r}$ \; 
+} {
+  \eIf{r has no grandchildren}{
+    M $\leftarrow M \cup {c, c is child of r}$ \; 
+  } { \eIf {r.max = $\sum c.max$} {
+         append all children of r to l \;
+  } {
+  M $\leftarrow M \cup {r}$ \; 
+  append all grandchildren of r to l \;
+  }
+  }
+}
+}
+\Return M
+\end{algorithm} \\
 
 \paragraph{c)}
  Begründen Sie die Korrektheit Ihres Algorithmus. \\
