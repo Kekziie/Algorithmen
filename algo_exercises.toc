@@ -114,67 +114,67 @@
 \contentsline {section}{\numberline {9}Tutorium 18.06.2018: Dynamisches Programmieren}{48}
 \contentsline {section}{\numberline {10}Blatt 08}{49}
 \contentsline {subsection}{\numberline {10.1}Skiplists}{49}
-\contentsline {subsection}{\numberline {10.2}Skiplists und Bin\IeC {\"a}re Suchb\IeC {\"a}ume}{50}
-\contentsline {subsection}{\numberline {10.3}Dynamisches Programmieren}{51}
-\contentsline {paragraph}{\nonumberline a)}{51}
-\contentsline {paragraph}{\nonumberline b)}{51}
-\contentsline {subparagraph}{\nonumberline 1.}{51}
-\contentsline {subparagraph}{\nonumberline 2.}{52}
-\contentsline {paragraph}{\nonumberline c)}{52}
-\contentsline {paragraph}{\nonumberline d)}{52}
-\contentsline {subsection}{\numberline {10.4}Dynamisches Prog.: Palindrom}{52}
-\contentsline {paragraph}{\nonumberline a)}{53}
+\contentsline {subsection}{\numberline {10.2}Skiplists und Bin\IeC {\"a}re Suchb\IeC {\"a}ume}{51}
+\contentsline {subsection}{\numberline {10.3}Dynamisches Programmieren}{52}
+\contentsline {paragraph}{\nonumberline a)}{52}
 \contentsline {paragraph}{\nonumberline b)}{53}
+\contentsline {subparagraph}{\nonumberline 1.}{53}
+\contentsline {subparagraph}{\nonumberline 2.}{53}
 \contentsline {paragraph}{\nonumberline c)}{54}
 \contentsline {paragraph}{\nonumberline d)}{54}
-\contentsline {section}{\numberline {11}Blatt 09}{55}
-\contentsline {subsection}{\numberline {11.1}Dynamisches Programmieren}{55}
-\contentsline {paragraph}{\nonumberline a)}{55}
+\contentsline {subsection}{\numberline {10.4}Dynamisches Prog.: Palindrom}{54}
+\contentsline {paragraph}{\nonumberline a)}{54}
 \contentsline {paragraph}{\nonumberline b)}{55}
-\contentsline {subsection}{\numberline {11.2}Programmieraufgabe}{55}
-\contentsline {paragraph}{\nonumberline a)}{55}
-\contentsline {paragraph}{\nonumberline b)}{56}
-\contentsline {subsection}{\numberline {11.3}Anagramme}{56}
-\contentsline {paragraph}{\nonumberline a)}{56}
-\contentsline {paragraph}{\nonumberline b)}{56}
 \contentsline {paragraph}{\nonumberline c)}{56}
 \contentsline {paragraph}{\nonumberline d)}{56}
-\contentsline {subsection}{\numberline {11.4}Hashing}{57}
+\contentsline {section}{\numberline {11}Blatt 09}{57}
+\contentsline {subsection}{\numberline {11.1}Dynamisches Programmieren}{57}
 \contentsline {paragraph}{\nonumberline a)}{57}
-\contentsline {subparagraph}{\nonumberline i.)}{57}
-\contentsline {subparagraph}{\nonumberline ii.)}{57}
 \contentsline {paragraph}{\nonumberline b)}{57}
-\contentsline {subparagraph}{\nonumberline i.)}{58}
-\contentsline {subparagraph}{\nonumberline ii.)}{58}
+\contentsline {subsection}{\numberline {11.2}Programmieraufgabe}{57}
+\contentsline {paragraph}{\nonumberline a)}{57}
+\contentsline {paragraph}{\nonumberline b)}{58}
+\contentsline {subsection}{\numberline {11.3}Anagramme}{58}
+\contentsline {paragraph}{\nonumberline a)}{58}
+\contentsline {paragraph}{\nonumberline b)}{58}
 \contentsline {paragraph}{\nonumberline c)}{58}
-\contentsline {paragraph}{\nonumberline d)}{59}
-\contentsline {section}{\numberline {12}Blatt 10}{60}
-\contentsline {subsection}{\numberline {12.1}Grapheigenschaften}{60}
-\contentsline {paragraph}{\nonumberline a)}{60}
-\contentsline {paragraph}{\nonumberline b)}{60}
+\contentsline {paragraph}{\nonumberline d)}{58}
+\contentsline {subsection}{\numberline {11.4}Hashing}{59}
+\contentsline {paragraph}{\nonumberline a)}{59}
+\contentsline {subparagraph}{\nonumberline i.)}{59}
+\contentsline {subparagraph}{\nonumberline ii.)}{59}
+\contentsline {paragraph}{\nonumberline b)}{59}
+\contentsline {subparagraph}{\nonumberline i.)}{60}
+\contentsline {subparagraph}{\nonumberline ii.)}{60}
 \contentsline {paragraph}{\nonumberline c)}{60}
-\contentsline {paragraph}{\nonumberline d)}{60}
-\contentsline {subsection}{\numberline {12.2}Adjazenzmatrix vs. Adjazenzliste}{60}
-\contentsline {paragraph}{\nonumberline a)}{61}
-\contentsline {paragraph}{\nonumberline b)}{61}
+\contentsline {paragraph}{\nonumberline d)}{61}
+\contentsline {section}{\numberline {12}Blatt 10}{62}
+\contentsline {subsection}{\numberline {12.1}Grapheigenschaften}{62}
+\contentsline {paragraph}{\nonumberline a)}{62}
+\contentsline {paragraph}{\nonumberline b)}{62}
 \contentsline {paragraph}{\nonumberline c)}{62}
 \contentsline {paragraph}{\nonumberline d)}{62}
-\contentsline {subsection}{\numberline {12.3}Dijkstra-Algorithmus}{62}
-\contentsline {subsection}{\numberline {12.4}Anwendung von Dijkstra}{63}
+\contentsline {subsection}{\numberline {12.2}Adjazenzmatrix vs. Adjazenzliste}{62}
 \contentsline {paragraph}{\nonumberline a)}{63}
 \contentsline {paragraph}{\nonumberline b)}{63}
 \contentsline {paragraph}{\nonumberline c)}{64}
-\contentsline {section}{\numberline {13}Tutorium 09.07.2018: Hilfestellung Blatt 11}{65}
-\contentsline {subsection}{\numberline {13.1}s-t-Graph}{65}
-\contentsline {subsection}{\numberline {13.2}Bellman Ford}{66}
-\contentsline {subsection}{\numberline {13.3}Wiederholung Rekursion}{66}
-\contentsline {section}{\numberline {14}Blatt 11}{67}
-\contentsline {subsection}{\numberline {14.1}Algorithmenentwurf}{67}
-\contentsline {subsection}{\numberline {14.2}Maximum Bottleneck Path}{67}
-\contentsline {paragraph}{\nonumberline a)}{67}
-\contentsline {paragraph}{\nonumberline b)}{67}
-\contentsline {subsection}{\numberline {14.3}Bellman/Ford-Algorithmus}{68}
-\contentsline {subsection}{\numberline {14.4}Floyd/Warshall-Algorithmus}{70}
-\contentsline {paragraph}{\nonumberline a)}{71}
-\contentsline {paragraph}{\nonumberline b)}{71}
-\contentsline {subsection}{\numberline {14.5}Programmieraufgabe: Dijkstra-Algorithmus}{71}
+\contentsline {paragraph}{\nonumberline d)}{64}
+\contentsline {subsection}{\numberline {12.3}Dijkstra-Algorithmus}{64}
+\contentsline {subsection}{\numberline {12.4}Anwendung von Dijkstra}{65}
+\contentsline {paragraph}{\nonumberline a)}{65}
+\contentsline {paragraph}{\nonumberline b)}{65}
+\contentsline {paragraph}{\nonumberline c)}{66}
+\contentsline {section}{\numberline {13}Tutorium 09.07.2018: Hilfestellung Blatt 11}{67}
+\contentsline {subsection}{\numberline {13.1}s-t-Graph}{67}
+\contentsline {subsection}{\numberline {13.2}Bellman Ford}{68}
+\contentsline {subsection}{\numberline {13.3}Wiederholung Rekursion}{68}
+\contentsline {section}{\numberline {14}Blatt 11}{69}
+\contentsline {subsection}{\numberline {14.1}Algorithmenentwurf}{69}
+\contentsline {subsection}{\numberline {14.2}Maximum Bottleneck Path}{69}
+\contentsline {paragraph}{\nonumberline a)}{69}
+\contentsline {paragraph}{\nonumberline b)}{69}
+\contentsline {subsection}{\numberline {14.3}Bellman/Ford-Algorithmus}{70}
+\contentsline {subsection}{\numberline {14.4}Floyd/Warshall-Algorithmus}{72}
+\contentsline {paragraph}{\nonumberline a)}{73}
+\contentsline {paragraph}{\nonumberline b)}{73}
+\contentsline {subsection}{\numberline {14.5}Programmieraufgabe: Dijkstra-Algorithmus}{73}
