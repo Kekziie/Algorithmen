@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.23)  13 JUL 2018 14:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.23)  13 JUL 2018 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1193,7 +1193,73 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \TX@cols=\count141
 \TX@ftn=\toks38
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/sectsty/sectsty.sty
+
+! LaTeX Error: File `ruled.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+
+! LaTeX Error: File `linesnumbered.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+(/usr/local/texlive/2017/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count142
+\algocf@hangindent=\skip60
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+********************************************************
+Package `algorithm2e' Release 5.1 -- october 19 2015 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (christophe.fiorio@umontpellier.fr)
+********************************************************
+\skiptotal=\skip61
+\skiplinenumber=\skip62
+\skiprule=\skip63
+\skiphlne=\skip64
+\skiptext=\skip65
+\skiplength=\skip66
+\algomargin=\skip67
+\skipalgocfslide=\skip68
+\algowidth=\dimen172
+\inoutsize=\dimen173
+\inoutindent=\dimen174
+\interspacetitleruled=\dimen175
+\interspacealgoruled=\dimen176
+\interspacetitleboxruled=\dimen177
+\algocf@ruledwidth=\skip69
+\algocf@inoutbox=\box43
+\algocf@inputbox=\box44
+\AlCapSkip=\skip70
+\AlCapHSkip=\skip71
+\algoskipindent=\skip72
+\algocf@nlbox=\box45
+\algocf@hangingbox=\box46
+\algocf@untilbox=\box47
+\algocf@skipuntil=\skip73
+\algocf@capbox=\box48
+\algoheightruledefault=\skip74
+\algoheightrule=\skip75
+\algotitleheightruledefault=\skip76
+\algotitleheightrule=\skip77
+\c@algocfline=\count143
+\c@algocfproc=\count144
+\c@algocf=\count145
+\algocf@algoframe=\box49
+\algocf@algobox=\box50
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
 )
@@ -1203,67 +1269,67 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 (scrartcl)              I'd suggest to use 
 (scrartcl)              package `scrlayer-scrpage'.
 (scrartcl)              Nevertheless, using requested
-(scrartcl)              package `fancyhdr' on input line 24.
+(scrartcl)              package `fancyhdr' on input line 27.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
-\fancy@headwidth=\skip60
-\f@ncyO@elh=\skip61
-\f@ncyO@erh=\skip62
-\f@ncyO@olh=\skip63
-\f@ncyO@orh=\skip64
-\f@ncyO@elf=\skip65
-\f@ncyO@erf=\skip66
-\f@ncyO@olf=\skip67
-\f@ncyO@orf=\skip68
+\fancy@headwidth=\skip78
+\f@ncyO@elh=\skip79
+\f@ncyO@erh=\skip80
+\f@ncyO@olh=\skip81
+\f@ncyO@orh=\skip82
+\f@ncyO@elf=\skip83
+\f@ncyO@erf=\skip84
+\f@ncyO@olf=\skip85
+\f@ncyO@orf=\skip86
 )
 (./algo_exercises.aux)
 \openout1 = `algo_exercises.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 55.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 58.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 58.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 55.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 55.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 58.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 58.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 55.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 55.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 58.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 58.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 55.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 58.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 55.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 58.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
@@ -1271,16 +1337,16 @@ File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 ABD: EveryShipout initializing macros
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count142
-\scratchdimen=\dimen172
-\scratchbox=\box43
-\nofMPsegments=\count143
-\nofMParguments=\count144
+\scratchcounter=\count146
+\scratchdimen=\dimen178
+\scratchbox=\box51
+\nofMPsegments=\count147
+\nofMParguments=\count148
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count145
-\MPscratchDim=\dimen173
-\MPnumerator=\count146
-\makeMPintoPDFobject=\count147
+\MPscratchCnt=\count149
+\MPscratchDim=\dimen179
+\MPnumerator=\count150
+\makeMPintoPDFobject=\count151
 \everyMPtoPDFconversion=\toks40
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
@@ -1331,40 +1397,40 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count148
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 57.
+\c@lstlisting=\count152
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 60.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 57
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 60
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 57.
+(Font)              scaled to size 13.24796pt on input line 60.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 57.
+(Font)              scaled to size 9.19998pt on input line 60.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 57.
-LaTeX Font Info:    Try loading font information for U+msa on input line 57.
+(Font)              scaled to size 7.35999pt on input line 60.
+LaTeX Font Info:    Try loading font information for U+msa on input line 60.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 57.
+LaTeX Font Info:    Try loading font information for U+msb on input line 60.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 57.
+(Font)              scaled to size 13.24796pt on input line 60.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 57.
+(Font)              scaled to size 9.19998pt on input line 60.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 57.
+(Font)              scaled to size 7.35999pt on input line 60.
  [1
 
 
@@ -1375,7 +1441,7 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 58.
+ne 61.
 
 (./algo_exercises.toc
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1396,16 +1462,16 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
  [3]
 ! Misplaced alignment tab character &.
-l.78 $\Rightarrow b^{x_{1}} = x &
+l.81 $\Rightarrow b^{x_{1}} = x &
                                   b^{x_{2}} = y$
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
 [4] [5] [6]
-Overfull \hbox (18.07272pt too wide) in paragraph at lines 206--217
+Overfull \hbox (18.07272pt too wide) in paragraph at lines 209--220
 []\T1/futs/m/n/10.95 IB: $\FML/futmi/m/it/10.95 T\T1/futs/m/n/10.95 (\FML/futmi
 /m/it/10.95 n\T1/futs/m/n/10.95 ) :\FMS/futm/m/n/10.95 Å [][] \T1/futs/m/n/10.9
 5 2[] \FMS/futm/m/n/10.95 Ä \FML/futmi/m/it/10.95 T\T1/futs/m/n/10.95 (\FML/fut
@@ -1416,16 +1482,11 @@ mi/m/it/10.95 n \FMS/futm/m/n/10.95 ^^@ \FML/futmi/m/it/10.95 i\T1/futs/m/n/10.
  \T1/futs/m/n/10.95 2[] \FMS/futm/m/n/10.95 Ä
  []
 
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 233
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 236
 .
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 ) [7]
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
@@ -1440,574 +1501,341 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
+
+ []
+
 [8]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.344 
+l.347 
       
 ? 
 ! Display math should end with $$.
 <to be read again> 
                    \par 
-l.344 
+l.347 
       
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.346 
+l.349 
       
 ? 
 ! Display math should end with $$.
 <to be read again> 
                    \par 
-l.346 
+l.349 
       
 ? 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
 
  []
 
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 365.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 368.
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--366
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 367--370
+Underfull \hbox (badness 10000) in paragraph at lines 363--369
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--377
+Underfull \hbox (badness 10000) in paragraph at lines 370--373
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
+Underfull \hbox (badness 10000) in paragraph at lines 374--380
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--389
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--396
+Underfull \hbox (badness 10000) in paragraph at lines 386--392
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--399
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 397--402
+Underfull \hbox (badness 10000) in paragraph at lines 400--405
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
 
  []
 
 
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.406 \begin{algorithm}
-                       [H]
-? 
-! Undefined control sequence.
-l.407 \SetAlgoLined
-                   
-? 
-! Undefined control sequence.
-l.408 \KwIn
-           {sortiertes Array A, Integer x}
-? 
-! Undefined control sequence.
-l.409 \KwOut
-            {Integer [Postion von x in A]}
-? 
-! Undefined control sequence.
-<recently read> \Return 
-                        
-l.422 \Return
-              $(a+unten)$ \\
-? 
-! Undefined control sequence.
-l.423 \textbf{else} \Return
-                            -1 \\
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.425 \end{algorithm}
-                     
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 437--438
+Underfull \hbox (badness 10000) in paragraph at lines 440--441
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
+Underfull \hbox (badness 10000) in paragraph at lines 451--452
 
  []
 
 ! Undefined control sequence.
 <recently read> \calO 
                       
-l.459 ... diese Frage in quadratischer Zeit $\calO
+l.462 ... diese Frage in quadratischer Zeit $\calO
                                                   (n^2)$ beantwortet. Geben ...
 
 ? 
 ! Undefined control sequence.
 <recently read> \calO 
                       
-l.459 ...warum Ihr Algorithmus die Laufzeit $\calO
+l.462 ...warum Ihr Algorithmus die Laufzeit $\calO
                                                   (n^2)$ hat. \\
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 459--460
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
 
  []
 
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.461 \begin{algorithm}
-                       [H]
-? 
-! Undefined control sequence.
-l.462 \SetAlgoLined
-                   
-? 
-! Undefined control sequence.
-l.463 \KwIn
-           {sortiertes Array A, Integer z}
-? 
-! Undefined control sequence.
-l.464 \KwOut
-            {boolean[ob $x,y \in A$ mit $x+y=z$]}
-? 
-! Undefined control sequence.
-<recently read> \Return 
-                        
-l.471 \Return
-              $true$ \\
-? 
-! Undefined control sequence.
-<recently read> \Return 
-                        
-l.476 \Return
-              $false$
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.477 \end{algorithm}
-                     
-? 
 [12]
 ! Undefined control sequence.
 <recently read> \calO 
                       
-l.482 ... obige Frage in einer Laufzeit von $\calO
+l.485 ... obige Frage in einer Laufzeit von $\calO
                                                   (n\log n)$ beantworten kan...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--483
-
- []
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.484 \begin{algorithm}
-                       [H]
-? 
-! Undefined control sequence.
-l.485 \SetAlgoLined
-                   
-? 
-! Undefined control sequence.
-l.486 \KwIn
-           {sortiertes Array A, Integer z}
-? 
-! Undefined control sequence.
-l.487 \KwOut
-            {}
-? 
-! Undefined control sequence.
-<recently read> \Return 
-                        
-l.494 \Return
-              $true$ \\
-? 
-! Undefined control sequence.
-<recently read> \Return 
-                        
-l.496 \Return
-              $false$ \\
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.497 \end{algorithm}
-                     
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 484--498
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
 
  []
 
 ! Undefined control sequence.
 <recently read> \calO 
                       
-l.502 ... obige Frage in einer Laufzeit von $\calO
+l.505 ... obige Frage in einer Laufzeit von $\calO
                                                   (n)$ beantwortet. Geben Si...
 
 ? 
 
-Overfull \hbox (2.07004pt too wide) in paragraph at lines 502--503
+Overfull \hbox (2.07004pt too wide) in paragraph at lines 505--506
 [] \T1/futs/m/sc/10.95 c)[][] \T1/futs/m/n/10.95 Es ist klar, dass ein Al-go-ri
 th-mus f¸r die obige Frage min-destens die Laufzeit $\FML/futm/m/it/10.95 
 \T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 n\T1/futs/m/n/10.95 )$ benˆtigt.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--503
-
- []
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.504 \begin{algorithm}
-                       [H]
-? 
-! Undefined control sequence.
-l.505 \SetAlgoLined
-                   
-? 
-! Undefined control sequence.
-l.506 \KwIn
-           {sortiertes Array A, Integer z}
-? 
-! Undefined control sequence.
-l.507 \KwOut
-            {boolean[ob $x,y \in A$ mit $x+y=z$]}
-? 
-! Undefined control sequence.
-<recently read> \Return 
-                        
-l.513 \Return
-              $true$ \\
-? 
-! Undefined control sequence.
-<recently read> \Return 
-                        
-l.515 \Return
-              $false$ \\
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.516 \end{algorithm}
-                     
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 504--517
+Underfull \hbox (badness 10000) in paragraph at lines 505--506
 
  []
 
 [13]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 524.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 527.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [14]
-Overfull \hbox (0.39099pt too wide) in paragraph at lines 538--539
+Overfull \hbox (0.39099pt too wide) in paragraph at lines 541--542
 \T1/futs/m/n/10.95 Betrachten Sie die Al-go-rith-men \T1/cmtt/m/n/10.95 Inserti
 onsort \T1/futs/m/n/10.95 und \T1/cmtt/m/n/10.95 Minimumsuche + Austausch \T1/f
 uts/m/n/10.95 (Schema-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 541--542
+Underfull \hbox (badness 10000) in paragraph at lines 544--545
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 599--600
+Underfull \hbox (badness 10000) in paragraph at lines 602--603
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 601--609
+Underfull \hbox (badness 10000) in paragraph at lines 604--612
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 611--615
+Underfull \hbox (badness 10000) in paragraph at lines 614--618
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 617--618
+Underfull \hbox (badness 10000) in paragraph at lines 620--621
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 619--626
+Underfull \hbox (badness 10000) in paragraph at lines 622--629
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 628--629
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--637
+Underfull \hbox (badness 10000) in paragraph at lines 633--640
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--637
+Underfull \hbox (badness 10000) in paragraph at lines 633--640
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 638--639
+Underfull \hbox (badness 10000) in paragraph at lines 641--642
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--648
+Underfull \hbox (badness 10000) in paragraph at lines 643--651
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--648
+Underfull \hbox (badness 10000) in paragraph at lines 643--651
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 654--655
+Underfull \hbox (badness 10000) in paragraph at lines 657--658
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 663--664
+Underfull \hbox (badness 10000) in paragraph at lines 666--667
 
  []
 
 
-Overfull \hbox (15.29044pt too wide) in paragraph at lines 685--686
+Overfull \hbox (15.29044pt too wide) in paragraph at lines 688--689
 \T1/futs/m/n/10.95 Schritt 2: 2. Array-Element wird in Heap einge-f¸gt und Heap
 -Eingeschaft gepr¸ft und hergestellt. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 685--686
+Underfull \hbox (badness 10000) in paragraph at lines 688--689
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 700--701
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+Underfull \hbox (badness 10000) in paragraph at lines 721--722
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 739--740
+Underfull \hbox (badness 10000) in paragraph at lines 742--743
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 763--764
+Underfull \hbox (badness 10000) in paragraph at lines 766--767
 
  []
 
 
-Overfull \hbox (15.29044pt too wide) in paragraph at lines 815--816
+Overfull \hbox (15.29044pt too wide) in paragraph at lines 818--819
 \T1/futs/m/n/10.95 Schritt 7: 7. Array-Element wird in Heap einge-f¸gt und Heap
 -Eigenschaft gepr¸ft und hergestellt. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--816
+Underfull \hbox (badness 10000) in paragraph at lines 818--819
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 845--846
+Underfull \hbox (badness 10000) in paragraph at lines 848--849
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 912--913
+Underfull \hbox (badness 10000) in paragraph at lines 915--916
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 944--947
+Underfull \hbox (badness 10000) in paragraph at lines 947--950
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 949--950
+Underfull \hbox (badness 10000) in paragraph at lines 952--953
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 982--984
+Underfull \hbox (badness 10000) in paragraph at lines 985--987
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 986--987
+Underfull \hbox (badness 10000) in paragraph at lines 989--990
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 996--997
+Underfull \hbox (badness 10000) in paragraph at lines 999--1000
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1000--1007
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1010
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1008--1010
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1013
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1012--1013
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1016
 
  []
 
 
-Overfull \hbox (36.2665pt too wide) in paragraph at lines 1017--1018
+Overfull \hbox (36.2665pt too wide) in paragraph at lines 1020--1021
 [] \T1/futs/m/sc/10.95 c)[][] \T1/futs/m/n/10.95 Geben Sie Pseu-docode f¸r ef-f
 iziente Im-ple-men-tierun-gen der Meth-o-den \T1/cmtt/m/n/10.95 Insert \T1/futs
 /m/n/10.95 und \T1/cmtt/m/n/10.95 ExtractMin
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1017--1018
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1021
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 1043--1045
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1048
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1068--1070
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1073
 
- []
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1075 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.1076 	\If
-           {$A[left] > A[right]$} {
-? 
-! Undefined control sequence.
-l.1079 	\If
-           {$left + 1 \ge right$} {
-? 
-! Undefined control sequence.
-l.1080 		\Return
-                 \;
-? 
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1086  \caption
-                {\texttt{ZweiDrittelSortieren}($A$, $left$, $right$)}
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1088 \end{algorithm}
-                      
-? 
-
-Overfull \hbox (13.24295pt too wide) in paragraph at lines 1075--1089
-[]\T1/futs/m/n/10.95 [H] $\FML/futmi/m/it/10.95 A\T1/futs/m/n/10.95 [\FML/futmi
-/m/it/10.95 left\T1/futs/m/n/10.95 ] \FMS/futm/m/n/10.95 É \FML/futmi/m/it/10.9
-5 A\T1/futs/m/n/10.95 [\FML/futmi/m/it/10.95 right\T1/futs/m/n/10.95 ]$  ex-cha
-nge $\FML/futmi/m/it/10.95 A\T1/futs/m/n/10.95 [\FML/futmi/m/it/10.95 left\T1/f
-uts/m/n/10.95 ]$ and $\FML/futmi/m/it/10.95 A\T1/futs/m/n/10.95 [\FML/futmi/m/i
-t/10.95 right\T1/futs/m/n/10.95 ]$   $\FML/futmi/m/it/10.95 left \FMS/futm/m/n/
-10.95 Ä \T1/futs/m/n/10.95 1 \FMS/futm/m/n/10.95 ^^U \FML/futmi/m/it/10.95 righ
-t$    $k \FMS/futm/m/n/10.95  [][] []$
  []
 
 [23]
-Overfull \hbox (9.0883pt too wide) in paragraph at lines 1091--1092
+Overfull \hbox (9.0883pt too wide) in paragraph at lines 1094--1095
 [] \T1/futs/m/sc/10.95 a)[][] \T1/futs/m/n/10.95 Ar-gu-men-tieren Sie, dass \T1
 /cmtt/m/n/10.95 ZweiDrittelSortieren\T1/futs/m/n/10.95 ($\FML/futmi/m/it/10.95 
 A$\T1/futs/m/n/10.95 , $1$, $\FML/futmi/m/it/10.95 n$\T1/futs/m/n/10.95 ) das A
@@ -2016,383 +1844,359 @@ r-ray $\FML/futmi/m/it/10.95 A\T1/futs/m/n/10.95 [1\FML/futmi/m/it/10.95 ::n\T1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1091--1092
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1095
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1093--1103
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1093--1103
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1106
 
  []
 
 
-Overfull \hbox (3.2418pt too wide) in paragraph at lines 1093--1103
+Overfull \hbox (3.2418pt too wide) in paragraph at lines 1096--1106
 \T1/futs/m/n/10.95 Das mit-tlere Drit-tel besteht aus min-destens k El-e-menten
  und die k grˆˇten El-e-mente befinden
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1105--1106
+Underfull \hbox (badness 10000) in paragraph at lines 1108--1109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1113
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1116
 
  []
 
 
-Overfull \hbox (32.51114pt too wide) in paragraph at lines 1115--1116
+Overfull \hbox (32.51114pt too wide) in paragraph at lines 1118--1119
 [] \T1/futs/m/sc/10.95 c)[][] \T1/futs/m/n/10.95 Ist Zwei-Drittel-Sortieren im 
 worst-case ef-fizien-ter als In-sert-sort, Min-i-mum-suche+Austauschen,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1115--1116
+Underfull \hbox (badness 10000) in paragraph at lines 1118--1119
 
  []
 
-
-Overfull \hbox (0.56514pt too wide) in paragraph at lines 1117--1122
+[24]
+Overfull \hbox (0.56514pt too wide) in paragraph at lines 1120--1125
 \T1/futs/m/n/10.95 Quicksort hat die Worst-Case Laufzeit $\FMS/futm/m/n/10.95 O
 \T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 n[]\T1/futs/m/n/10.95 )$, zwei-Dritte
 l-Sortieren ist also deut-lich schneller. 
  []
 
 
-Overfull \hbox (4.58365pt too wide) in paragraph at lines 1117--1122
+Overfull \hbox (4.58365pt too wide) in paragraph at lines 1120--1125
 \T1/futs/m/n/10.95 Heapsort hat die Worst-Case Laufzeit $\FMS/futm/m/n/10.95 O\
 T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 n [] n\T1/futs/m/n/10.95 )$, zwei-Drit
 tel-Sortieren ist also et-was schneller. 
  []
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 1128--1131
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 1131--1134
 
  []
 
 
-Overfull \hbox (39.05135pt too wide) in paragraph at lines 1132--1137
+Overfull \hbox (39.05135pt too wide) in paragraph at lines 1135--1140
 \T1/futs/m/n/10.95 Die L‰nge hi-erzu l‰sst sich mit $[][] \FML/futmi/m/it/10.95
  i$ \T1/futs/m/n/10.95 bei fes-tem k bes-tim-men, was $\FML/futmi/m/it/10.95 St
 ellenlaenge \FMS/futm/m/n/10.95 ^^C
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1132--1137
+Underfull \hbox (badness 10000) in paragraph at lines 1135--1140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1143--1147
+Underfull \hbox (badness 10000) in paragraph at lines 1146--1150
 
  []
 
 
-Overfull \hbox (40.13437pt too wide) in paragraph at lines 1150--1151
+Overfull \hbox (40.13437pt too wide) in paragraph at lines 1153--1154
 []\T1/futs/m/n/10.95 Bestimme das Min-i-mum unter allen Zahlen, die im Zahlen-p
 aar kleiner waren im Vergleich($\FMS/futm/m/n/10.95 b[]c ^^@
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1155--1156
+Underfull \hbox (badness 10000) in paragraph at lines 1158--1159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1157--1158
+Underfull \hbox (badness 10000) in paragraph at lines 1160--1161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1159--1160
+Underfull \hbox (badness 10000) in paragraph at lines 1162--1163
 
  []
 
-[25]
-Overfull \hbox (0.41667pt too wide) in paragraph at lines 1173--1174
+[26]
+Overfull \hbox (0.41667pt too wide) in paragraph at lines 1176--1177
 [] \T1/futs/m/sc/10.95 b)[][] \T1/futs/m/n/10.95 F¸r die Laufzei-t-anal-yse der
  Me-di-anbes-tim-mung er-gab sich bei einer Un-terteilung in F¸n-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1186
+Underfull \hbox (badness 10000) in paragraph at lines 1188--1189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1188
+Underfull \hbox (badness 10000) in paragraph at lines 1190--1191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1190
+Underfull \hbox (badness 10000) in paragraph at lines 1192--1193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1191--1192
+Underfull \hbox (badness 10000) in paragraph at lines 1194--1195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1193--1194
+Underfull \hbox (badness 10000) in paragraph at lines 1196--1197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1195--1196
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1197--1198
+Underfull \hbox (badness 10000) in paragraph at lines 1200--1201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1199--1200
+Underfull \hbox (badness 10000) in paragraph at lines 1202--1203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1201--1202
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1206--1208
+Underfull \hbox (badness 10000) in paragraph at lines 1209--1211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1209--1210
+Underfull \hbox (badness 10000) in paragraph at lines 1212--1213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1211--1212
-
- []
-
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 1213--1214
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1215--1216
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1217--1218
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1219--1220
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1229
-
- []
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1230 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.1231 \SetAlgoLined
-                    
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1249 \end{algorithm}
-                      
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1252--1253
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1215
 
  []
 
 [27]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1284 
-       
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1285--1286
+Underfull \hbox (badness 10000) in paragraph at lines 1216--1217
 
  []
 
 
-! LaTeX Error: There's no line here to end.
+Underfull \hbox (badness 10000) in paragraph at lines 1218--1219
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1292 
-       
-? 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1220--1221
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1222--1223
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1231--1232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1255--1256
+
+ []
+
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 1315--1317
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1287 
+       
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1288--1289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1324--1325
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1295 
+       
+? 
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 1318--1320
 
  []
 
 
-Overfull \hbox (10.16206pt too wide) in paragraph at lines 1328--1331
+Underfull \hbox (badness 10000) in paragraph at lines 1327--1328
+
+ []
+
+
+Overfull \hbox (10.16206pt too wide) in paragraph at lines 1331--1334
 [] \T1/futs/m/sc/10.95 b)[][] \T1/futs/m/n/10.95 Das zweite Prob-lem ist es, zu
  entschei-den, ob in der Liste $\FML/futmi/m/it/10.95 A$ \T1/futs/m/n/10.95 ein
  be-liebiger Wert $\FML/futmi/m/it/10.95 x$ \T1/futs/m/n/10.95 vorkommt.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1328--1331
+Underfull \hbox (badness 10000) in paragraph at lines 1331--1334
 
  []
 
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 1339--1340
-
- []
-
-
-! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1346 \end{tikzpicture}
-                        }
-? 
-! Extra }, or forgotten \endgroup.
-l.1346 \end{tikzpicture}}
-                         
-? 
-
-! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1359 \end{tikzpicture}
-                        }
-? 
-! Extra }, or forgotten \endgroup.
-l.1359 \end{tikzpicture}}
-                         
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1362--1365
-
- []
-
-
-! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1376 \end{tikzpicture}
-                        }
-? 
-! Extra }, or forgotten \endgroup.
-l.1376 \end{tikzpicture}}
-                         
-? 
-! Extra }, or forgotten \endgroup.
-l.1386 \end{tikzpicture}}
-                         
-? 
-! Extra }, or forgotten \endgroup.
-l.1411 \end{tikzpicture}}
-                         
-? 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 1414--1417
+Underfull \hbox (badness 10000) in paragraph at lines 1342--1343
 
  []
 
+
+! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1349 \end{tikzpicture}
+                        }
+? 
 ! Extra }, or forgotten \endgroup.
-l.1440 \end{tikzpicture}}
+l.1349 \end{tikzpicture}}
+                         
+? 
+
+! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1362 \end{tikzpicture}
+                        }
+? 
+! Extra }, or forgotten \endgroup.
+l.1362 \end{tikzpicture}}
+                         
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1365--1368
+
+ []
+
+
+! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1379 \end{tikzpicture}
+                        }
+? 
+! Extra }, or forgotten \endgroup.
+l.1379 \end{tikzpicture}}
                          
 ? 
 ! Extra }, or forgotten \endgroup.
-l.1460 \end{tikzpicture}}
+l.1389 \end{tikzpicture}}
                          
 ? 
 ! Extra }, or forgotten \endgroup.
-l.1488 \end{tikzpicture}}
+l.1414 \end{tikzpicture}}
                          
 ? 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 1494--1495
+Underfull \hbox (badness 10000) in paragraph at lines 1417--1420
 
  []
 
 ! Extra }, or forgotten \endgroup.
-l.1521 \end{tikzpicture}}
+l.1443 \end{tikzpicture}}
                          
 ? 
 ! Extra }, or forgotten \endgroup.
-l.1546 \end{tikzpicture}}
+l.1463 \end{tikzpicture}}
+                         
+? 
+! Extra }, or forgotten \endgroup.
+l.1491 \end{tikzpicture}}
                          
 ? 
 [32]
-! Extra }, or forgotten \endgroup.
-l.1572 \end{tikzpicture}}
-                         
-? 
-! Extra }, or forgotten \endgroup.
-l.1598 \end{tikzpicture}}
-                         
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1602--1603
+Underfull \hbox (badness 10000) in paragraph at lines 1497--1498
 
  []
 
+! Extra }, or forgotten \endgroup.
+l.1524 \end{tikzpicture}}
+                         
+? 
+! Extra }, or forgotten \endgroup.
+l.1549 \end{tikzpicture}}
+                         
+? 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 1613--1615
+! Extra }, or forgotten \endgroup.
+l.1575 \end{tikzpicture}}
+                         
+? 
+! Extra }, or forgotten \endgroup.
+l.1601 \end{tikzpicture}}
+                         
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1605--1606
+
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 1616--1618
 
  []
 
 ! Extra }, or forgotten \endgroup.
-l.1629 \end{tikzpicture}}
+l.1632 \end{tikzpicture}}
                          
 ? 
 
@@ -2402,186 +2206,154 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1637 
+l.1640 
        
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1638--1643
+Underfull \hbox (badness 10000) in paragraph at lines 1641--1646
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1644--1645
-
- []
-
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 1646--1647
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1654--1655
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1656--1658
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1659--1660
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1661--1662
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1663--1664
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1665--1666
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1667--1668
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1669--1670
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1671--1672
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1675--1676
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1677--1678
+Underfull \hbox (badness 10000) in paragraph at lines 1647--1648
 
  []
 
 [35]
-Underfull \hbox (badness 10000) in paragraph at lines 1694--1695
+Underfull \hbox (badness 10000) in paragraph at lines 1649--1650
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1753--1757
+Underfull \hbox (badness 10000) in paragraph at lines 1657--1658
 
  []
 
-[36] <baum06A3b.jpg, id=131, 369.63094pt x 258.9675pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1659--1661
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1663
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1664--1665
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1666--1667
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1668--1669
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1670--1671
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1672--1673
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1674--1675
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1678--1679
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1680--1681
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 1697--1698
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1756--1760
+
+ []
+
+[37] <baum06A3b.jpg, id=135, 369.63094pt x 258.9675pt>
 File: baum06A3b.jpg Graphic file (type jpg)
  <use baum06A3b.jpg>
-Package pdftex.def Info: baum06A3b.jpg used on input line 1758.
+Package pdftex.def Info: baum06A3b.jpg used on input line 1761.
 (pdftex.def)             Requested size: 284.52644pt x 142.27054pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1758--1759
+Underfull \hbox (badness 10000) in paragraph at lines 1761--1762
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1761--1763
+Underfull \hbox (badness 10000) in paragraph at lines 1764--1766
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1767--1768
+Underfull \hbox (badness 10000) in paragraph at lines 1770--1771
 
  []
 
-[37 <./baum06A3b.jpg>]
-Overfull \hbox (10.14395pt too wide) in paragraph at lines 1788--1799
+[38 <./baum06A3b.jpg>]
+Overfull \hbox (10.14395pt too wide) in paragraph at lines 1791--1802
 \FML/futmi/m/it/10.95 O\T1/futs/m/n/10.95 (1)$ berech-net wer-den kˆn-nen. Gebe
 n Sie einen \T1/futs/m/it/10.95 Plane-Sweep \T1/futs/m/n/10.95 Al-go-rith-mus f
 ¸r das Schnittprob-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1788--1799
+Underfull \hbox (badness 10000) in paragraph at lines 1791--1802
 
  []
 
 
-! LaTeX Error: Environment algorithm undefined.
+! LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1800 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.1801 \SetAlgoLined
-                    
+l.1822 
+       
 ? 
 
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
+Overfull \hbox (91.76083pt too wide) in paragraph at lines 1823--1836
+[]\T1/futs/b/n/10.95 InterceptionFinder $[]$ 
+ []
+
+
+! LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1818 \end{algorithm}
-                       \\
+l.1837 
+       
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1800--1819
+Underfull \hbox (badness 10000) in paragraph at lines 1838--1839
 
  []
 
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1821 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.1822 \SetAlgoLined
-                    
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1833 \end{algorithm}
-                       \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1820--1834
-
- []
-
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 1835--1836
-
- []
-
+[39]
 ! Extra }, or forgotten $.
-l.1838 ...*log(n))+O (n)+O (log(n))+O (n)+O (1)+O}
+l.1841 ...*log(n))+O (n)+O (log(n))+O (n)+O (1)+O}
                                                    (n)=O (n*log(n))$
 ? 
 
@@ -2591,1744 +2363,125 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1848 
+l.1851 
        
 ? 
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1868 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.1869 \SetAlgoLined
-                    
-? 
-! Undefined control sequence.
-<recently read> \While 
-                       
-l.1872 \While
-             {X not empty} {
-? 
-! Undefined control sequence.
-l.1874   \eIF
-             {e is start of circle} {
-? 
-! Undefined control sequence.
-l.1882      \eIF
-                {e is end of circle} {
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1897 \end{algorithm}
-                       \\
-? 
-! Missing } inserted.
+)
+Runaway argument?
+{ get and remove first event e in X \; \eIF {e is start of circle} { \ETC.
+! File ended while scanning use of \algocf@Whilestrip.
 <inserted text> 
-                }
-l.1897 \end{algorithm}
-                       \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1867--1898
-
- []
-
-[39]
-Underfull \hbox (badness 10000) in paragraph at lines 1905--1906
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1936--1937
-
- []
-
-[40]
-Underfull \hbox (badness 10000) in paragraph at lines 1967--1968
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1998--1999
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2000--2001
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2002--2004
-
- []
-
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 2041--2042
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2043--2044
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2080--2081
-
- []
-
-[42]
-Underfull \hbox (badness 10000) in paragraph at lines 2117--2119
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2149--2150
-
- []
-
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 2180--2182
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2217--2221
-
- []
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2223 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.2224 \SetAlgoLined
-                    
-? 
-! Undefined control sequence.
-<recently read> \eIF 
-                     
-l.2226 \eIF
-           {height(S) $\leq$ height(T)} {
-? 
-! Undefined control sequence.
-l.2228    \While
-                {height(S) $\neq$ height(T')} {
-? 
-! Undefined control sequence.
-l.2237    \While
-                 {height(S') $\neq$ height(T)} {
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2245 \end{algorithm}
-                      
-? 
-[44]
-Underfull \hbox (badness 10000) in paragraph at lines 2248--2252
-
- []
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2254 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.2255 \SetAlgoLined
-                    
-? 
-! Undefined control sequence.
-l.2258 \While
-              {w is not leaf}{
-? 
-! Undefined control sequence.
-l.2260    \While
-                 {$i $} {
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2263 \end{algorithm}
+                \par 
+<*> algo_exercises.tex
                       
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2290--2291
-
- []
-
-<QueueStack.png, id=158, 867.24pt x 487.8225pt>
-File: QueueStack.png Graphic file (type png)
- <use QueueStack.png>
-Package pdftex.def Info: QueueStack.png used on input line 2292.
-(pdftex.def)             Requested size: 426.79071pt x 284.53017pt.
-
-Overfull \hbox (8.53516pt too wide) in paragraph at lines 2292--2293
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2292--2293
-
- []
-
-[45]
-Underfull \hbox (badness 10000) in paragraph at lines 2300--2301
-
- []
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2303 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.2304 \SetAlgoLined
-                    
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2310 \end{algorithm}
-                      
-? 
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2313 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.2314 \SetAlgoLined
-                    
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2320 \end{algorithm}
-                      
-? 
-[46 <./QueueStack.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2324--2326
-
- []
-
-
-Overfull \hbox (31.06621pt too wide) in paragraph at lines 2327--2332
-[][] 
- []
-
-[47]
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2342 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.2343 \SetAlgoLined
-                    
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2351 \end{algorithm}
-                      
-? 
-[48]
-Underfull \hbox (badness 10000) in paragraph at lines 2361--2363
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2364--2365
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2366--2367
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2379--2380
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2381--2382
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2394--2395
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2396--2397
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2409--2410
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2412--2413
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2439--2440
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2442--2443
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2469--2470
-
- []
-
-[49]
-Underfull \hbox (badness 10000) in paragraph at lines 2471--2472
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2507--2508
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2509--2510
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2548--2549
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2550--2551
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2598--2599
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2600--2601
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2648--2649
-
- []
-
-[50]
-Underfull \hbox (badness 10000) in paragraph at lines 2650--2651
-
- []
-
-
-Overfull \hbox (31.79779pt too wide) in paragraph at lines 2720--2721
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2720--2721
-
- []
-
-! Undefined control sequence.
-<recently read> \calO 
-                      
-l.2725 ...ithmus in Pseudocode, der in Zeit $\calO
-                                                  (n)$ aus $T$ eine Skiplist...
-
-? 
-! Undefined control sequence.
-<recently read> \calO 
-                      
-l.2727 worst-case Laufzeit von $\calO
-                                     (\log n)$ hat.
-? 
-
-Overfull \hbox (14.15155pt too wide) in paragraph at lines 2724--2729
-\T1/futs/m/n/10.95 Sei $\FML/futmi/m/it/10.95 T$ \T1/futs/m/n/10.95 ein bin‰rer
- Such-baum der Grˆˇe $\FML/futmi/m/it/10.95 n$\T1/futs/m/n/10.95 , der nicht no
-twendi-ger-weise bal-anciert ist. Beschreiben
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2724--2729
-
- []
-
-
-Overfull \hbox (2.09213pt too wide) in paragraph at lines 2734--2735
-[]\T1/futs/m/n/10.95 mit dem n‰ch-sten 4 er-hal-te-nen Skiplis-ten wird auf die
-se Weise ver-fahren, bis die Skiplis-
- []
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2738 \begin{algorithm}
-                        [H]
-? 
-[51]
-! Undefined control sequence.
-l.2739 \SetAlgoLined
-                    
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2738--2743
-
- []
-
-! Undefined control sequence.
-l.2746 \Return
-               sorted-list
-? 
-! Undefined control sequence.
-<recently read> \For 
-                     
-l.2749 \For
-            {i=0, i++,$i < log(i)$}{
-? 
-! Undefined control sequence.
-l.2753 \Return
-               S
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2754 \end{algorithm}
-                       \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2748--2755
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2767--2768
-
- []
-
-<treeA.png, id=184, 155.83218pt x 117.43875pt>
-File: treeA.png Graphic file (type png)
- <use treeA.png>
-Package pdftex.def Info: treeA.png used on input line 2769.
-(pdftex.def)             Requested size: 284.56139pt x 284.52875pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2769--2770
-
- []
-
-[52]
-Underfull \hbox (badness 10000) in paragraph at lines 2774--2775
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2776--2777
-
- []
-
-[53 <./treeA.png>]
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2795 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.2796 \SetAlgoLined
-                    
-? 
-! Undefined control sequence.
-<recently read> \While 
-                       
-l.2798 \While
-              {not all nodes of T are visited in a post-order walk}{
-? 
-! Undefined control sequence.
-l.2799   \eIf
-              {e has no children}{
-? 
-! Undefined control sequence.
-l.2802   \eIf
-             {v has no grandchildren}{
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2808 \end{algorithm}
-                       \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2794--2809
-
- []
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2811 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.2812 \SetAlgoLined
-                    
-? 
-! Undefined control sequence.
-<recently read> \While 
-                       
-l.2815 \While
-              {l is not empty}{
-? 
-! Undefined control sequence.
-l.2818 \eIf
-            {r has no children }{
-? 
-! Undefined control sequence.
-l.2821   \eIf
-             {r has no grandchildren}{
-? 
-! Undefined control sequence.
-l.2823   } { \eIf
-                  {r.max = $\sum c.max$} {
-? 
-! Undefined control sequence.
-l.2832 \Return
-               M
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2833 \end{algorithm}
-                       \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2810--2834
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2836--2837
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2839--2840
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2853--2854
-
- []
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2856 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.2857 \SetAlgoLined
-                    
-? 
-! Undefined control sequence.
-l.2858 \KwIn
-            {String S}
-? 
-! Undefined control sequence.
-l.2859 \KwOut
-             {int L√§nge des l√§ngsten Palindroms in S}
-? 
-! Undefined control sequence.
-<recently read> \For 
-                     
-l.2861 \For
-            {I=1 ... length(S)}{
-? 
-! Undefined control sequence.
-l.2862  \If
-            {i-tes Zeichen von S ist Leerzeichen}{
-? 
-! Undefined control sequence.
-<recently read> \Return 
-                        
-l.2868 \Return
-               LLPWorker(S,i,j)
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2869 \end{algorithm}
-                       \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2855--2870
-
- []
-
-[54]
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2872 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.2873 \SetAlgoLined
-                    
-? 
-! Undefined control sequence.
-l.2874 \KwIn
-            {String S, int i, int j}
-? 
-! Undefined control sequence.
-l.2875 \KwOut
-             {int L√§nge des l√§ngsten Palindroms in S}
-? 
-! Undefined control sequence.
-<recently read> \If 
-                    
-l.2877 \If
-           {i == y}{
-? 
-! Undefined control sequence.
-l.2878   \Return
-                 1
-? 
-! Undefined control sequence.
-<recently read> \If 
-                    
-l.2882 \If
-           {length(S) == 2 und S[i] == S[j]}{
-? 
-! Undefined control sequence.
-l.2883   \Return
-                 2
-? 
-! Undefined control sequence.
-<recently read> \If 
-                    
-l.2887 \If
-           {S[i] == S[j]}{
-? 
-! Undefined control sequence.
-l.2888   \Return
-                 LLPWorker(S, i+1,j-1) +2
-? 
-! Undefined control sequence.
-<recently read> \Return 
-                        
-l.2892 \Return
-               max(LLPWorker(S,i,j-1),LLPWorker(S,i+1,j))
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2893 \end{algorithm}
-                       \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2891--2894
-
- []
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2896 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.2897 \SetAlgoLined
-                    
-? 
-! Undefined control sequence.
-l.2898 \KwIn
-            {int x, int y}
-? 
-! Undefined control sequence.
-l.2899 \KwOut
-             {int (max von a und b)}
-? 
-! Undefined control sequence.
-l.2900 \eIf
-            {a > b}{
-? 
-! Undefined control sequence.
-l.2901   \Return
-                 a
-? 
-! Undefined control sequence.
-l.2903   \Return
-                 b
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2905 \end{algorithm}
-                       \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2895--2906
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2908--2909
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2915--2916
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2917--2918
-
- []
-
-[55]
-Underfull \hbox (badness 10000) in paragraph at lines 2931--2932
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2940--2941
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2946--2948
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2950--2951
-
- []
-
-[56]
-Overfull \hbox (3.76122pt too wide) in paragraph at lines 2957--2959
-\T1/futs/m/n/10.95 Zum Beispiel ist $\FML/futmi/m/it/10.95 w \FMS/futm/m/n/10.9
-5 Å []$ \T1/futs/m/n/10.95 ein Shuf-fle aus den Wˆrtern $\FML/futmi/m/it/10.95 
-u \FMS/futm/m/n/10.95 Å []$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2961--2962
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2963--2964
-
- []
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2966 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.2967 \SetAlgoLined
-                    
-? 
-! Undefined control sequence.
-l.2968 \For
-            {i=0; $i < length(u)$; i++}{
-? 
-! Undefined control sequence.
-l.2970  \eIf
-             {$w 0 0 v$}{
-? 
-! Undefined control sequence.
-l.2971    \Return
-                  true \;
-? 
-! Undefined control sequence.
-l.2973    \Return
-                  false \;
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2976 \end{algorithm}
-                       \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2965--2977
-
- []
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2979 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.2980 \SetAlgoLined
-                    
-? 
-! Undefined control sequence.
-<recently read> \While 
-                       
-l.2982 \While
-              {$j < length(w)$} {
-? 
-! Undefined control sequence.
-l.2983   \If
-             {$u[i]= = w[j]$} {
-? 
-! Undefined control sequence.
-l.2984     \For
-                {k=j;$k < length(w)-1$; k++} {
-? 
-! Undefined control sequence.
-l.2987     \Return
-                   checkShuffle(w,u,v)
-? 
-! Undefined control sequence.
-l.2990   \Return
-                 false \;
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2992 \end{algorithm}
-                       \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2978--2993
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2995--2996
-
- []
-
-
-Overfull \hbox (9.04391pt too wide) in paragraph at lines 3005--3006
-[] \T1/futs/m/sc/10.95 a)[][] \T1/cmtt/m/n/10.95 isShuffled(String w, String u,
- String v)\T1/futs/m/n/10.95 , die entschei-det ob das Wort $\FML/futmi/m/it/10
-.95 w$ \T1/futs/m/n/10.95 ein Shuf-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3005--3006
-
- []
-
-[57]
-Overfull \hbox (9.56398pt too wide) in paragraph at lines 3008--3009
-[] \T1/futs/m/sc/10.95 b)[][] \T1/cmtt/m/n/10.95 isShuffled(String w, String u,
- String v, String z)\T1/futs/m/n/10.95 , die entschei-det of das Wort
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3015--3016
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3021--3023
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3024--3025
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3029--3030
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3034--3035
-
- []
-
-[58]
-Underfull \hbox (badness 10000) in paragraph at lines 3055--3056
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3061 
-       
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 3065--3066
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3071 
-       
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 3078--3079
-
- []
-
-<hashbi.png, id=208, 867.24pt x 487.8225pt>
-File: hashbi.png Graphic file (type png)
- <use hashbi.png>
-Package pdftex.def Info: hashbi.png used on input line 3080.
-(pdftex.def)             Requested size: 284.52274pt x 142.26135pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 3080--3081
-
- []
-
-[59]
-Underfull \hbox (badness 10000) in paragraph at lines 3083--3084
-
- []
-
-<hashbii.png, id=212, 867.24pt x 487.8225pt>
-File: hashbii.png Graphic file (type png)
- <use hashbii.png>
-Package pdftex.def Info: hashbii.png used on input line 3085.
-(pdftex.def)             Requested size: 284.52274pt x 142.26135pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 3085--3086
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3088--3089
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3090--3099
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3100--3101
-
- []
-
-[60 <./hashbi.png> <./hashbii.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 3103--3104
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3109 
-       
-? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3118 
-       
-? 
-[61]
-Underfull \hbox (badness 10000) in paragraph at lines 3126--3127
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3133--3134
-
- []
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 3137.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3140--3141
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3146--3148
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3153--3155
-
- []
-
-<graph.pdf, id=220, 113.82526pt x 113.82526pt>
-File: graph.pdf Graphic file (type pdf)
- <use graph.pdf>
-Package pdftex.def Info: graph.pdf used on input line 3167.
-(pdftex.def)             Requested size: 102.44177pt x 102.44177pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3171--3172
-
- []
-
-[62]
-Underfull \hbox (badness 10000) in paragraph at lines 3187--3189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3190--3192
-
- []
-
-[63 <./graph.pdf>]
-! Undefined control sequence.
-<recently read> \calO 
-                      
-l.3243 ... Graph $G'$ in einer Laufzeit von $\calO
-                                                  (|V|^2)$ berechnet. \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 3241--3244
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3245--3246
-
- []
-
-! Undefined control sequence.
-<recently read> \calO 
-                      
-l.3249 ... Graph $G'$ in einer Laufzeit von $\calO
-                                                  (|V| + |E|)$ berechnet. \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 3248--3250
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3251--3254
-
- []
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3255 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.3256 \SetAlgoLined
-                    
-? 
-! Undefined control sequence.
-<recently read> \For 
-                     
-l.3258 \For
-            {i= 1 to n}{
-? 
-! Undefined control sequence.
-l.3259   \For
-              {j= 1 to $|L[i]|$} {
-? 
-! Undefined control sequence.
-l.3260      \If
-                {$L[i]$ enth√§lt j}{
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3265 \end{algorithm}
-                       \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 3255--3266
-
- []
-
-<dijkstra.pdf, id=243, 218.21524pt x 83.73282pt>
-File: dijkstra.pdf Graphic file (type pdf)
- <use dijkstra.pdf>
-Package pdftex.def Info: dijkstra.pdf used on input line 3275.
-(pdftex.def)             Requested size: 196.39189pt x 75.35883pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-! You can't use `macro parameter character #' in restricted horizontal mode.
-<recently read> ##
-                  
-l.3280 #
-         & s & s' \\\hline
-? 
-[64]
-Underfull \hbox (badness 10000) in paragraph at lines 3302--3304
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3308--3310
-
- []
-
-[65 <./dijkstra.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3369--3372
-
- []
-
-[66]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3385 \begin
-             {itemize}
-? 
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3459 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.3460 \SetAlgoLined
-                    
-? 
-
-LaTeX Warning: Command \" invalid in math mode on input line 3461.
-
-! Undefined control sequence.
-<recently read> \For 
-                     
-l.3463 \For
-            {i = 1 to n-1}{
-? 
-! Undefined control sequence.
-<recently read> \If 
-                    
-l.3465    \If
-              {d(u)+w(u,v) $<$ d(v)}{
-? 
-! Undefined control sequence.
-<recently read> \If 
-                    
-l.3470    \If
-              {d(u)+w(u,v) $<$ d(v)}{
-? 
-! Undefined control sequence.
-l.3475 \Return
-               d vom Endknoten
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3476 \end{algorithm}
-                       \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 3459--3477
-
- []
-
-[67]
-Underfull \hbox (badness 10000) in paragraph at lines 3480--3481
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3497--3501
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3502--3503
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3509 
-       
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 3510--3511
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3512--3517
-
- []
-
-[68]
-! Undefined control sequence.
-<recently read> \calO 
-                      
-l.3527 ...ithmus in Pseudocode, der in Zeit $\calO
-                                                  (|V| + |E|)$ feststellt, o...
-
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 3525--3528
-
- []
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3529 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.3530 \SetAlgoLined
-                    
-? 
-! Undefined control sequence.
-l.3531 \For
-            {every node in G}{
-? 
-! Undefined control sequence.
-<recently read> \For 
-                     
-l.3535 \For
-            {every node in G}{
-? 
-! Undefined control sequence.
-l.3536   \For
-              {every target node in nod.adjacentlist}{
-? 
-! Undefined control sequence.
-l.3538      \If
-                {node.adjacentNodes is empty}{
-? 
-! Undefined control sequence.
-<recently read> \For 
-                     
-l.3544 \For
-            {every node in G}{
-? 
-! Undefined control sequence.
-l.3545    \If
-              {incomingDegree(node) == 0}{
-? 
-! Undefined control sequence.
-l.3549 \If
-           {Sources == 1}{
-? 
-! Undefined control sequence.
-l.3550    \If
-              {sinks ==1}{
-? 
-! Undefined control sequence.
-l.3551      \Return
-                    true \;
-? 
-! Undefined control sequence.
-l.3554 \Return
-               false;
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3555 \end{algorithm}
-                       \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 3529--3556
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3562--3563
-
- []
-
-<graph112.png, id=291, 231.11343pt x 202.50656pt>
-File: graph112.png Graphic file (type png)
- <use graph112.png>
-Package pdftex.def Info: graph112.png used on input line 3564.
-(pdftex.def)             Requested size: 199.1698pt x 199.17502pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 3564--3565
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3567--3568
-
- []
-
-[69 <./graph112.png>]
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3569 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.3570 \SetAlgoLined
-                    
-? 
-! Undefined control sequence.
-<recently read> \While 
-                       
-l.3582 \While
-              {visited != V}{
-? 
-! Undefined control sequence.
-<recently read> \If 
-                    
-l.3586       \If
-                 {$next \notin queue$}{
-? 
-! Undefined control sequence.
-l.3590       \eIf
-                  {broadestPathTo(next) == $\{ \}$}{
-? 
-! Undefined control sequence.
-l.3594          \If
-                    {minNewWidth $>$ broadestWith(next)}{
-? 
-! Undefined control sequence.
-<recently read> \Return 
-                        
-l.3602    \Return
-                  (v,broadestWidth(v), broadestPathTo(v)) \;
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3604 \end{algorithm}
-                       \\
-? 
-
-Overfull \hbox (75.64915pt too wide) in paragraph at lines 3569--3605
-\T1/futs/m/n/10.95 visited != V cur-rentN-ode = queue.removeMax()  vis-ited = v
-is-ited $\FMS/futm/m/n/10.95 [$ \T1/futs/m/n/10.95 cur-rentN-ode  \T1/futs/b/n/
-10.95 forall $\T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 currentNode; next\T1/fu
-ts/m/n/10.95 ) \FMS/futm/m/n/10.95 2
- []
-
-
-Overfull \hbox (34.67464pt too wide) in paragraph at lines 3569--3605
-\FML/futmi/m/it/10.95 next \FMS/futm/m/n/10.95 õ \FML/futmi/m/it/10.95 queue$ \
-T1/futs/m/n/10.95 queue.add(next)   min-NewWidth = min(broadestWidth(currentNod
-e), c(currentNode,
- []
-
-
-Overfull \hbox (21.8648pt too wide) in paragraph at lines 3569--3605
-\T1/futs/m/n/10.95 (cur-rentN-ode,next)  broad-est-Width(next) = min-NewWidth  
-  min-NewWidth $\FMS/futm/m/n/10.95 É$ \T1/futs/m/n/10.95 broad-est-With(next)
- []
-
-
-Overfull \hbox (25.16765pt too wide) in paragraph at lines 3569--3605
-\T1/futs/m/n/10.95 broad-est-PathTo(next) = broad-est-PathTo(currentNode) $\FMS
-/futm/m/n/10.95 [$ \T1/futs/m/n/10.95 (cur-rentN-ode,next)  broad-est-Width(nex
-t)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3569--3605
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3606--3608
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3622--3624
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3625--3626
-
- []
-
-[70]
-Underfull \hbox (badness 10000) in paragraph at lines 3627--3642
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3643--3644
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3645--3660
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3661--3662
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3663--3678
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3679--3680
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3681--3696
-
- []
-
-[71]
-Underfull \hbox (badness 10000) in paragraph at lines 3697--3698
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3699--3714
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3715--3716
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3717--3732
-
- []
-
-[72]
-Underfull \hbox (badness 10000) in paragraph at lines 3744--3745
-
- []
-
-! Undefined control sequence.
-<recently read> \calO 
-                      
-l.3750 ... H√ºlle $G'$ eines Graphen $G$ in $\calO
-                                                  (n^3)$ zu berechnen. Begr√...
-
-? 
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3752 \begin{algorithm}
-                        [H]
-? 
-! Undefined control sequence.
-l.3753 \SetAlgoLined
-                    
-? 
-! Undefined control sequence.
-<recently read> \For 
-                     
-l.3757 \For
-            {i= 1 to n}{
-? 
-! Undefined control sequence.
-l.3758    \For
-               {j= 1 to n}{
-? 
-! Undefined control sequence.
-l.3762 \For
-            {i = 1 to n}{
-? 
-! Undefined control sequence.
-l.3765 \For
-            {k= 1 to n}{
-? 
-! Undefined control sequence.
-l.3766    \For
-               {i=1 to n}{
-? 
-! Undefined control sequence.
-l.3767       \For
-                  {j= 1 to n}{
-? 
-! Undefined control sequence.
-l.3768          \If
-                    {M[i][k] == 1 $&&$ M[k][j] == 1}{
-? 
-! Misplaced alignment tab character &.
-<recently read> &
-                 
-l.3768          \If {M[i][k] == 1 $&
-                                    &$ M[k][j] == 1}{
-? 
-! Misplaced alignment tab character &.
-l.3768          \If {M[i][k] == 1 $&&
-                                     $ M[k][j] == 1}{
-? 
-! Undefined control sequence.
-l.3774 \Return
-               H
-? 
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3775 \end{algorithm}
-                       \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 3752--3776
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3777--3779
-
- []
-
-[73] (./algo_exercises.aux) ) 
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*\end
+
+*
+Runaway argument?
+! Paragraph ended before \end was complete.
+<to be read again> 
+                   \par 
+<*> 
+    
+? 
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+! Emergency stop.
+<*> 
+    
+End of file on the terminal!
+
+ 
 Here is how much of TeX's memory you used:
- 19837 strings out of 492995
- 367572 string characters out of 6132703
- 609962 words of memory out of 5000000
- 22958 multiletter control sequences out of 15000+600000
- 109755 words of font info for 122 fonts, out of 8000000 for 9000
+ 20309 strings out of 492995
+ 375416 string characters out of 6132703
+ 653190 words of memory out of 5000000
+ 23429 multiletter control sequences out of 15000+600000
+ 101091 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,14n,68p,8852b,1612s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvip
-s/cm-super/cm-super-t1.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/
-base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmtt10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fouri
-er-bb.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourie
-r-mcl.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourie
-r-mex.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourie
-r-ml.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier
--mlit.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourie
-r-ms.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbol
-s/msbm10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/putb8
-a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on algo_exercises.pdf (73 pages, 453875 bytes).
-PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 0 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 64i,14n,68p,8852b,3765s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
