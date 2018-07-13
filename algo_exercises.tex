@@ -2951,7 +2951,171 @@ Demonstrieren Sie die Funktionsweise Ihrer Algorithmen an der Zeichenfolge \text
 \newpage
 \section{Blatt 09}
 %----------------------------------------------------------------------------
+\subsection{Dynamisches Programmieren}
+Seien $u,v,w \in \Sigma^*$ Wörter über einem  Alphabet $\Sigma$. Wir nennen $w$ \textit{einen Shuffle} aus $u$ und $v$, wenn es eine Zerlegung $u=u_1\dots u_k$ und $v=v_1\dots v_l$ gibt mit $u_i, v_j\in \Sigma^*$ für alle $i,j$, so dass $w=u_1v_1u_2v_2\dots$ ist.\\
+Zum Beispiel ist $w=\mathit{INaFOlgoRMrithAmTIenK}$ ein Shuffle aus den Wörtern $u=\mathit{INFORMATIK}$ und $v=\mathit{algorithmen}$.
 
+\paragraph{a)}
+Geben Sie einen Algorithmus an, der für drei gegebene Wörter $u,v,w$ unter der Verwendung von dynamischer Programmierung entscheidet, ob $w$ ein Shuffle aus $u$ und $v$ ist. \\
+
+Algorithmus testet, ob $w \backslash u = v$, also die Symbole von u werden abgeleitet von links nach rechts, dabei werden all diese Symbole aus w entfernt. Nach Abarbeitung von u, muss w=v gelten, falls w Shuffle war. u,v,w werden als Array repräsentiert. \\
+
+\textbf{checkShuffle(w,u,v)} \\
+\begin{algorithm}[H]
+\SetAlgoLined
+\For {i=0; $i < length(u)$; i++}{
+ delete($u[i],w$)
+ \eIf {$w 0 0 v$}{
+   \Return true \;
+ } {
+   \Return false \;
+ }
+}
+\end{algorithm} \\
+
+\textbf{delete($u[i],w$)} \\
+\begin{algorithm}[H]
+\SetAlgoLined
+j = 0 \\
+\While {$j < length(w)$} {
+  \If {$u[i]= = w[j]$} {
+    \For {k=j;$k < length(w)-1$; k++} {
+      $w[j]=w[j+1]$ \;
+    }
+    \Return checkShuffle(w,u,v)
+  }
+  j++
+  \Return false \;
+}
+\end{algorithm} \\
+
+\paragraph{b)} 
+Geben Sie die Laufzeit in Abhängigkeit der Längen der Wörter an. \\
+
+Beim Algorithmus wir u einmal komplett durchlaufen ($O(lenght(u))$), wobei zwischen jedem Schritt, w entweder komplett durchlaufen wird und Ende oder in w das Symbol aus u gefunden in maximal length(w) Schritten. \\
+Da nun length(w) bei gefundenen Symbol von u in w nicht um 1 verringert, wird length(w) jeden Schritt bei der Abarbeitung von u, wird im nächsten Schritt immer nur die Teilwertlänge von v weitergelaufen, welche zwischen 1 und lenght(v) liegt. Im worst case haben wir also $O(length(u))+O(length(v))$ und die $O(length(w))$ entspricht mit length(w)=n erhalten wird $O(n)$ Laufzeit (mit Faktor $c \leq 1$). 
+
+%----------------------------------------------------------------------------
+\subsection{Programmieraufgabe}
+Laden Sie die Java-Vorlage aus dem Moodle herunter und implementieren Sie die folgenden Methoden:
+
+\paragraph{a)}
+ \texttt{isShuffled(String w, String u, String v)}, die entscheidet ob das Wort $w$ ein Shuffle aus den zwei Wörtern $u$ und $v$ ist. \\
+ 
+\paragraph{b)}
+ \texttt{isShuffled(String w, String u, String v, String z)}, die entscheidet of das Wort $w$ ein Shuffle aus den drei Wörtern $u$, $v$ und $z$ ist.
+
+%----------------------------------------------------------------------------
+\subsection{Anagramme}
+Seien $u$ und $v$ zwei Wörter über einem endlichen Alphabet $\Sigma$. Ein Anagramm eines Wortes $u$ ist ein Wort $v$, das aus einer Permutation der Buchstaben von $u$ gebildet werden kann.
+
+\paragraph{a)}
+Welche Eigenschaften muss eine Hashfunktion erfüllen, um Anagramme schnell identifizieren zu können? \\
+
+Für jedes Symbol/ Buchstabe aus Wort muss ein individueller Wert existieren (Zahlenwert). Zusätzlich darf/ sollte keiner dieser Werte aus der Summe anderer Werte entstehen (Wertunabhängigkeit).
+
+\paragraph{b)} 
+Die Funktion \texttt{getBytes} weißt jedem Buchstaben aus $\Sigma$ eine eindeutige natürliche Zahl zu. Betrachte folgende Hashfunktion $h\colon \Sigma^* \rightarrow \mathbb N$
+$$h(w_1\dots w_n)= \sum \limits_{i=1}^n \mathtt{getBytes}(w_i)$$
+Zeigen Sie, dass die Hashfunktion $h$ zwei Anagramme auf denselben Hashwert abbildet. \\
+
+Da $h(w_{1}, ..., w_{n})= \sum^{n}_{i=1} getBytes(w_{i})$ gilt und $\sum^{n}_{i=1} getBytes(w_{i})=w_{1}+...+w_{n}$, so ist nach Kommutativgesetz die Reihenfolge der Summanden für den Ergebniswert irrelevant, so das alle Permutationen derselbe Summand zum selben Wert führen. \\
+
+$\Rightarrow$ Zwei Argumente bilden auf denselben Wert ab, da ihre Summanden gleich sind.
+
+\paragraph{c)} 
+Warum ist die Funktion dennoch ungeeignet, um Anagramme zu filtern? Welche Strings werden noch auf dieselben Hashwerte abgebildet? \\
+
+Da zwei Hashwerte summiert den Hashwert eines anderen Symbols erzeugen können, kann z.B. $h(w_{1},w_{2},w_{3})=h(w_{1},w_{4})$ gelten, falls $w_{2}+w_{3}=w_{4}$. Unterschiedliche Werte können also denselben Hashwert erzeugen.
+
+\paragraph{d)}
+Modifizieren Sie die Hashfunktion so, dass sie sich besser dazu eignet Anagramme zu filtern. Begründen Sie, warum sich Ihre neue Hashfunktion besser verhalten sollte und zeigen Sie, dass sie immer noch zwei Anagramme auf denselben Wert abbildet. \\
+
+Wähle als Hashwert für einzelne Symbole Primzahlen. \\
+$getBytes(w_{i})$ soll also für alle existierende Symbole eine Primzahl sein. Da Summen von Primzahlen immer eindeutig sind. (Beweis: Primfaktorzerlegung, Multiplikationen sind vor Schreibweise für Addition)
+
+%----------------------------------------------------------------------------
+\subsection{Hashing}
+Betrachten Sie die folgende Hashfunktion
+
+\begin{align*}
+  h_{a,b,m}\colon\ \ &\rightarrow \{0,\dots, m-1\}\\
+  x &\mapsto( a x +b) \bmod m
+\end{align*}
+
+und die Eingabewerte
+$$S = \{13,45,64,78,116\}\enspace.$$
+
+\paragraph{a)}
+ Geben Sie Werte für $a$, $b$ und $m$ an, sodass
+
+\subparagraph{i.)}
+ alle Werte aus $S$ auf den selben Hashwert abgebildet werden. \\
+  \begin{itemize}
+ \item a=0
+ \item b=4
+ \item m=3
+ \end{itemize} \\
+ 
+ Dann ist $h_{0,4,3}(x)$ eine Konstante, die alle Werte auf 4 mod 3 = 1 abbildet.
+ 
+\subparagraph{ii.)}
+alle Werte aus $S$ auf unterschiedliche Hashwerte abgebildet werden. \\
+ \begin{itemize}
+ \item a=1
+ \item b=0
+ \item m=10
+ \end{itemize} \\
+ 
+ Dann ist $h_{1,0,10}(13)=3$ , $h_{1,0,10}(45)=5$, $h_{1,0,10}(64)=4$, $h_{1,0,10}(78)=8$ und $h_{1,0,10}(116)=6$, also alles verschiedene Werte.    
+
+\paragraph{b)} 
+Sei $g_i(x) \; {\color{darkgray}:=(}  h_{1,0,5}(x) + i) \bmod 5$. Geben Sie jeweils die Hashtabelle an, die entsteht, wenn $S$ in aufsteigender Reihenfolge in eine zuvor leere Hashtabelle eingefügt wird. Verwenden Sie dabei die folgenden Kollisionsauflösungsstrategien:
+
+\subparagraph{i.)}
+Verkettetes Hashing mit der Hashfunktion $g_0$ \\
+
+\includegraphics[width=10cm,height=5cm]{hashbi.png} \\
+
+\subparagraph{ii.)}
+Hashing mit offener Adressierung mit ${(g_i)}_{i\geq 0}$ \\
+
+\includegraphics[width=10cm,height=5cm]{hashbii.png} \\
+
+\paragraph{c)}
+ Zeigen Sie, dass es für alle Werte von $a$ und $b$ bei $m=5$ zu Kollisionen kommt. \\
+ 
+ Beweis: \\
+ Seien a und b beliebig \\
+ Umformen der mod-Rechenregeln: \\
+ $h_{a,b,5}(x)=(a*x+b) mod 5 = (((a*x) mod 5) +b) mod 5$ \\
+ $= (((x*a) mod 5)+b) mod 5 = ((((x mod 5)*a) mod 5) +b) mod 5$ \\
+ Einmaliges Einsetzen für x die Werte 13 und 78 \\
+ zz. das folgende Gleichung für alle a,b gilt : \\
+ $((((13 mod 5)*a) mod 5)+b) mod 5 =((((78 mod 5)*a) mod 5)+b) mod 5$ \\
+ $\Leftrightarrow (((3*a) mod 5)+b) mod 5 = ((((3*a) mod 5)+b) mod 5$ \\
+ 
+ Es gibt also unendlich viele Lösungen für diese Gleichung, d.h. diese gilt für alle a,b. Daraus folgt, dass es immer zur Kollision bei $m=5$ kommt. \\
+ 
+\paragraph{d)} 
+Geben Sie Werte für $a$, $b$ und $m$ an, sodass $m$ minimal ist und alle Werte aus $S$ auf unterschiedliche Hashwerte abgebildet werden. \\
+ \begin{itemize}
+ \item a=1
+ \item b=0
+ \item m=6
+ \end{itemize} \\
+ 
+ Kontrolle:
+  \begin{itemize}
+ \item 13 mod 6 =1
+ \item 45 mod 6 = 3
+ \item 64 mod 6 = 4
+ \item 78 mod 6 = 0
+ \item 116 mod 6 = 2
+ \end{itemize} \\
+ 
+ Man sieht, dass $m=6$ minimal ist, da wir bei $m=5$ in c) gesehen haben, dass es da nicht möglich war und das es bei kleineren m's auch nicht möglich wäre, da man dann auf zu wenigen unterschiedlichen Fächern abbilden könnte.
+ 
 %----------------------------------------------------------------------------------------
 \newpage
 \section{Blatt 10}
