@@ -1,20 +1,20 @@
 \contentsline {section}{\numberline {1}Blatt 0}{3}
-\contentsline {subsection}{\numberline {1.1}Aufgabe 1: Logarithmus}{3}
+\contentsline {subsection}{\numberline {1.1}Logarithmus}{3}
 \contentsline {paragraph}{\nonumberline a)}{3}
 \contentsline {paragraph}{\nonumberline b)}{3}
 \contentsline {paragraph}{\nonumberline c)}{3}
-\contentsline {subsection}{\numberline {1.2}Aufgabe 2: Summenformel}{3}
+\contentsline {subsection}{\numberline {1.2}Summenformel}{3}
 \contentsline {paragraph}{\nonumberline a) Kleiner Gau\IeC {\ss }}{3}
 \contentsline {paragraph}{\nonumberline b)}{3}
 \contentsline {paragraph}{\nonumberline c)}{3}
-\contentsline {subsection}{\numberline {1.3}Aufgabe 3: Ereignisraum und Ereignisse}{3}
+\contentsline {subsection}{\numberline {1.3}Ereignisraum und Ereignisse}{3}
 \contentsline {paragraph}{\nonumberline a)}{3}
 \contentsline {paragraph}{\nonumberline b)}{3}
 \contentsline {paragraph}{\nonumberline c)}{3}
-\contentsline {subsection}{\numberline {1.4}Aufgabe 4: Zufallsvariable}{4}
+\contentsline {subsection}{\numberline {1.4}Zufallsvariable}{4}
 \contentsline {paragraph}{\nonumberline a)}{4}
 \contentsline {paragraph}{\nonumberline b)}{4}
-\contentsline {subsection}{\numberline {1.5}Aufgabe 5: Erwartungswert und Varianz}{4}
+\contentsline {subsection}{\numberline {1.5}Erwartungswert und Varianz}{4}
 \contentsline {paragraph}{\nonumberline a)}{4}
 \contentsline {paragraph}{\nonumberline b)}{4}
 \contentsline {paragraph}{\nonumberline c)}{4}
@@ -22,44 +22,155 @@
 \contentsline {section}{\numberline {2}Tutorium 23.04.2018: Rekursion}{6}
 \contentsline {subsection}{\numberline {2.1}Beispiele}{6}
 \contentsline {section}{\numberline {3}Blatt 01}{7}
+\contentsline {subsection}{\numberline {3.1}O-Notation}{7}
 \contentsline {paragraph}{\nonumberline a)}{7}
 \contentsline {paragraph}{\nonumberline b)}{7}
 \contentsline {paragraph}{\nonumberline c)}{7}
 \contentsline {paragraph}{\nonumberline d)}{7}
+\contentsline {subsection}{\numberline {3.2}Mastertheorem}{7}
 \contentsline {paragraph}{\nonumberline a)}{7}
 \contentsline {paragraph}{\nonumberline b)}{7}
 \contentsline {paragraph}{\nonumberline c)}{7}
+\contentsline {subsection}{\numberline {3.3}Rekursionen aus alten Klausuren und geometrische Summenformel}{8}
 \contentsline {paragraph}{\nonumberline a)}{8}
 \contentsline {paragraph}{\nonumberline b)}{8}
 \contentsline {paragraph}{\nonumberline c)}{8}
 \contentsline {paragraph}{\nonumberline d)}{8}
-\contentsline {section}{\numberline {4}Tern\IeC {\"a}re Suche}{9}
+\contentsline {section}{\numberline {4}Blatt 02}{9}
+\contentsline {subsection}{\numberline {4.1}Tern\IeC {\"a}re Suche}{9}
 \contentsline {paragraph}{\nonumberline a)}{9}
 \contentsline {paragraph}{\nonumberline b)}{9}
 \contentsline {paragraph}{\nonumberline c)}{10}
 \contentsline {paragraph}{\nonumberline d)}{10}
 \contentsline {paragraph}{\nonumberline e)}{11}
-\contentsline {section}{\numberline {5}Eine Anwendung der Bin\IeC {\"a}ren Suche}{11}
+\contentsline {subsection}{\numberline {4.2}Eine Anwendung der Bin\IeC {\"a}ren Suche}{11}
 \contentsline {paragraph}{\nonumberline a)}{11}
 \contentsline {paragraph}{\nonumberline b)}{12}
 \contentsline {paragraph}{\nonumberline c)}{12}
-\contentsline {section}{\numberline {6}Implementierung von Suchalgorithmen}{13}
-\contentsline {section}{\numberline {7}Sortieren}{13}
-\contentsline {paragraph}{\nonumberline a)}{13}
-\contentsline {paragraph}{\nonumberline b)}{14}
+\contentsline {subsection}{\numberline {4.3}Implementierung von Suchalgorithmen}{13}
+\contentsline {section}{\numberline {5}Blatt 03}{14}
+\contentsline {subsection}{\numberline {5.1}Sortieren}{14}
+\contentsline {paragraph}{\nonumberline a)}{14}
+\contentsline {paragraph}{\nonumberline b)}{15}
 \contentsline {paragraph}{\nonumberline c)}{15}
-\contentsline {paragraph}{\nonumberline d)}{15}
+\contentsline {paragraph}{\nonumberline d)}{16}
 \contentsline {paragraph}{\nonumberline e)}{16}
-\contentsline {section}{\numberline {8}Heapsort}{16}
-\contentsline {paragraph}{\nonumberline a)}{16}
+\contentsline {subsection}{\numberline {5.2}Heapsort}{17}
+\contentsline {paragraph}{\nonumberline a)}{17}
 \contentsline {paragraph}{\nonumberline b)}{19}
 \contentsline {paragraph}{\nonumberline c)}{19}
-\contentsline {paragraph}{\nonumberline d)}{19}
-\contentsline {section}{\numberline {9}Eine Erweiterung von Heapsort}{20}
+\contentsline {paragraph}{\nonumberline d)}{20}
+\contentsline {subsection}{\numberline {5.3}Eine Erweiterung von Heapsort}{20}
 \contentsline {paragraph}{\nonumberline a)}{20}
-\contentsline {paragraph}{\nonumberline b)}{20}
-\contentsline {paragraph}{\nonumberline c)}{20}
-\contentsline {section}{\numberline {10}Zwei-Drittel-Sortieren}{21}
+\contentsline {paragraph}{\nonumberline b)}{21}
+\contentsline {paragraph}{\nonumberline c)}{21}
+\contentsline {subsection}{\numberline {5.4}Zwei-Drittel-Sortieren}{22}
 \contentsline {paragraph}{\nonumberline a)}{22}
-\contentsline {paragraph}{\nonumberline b)}{22}
-\contentsline {paragraph}{\nonumberline c)}{22}
+\contentsline {paragraph}{\nonumberline b)}{23}
+\contentsline {paragraph}{\nonumberline c)}{23}
+\contentsline {section}{\numberline {6}Blatt 05}{24}
+\contentsline {subsection}{\numberline {6.1}Bucketsort}{24}
+\contentsline {subsection}{\numberline {6.2}Mediansuche in Linearzeit}{24}
+\contentsline {paragraph}{\nonumberline a)}{24}
+\contentsline {paragraph}{\nonumberline b)}{25}
+\contentsline {paragraph}{\nonumberline I)}{25}
+\contentsline {paragraph}{\nonumberline II)}{25}
+\contentsline {subsection}{\numberline {6.3}Median in sortierten Arrays}{26}
+\contentsline {paragraph}{\nonumberline a)}{26}
+\contentsline {paragraph}{\nonumberline b)}{26}
+\contentsline {subsection}{\numberline {6.4}Konvexe H\IeC {\"u}lle}{27}
+\contentsline {subsection}{\numberline {6.5}Untere Schranke}{28}
+\contentsline {paragraph}{\nonumberline a)}{28}
+\contentsline {paragraph}{\nonumberline b)}{28}
+\contentsline {section}{\numberline {7}Blatt 06}{29}
+\contentsline {subsection}{\numberline {7.1}AVL-B\IeC {\"a}ume}{29}
+\contentsline {paragraph}{\nonumberline a)}{29}
+\contentsline {paragraph}{\nonumberline b)}{30}
+\contentsline {paragraph}{\nonumberline c)}{31}
+\contentsline {subsection}{\numberline {7.2}Bin\IeC {\"a}re Suchb\IeC {\"a}ume}{31}
+\contentsline {paragraph}{\nonumberline a)}{31}
+\contentsline {paragraph}{\nonumberline b)}{32}
+\contentsline {paragraph}{\nonumberline c)}{32}
+\contentsline {subsection}{\numberline {7.3}Rot-Schwarz-B\IeC {\"a}ume}{33}
+\contentsline {paragraph}{\nonumberline a)}{33}
+\contentsline {paragraph}{\nonumberline b)}{34}
+\contentsline {paragraph}{\nonumberline c)}{34}
+\contentsline {paragraph}{\nonumberline d)}{34}
+\contentsline {subsection}{\numberline {7.4}Implementation von Bin\IeC {\"a}ren Suchb\IeC {\"a}umen}{34}
+\contentsline {paragraph}{\nonumberline a)}{34}
+\contentsline {paragraph}{\nonumberline b)}{34}
+\contentsline {section}{\numberline {8}Blatt 07}{35}
+\contentsline {subsection}{\numberline {8.1}Anwendung von AVL-B\IeC {\"a}umen}{35}
+\contentsline {subsubsection}{\numberline {8.1.1}Korrektur}{36}
+\contentsline {subsection}{\numberline {8.2}B-B\IeC {\"a}ume}{37}
+\contentsline {paragraph}{\nonumberline a)}{37}
+\contentsline {paragraph}{\nonumberline b)}{38}
+\contentsline {subsection}{\numberline {8.3}(2,4)-B\IeC {\"a}ume}{40}
+\contentsline {paragraph}{\nonumberline a)}{40}
+\contentsline {paragraph}{\nonumberline b)}{40}
+\contentsline {subsection}{\numberline {8.4}Amortisierte Analyse}{40}
+\contentsline {paragraph}{\nonumberline a)}{41}
+\contentsline {paragraph}{\nonumberline b)}{42}
+\contentsline {section}{\numberline {9}Tutorium 18.06.2018: Dynamisches Programmieren}{43}
+\contentsline {section}{\numberline {10}Blatt 08}{44}
+\contentsline {subsection}{\numberline {10.1}Skiplists}{44}
+\contentsline {subsection}{\numberline {10.2}Skiplists und Bin\IeC {\"a}re Suchb\IeC {\"a}ume}{47}
+\contentsline {subsection}{\numberline {10.3}Dynamisches Programmieren}{47}
+\contentsline {paragraph}{\nonumberline a)}{48}
+\contentsline {paragraph}{\nonumberline b)}{48}
+\contentsline {subparagraph}{\nonumberline 1.}{48}
+\contentsline {subparagraph}{\nonumberline 2.}{49}
+\contentsline {paragraph}{\nonumberline c)}{49}
+\contentsline {paragraph}{\nonumberline d)}{49}
+\contentsline {subsection}{\numberline {10.4}Dynamisches Prog.: Palindrom}{49}
+\contentsline {paragraph}{\nonumberline a)}{50}
+\contentsline {paragraph}{\nonumberline b)}{50}
+\contentsline {paragraph}{\nonumberline c)}{51}
+\contentsline {paragraph}{\nonumberline d)}{51}
+\contentsline {section}{\numberline {11}Blatt 09}{52}
+\contentsline {subsection}{\numberline {11.1}Dynamisches Programmieren}{52}
+\contentsline {paragraph}{\nonumberline a)}{52}
+\contentsline {paragraph}{\nonumberline b)}{52}
+\contentsline {subsection}{\numberline {11.2}Programmieraufgabe}{52}
+\contentsline {paragraph}{\nonumberline a)}{52}
+\contentsline {paragraph}{\nonumberline b)}{53}
+\contentsline {subsection}{\numberline {11.3}Anagramme}{53}
+\contentsline {paragraph}{\nonumberline a)}{53}
+\contentsline {paragraph}{\nonumberline b)}{53}
+\contentsline {paragraph}{\nonumberline c)}{53}
+\contentsline {paragraph}{\nonumberline d)}{53}
+\contentsline {subsection}{\numberline {11.4}Hashing}{54}
+\contentsline {paragraph}{\nonumberline a)}{54}
+\contentsline {subparagraph}{\nonumberline i.)}{54}
+\contentsline {subparagraph}{\nonumberline ii.)}{54}
+\contentsline {paragraph}{\nonumberline b)}{54}
+\contentsline {subparagraph}{\nonumberline i.)}{55}
+\contentsline {subparagraph}{\nonumberline ii.)}{55}
+\contentsline {paragraph}{\nonumberline c)}{55}
+\contentsline {paragraph}{\nonumberline d)}{56}
+\contentsline {section}{\numberline {12}Blatt 10}{57}
+\contentsline {subsection}{\numberline {12.1}Grapheigenschaften}{57}
+\contentsline {paragraph}{\nonumberline a)}{57}
+\contentsline {paragraph}{\nonumberline b)}{57}
+\contentsline {paragraph}{\nonumberline c)}{57}
+\contentsline {paragraph}{\nonumberline d)}{57}
+\contentsline {subsection}{\numberline {12.2}Adjazenzmatrix vs. Adjazenzliste}{57}
+\contentsline {paragraph}{\nonumberline a)}{58}
+\contentsline {paragraph}{\nonumberline b)}{58}
+\contentsline {paragraph}{\nonumberline c)}{59}
+\contentsline {paragraph}{\nonumberline d)}{59}
+\contentsline {subsection}{\numberline {12.3}Dijkstra-Algorithmus}{59}
+\contentsline {subsection}{\numberline {12.4}Anwendung von Dijkstra}{60}
+\contentsline {paragraph}{\nonumberline a)}{60}
+\contentsline {paragraph}{\nonumberline b)}{60}
+\contentsline {paragraph}{\nonumberline c)}{61}
+\contentsline {section}{\numberline {13}Blatt 11}{62}
+\contentsline {subsection}{\numberline {13.1}Algorithmenentwurf}{62}
+\contentsline {subsection}{\numberline {13.2}Maximum Bottleneck Path}{62}
+\contentsline {paragraph}{\nonumberline a)}{62}
+\contentsline {paragraph}{\nonumberline b)}{62}
+\contentsline {subsection}{\numberline {13.3}Bellman/Ford-Algorithmus}{63}
+\contentsline {subsection}{\numberline {13.4}Floyd/Warshall-Algorithmus}{65}
+\contentsline {paragraph}{\nonumberline a)}{66}
+\contentsline {paragraph}{\nonumberline b)}{66}
+\contentsline {subsection}{\numberline {13.5}Programmieraufgabe: Dijkstra-Algorithmus}{66}
