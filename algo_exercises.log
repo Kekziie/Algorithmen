@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.23)  13 JUL 2018 14:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.23)  13 JUL 2018 14:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -955,7 +955,32 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \c@algocf=\count125
 \algocf@algoframe=\box69
 \algocf@algobox=\box70
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count126
+\lst@gtempboxa=\box71
+\lst@token=\toks38
+\lst@length=\count127
+\lst@currlwidth=\dimen173
+\lst@column=\count128
+\lst@pos=\count129
+\lst@lostspace=\dimen174
+\lst@width=\dimen175
+\lst@newlines=\count130
+\lst@lineno=\count131
+\lst@maxwidth=\dimen176
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count132
+\lst@skipnumbers=\count133
+\lst@framebox=\box72
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
@@ -1266,7 +1291,7 @@ LaTeX Font Info:    Redeclaring math accent \mathring on input line 256.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count126
+\c@lips@count=\count134
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
@@ -1278,7 +1303,7 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 (scrartcl)              I'd suggest to use 
 (scrartcl)              package `scrlayer-scrpage'.
 (scrartcl)              Nevertheless, using requested
-(scrartcl)              package `fancyhdr' on input line 24.
+(scrartcl)              package `fancyhdr' on input line 25.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
@@ -1295,67 +1320,67 @@ Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 (./algo_exercises.aux)
 \openout1 = `algo_exercises.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 55.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 56.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 56.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 55.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 55.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 56.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 56.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 55.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 55.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 56.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 56.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 55.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 56.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 55.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 56.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count127
-\scratchdimen=\dimen173
-\scratchbox=\box71
-\nofMPsegments=\count128
-\nofMParguments=\count129
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count130
-\MPscratchDim=\dimen174
-\MPnumerator=\count131
-\makeMPintoPDFobject=\count132
-\everyMPtoPDFconversion=\toks39
+\scratchcounter=\count135
+\scratchdimen=\dimen177
+\scratchbox=\box73
+\nofMPsegments=\count136
+\nofMParguments=\count137
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count138
+\MPscratchDim=\dimen178
+\MPnumerator=\count139
+\makeMPintoPDFobject=\count140
+\everyMPtoPDFconversion=\toks40
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1406,39 +1431,40 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 57.
+\c@lstlisting=\count141
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 58.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 57
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 58
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 57.
+(Font)              scaled to size 13.24796pt on input line 58.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 57.
+(Font)              scaled to size 9.19998pt on input line 58.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 57.
-LaTeX Font Info:    Try loading font information for U+msa on input line 57.
+(Font)              scaled to size 7.35999pt on input line 58.
+LaTeX Font Info:    Try loading font information for U+msa on input line 58.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 57.
+LaTeX Font Info:    Try loading font information for U+msb on input line 58.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 57.
+(Font)              scaled to size 13.24796pt on input line 58.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 57.
+(Font)              scaled to size 9.19998pt on input line 58.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 57.
+(Font)              scaled to size 7.35999pt on input line 58.
  [1
 
 
@@ -1449,7 +1475,7 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 58.
+ne 59.
 
 (./algo_exercises.toc)
 \tf@toc=\write4
@@ -1457,29 +1483,24 @@ ne 58.
 
  [2]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 66.
+(Font)              scaled to size 10.07397pt on input line 67.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 66.
+(Font)              scaled to size 7.63599pt on input line 67.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 66.
+(Font)              scaled to size 5.51999pt on input line 67.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 66.
+(Font)              scaled to size 10.07397pt on input line 67.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 66.
+(Font)              scaled to size 7.63599pt on input line 67.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 66.
+(Font)              scaled to size 5.51999pt on input line 67.
 
-! Misplaced alignment tab character &.
-l.78 $\Rightarrow b^{x_{1}} = x &
-                                  b^{x_{2}} = y$
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
 [3] [4] [5]
-Overfull \hbox (18.07272pt too wide) in paragraph at lines 206--217
+Overfull \hbox (18.07272pt too wide) in paragraph at lines 207--218
 []\T1/futs/m/n/10.95 IB: $\FML/futmi/m/it/10.95 T\T1/futs/m/n/10.95 (\FML/futmi
 /m/it/10.95 n\T1/futs/m/n/10.95 ) :\FMS/futm/m/n/10.95 Å [][] \T1/futs/m/n/10.9
 5 2[] \FMS/futm/m/n/10.95 Ä \FML/futmi/m/it/10.95 T\T1/futs/m/n/10.95 (\FML/fut
@@ -1490,443 +1511,324 @@ mi/m/it/10.95 n \FMS/futm/m/n/10.95 ^^@ \FML/futmi/m/it/10.95 i\T1/futs/m/n/10.
  \T1/futs/m/n/10.95 2[] \FMS/futm/m/n/10.95 Ä
  []
 
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 233
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 234
 .
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 ) [6]
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
-[7]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.344 
-      
-? 
-! Display math should end with $$.
-<to be read again> 
-                   \par 
-l.344 
-      
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.346 
-      
-? 
-! Display math should end with $$.
-<to be read again> 
-                   \par 
-l.346 
-      
-? 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
+[7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
 
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 365.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 364.
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--366
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 367--370
+Underfull \hbox (badness 10000) in paragraph at lines 359--365
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--377
+Underfull \hbox (badness 10000) in paragraph at lines 366--369
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
+Underfull \hbox (badness 10000) in paragraph at lines 370--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--389
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--396
+Underfull \hbox (badness 10000) in paragraph at lines 382--388
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--395
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 397--402
+Underfull \hbox (badness 10000) in paragraph at lines 396--401
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
 
  []
 
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 410.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 409.
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--438
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
 
  []
 
-! Undefined control sequence.
-<recently read> \calO 
-                      
-l.459 ... diese Frage in quadratischer Zeit $\calO
-                                                  (n^2)$ beantwortet. Geben ...
 
-? 
-! Undefined control sequence.
-<recently read> \calO 
-                      
-l.459 ...warum Ihr Algorithmus die Laufzeit $\calO
-                                                  (n^2)$ hat. \\
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 459--460
+Underfull \hbox (badness 10000) in paragraph at lines 458--459
 
  []
 
 [11]
 ! Undefined control sequence.
-<recently read> \calO 
-                      
-l.482 ... obige Frage in einer Laufzeit von $\calO
+<recently read> \mathcalO 
+                          
+l.481 ...ge Frage in einer Laufzeit von $\mathcalO
                                                   (n\log n)$ beantworten kan...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--483
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
 
  []
 
 ! Undefined control sequence.
-<recently read> \calO 
-                      
-l.502 ... obige Frage in einer Laufzeit von $\calO
+<recently read> \mathcalO 
+                          
+l.501 ...ge Frage in einer Laufzeit von $\mathcalO
                                                   (n)$ beantwortet. Geben Si...
 
 ? 
 
-Overfull \hbox (2.07004pt too wide) in paragraph at lines 502--503
+Overfull \hbox (2.07004pt too wide) in paragraph at lines 501--502
 [] \T1/futs/m/sc/10.95 c)[][] \T1/futs/m/n/10.95 Es ist klar, dass ein Al-go-ri
 th-mus f¸r die obige Frage min-destens die Laufzeit $\FML/futm/m/it/10.95 
 \T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 n\T1/futs/m/n/10.95 )$ benˆtigt.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--503
+Underfull \hbox (badness 10000) in paragraph at lines 501--502
 
  []
 
 [12]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 524.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 523.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [13]
-Overfull \hbox (0.39099pt too wide) in paragraph at lines 538--539
+Overfull \hbox (0.39099pt too wide) in paragraph at lines 537--538
 \T1/futs/m/n/10.95 Betrachten Sie die Al-go-rith-men \T1/cmtt/m/n/10.95 Inserti
 onsort \T1/futs/m/n/10.95 und \T1/cmtt/m/n/10.95 Minimumsuche + Austausch \T1/f
 uts/m/n/10.95 (Schema-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 541--542
-
- []
-
-
-! LaTeX Error: Environment lstlisting undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.543 \begin{lstlisting}
-                        
-? 
-
-! LaTeX Error: \begin{document} ended by \end{lstlisting}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.568 \end{lstlisting}
-                      
-? 
-
-! LaTeX Error: Environment lstlisting undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.570 \begin{lstlisting}
-                        
-? 
-
-! LaTeX Error: \begin{document} ended by \end{lstlisting}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.596 \end{lstlisting}
-                      
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 599--600
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 601--609
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 611--615
+Underfull \hbox (badness 10000) in paragraph at lines 540--541
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 617--618
+Underfull \hbox (badness 10000) in paragraph at lines 598--599
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 619--626
+Underfull \hbox (badness 10000) in paragraph at lines 600--608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 628--629
+Underfull \hbox (badness 10000) in paragraph at lines 610--614
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--637
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 630--637
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 638--639
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 640--648
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 640--648
+Underfull \hbox (badness 10000) in paragraph at lines 616--617
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 654--655
+Underfull \hbox (badness 10000) in paragraph at lines 618--625
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 663--664
+Underfull \hbox (badness 10000) in paragraph at lines 627--628
 
  []
 
 
-Overfull \hbox (15.29044pt too wide) in paragraph at lines 685--686
+Underfull \hbox (badness 10000) in paragraph at lines 629--636
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--636
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 637--638
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 639--647
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 639--647
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 653--654
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 662--663
+
+ []
+
+
+Overfull \hbox (15.29044pt too wide) in paragraph at lines 684--685
 \T1/futs/m/n/10.95 Schritt 2: 2. Array-Element wird in Heap einge-f¸gt und Heap
 -Eingeschaft gepr¸ft und hergestellt. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 685--686
+Underfull \hbox (badness 10000) in paragraph at lines 684--685
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 700--701
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+Underfull \hbox (badness 10000) in paragraph at lines 699--700
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 739--740
+Underfull \hbox (badness 10000) in paragraph at lines 717--718
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 738--739
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 763--764
+Underfull \hbox (badness 10000) in paragraph at lines 762--763
 
  []
 
 
-Overfull \hbox (15.29044pt too wide) in paragraph at lines 815--816
+Overfull \hbox (15.29044pt too wide) in paragraph at lines 814--815
 \T1/futs/m/n/10.95 Schritt 7: 7. Array-Element wird in Heap einge-f¸gt und Heap
 -Eigenschaft gepr¸ft und hergestellt. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--816
-
- []
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 845--846
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 912--913
+Underfull \hbox (badness 10000) in paragraph at lines 814--815
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 944--947
+Underfull \hbox (badness 10000) in paragraph at lines 844--845
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 949--950
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 982--984
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 986--987
+Underfull \hbox (badness 10000) in paragraph at lines 911--912
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 996--997
+Underfull \hbox (badness 10000) in paragraph at lines 943--946
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1000--1007
+Underfull \hbox (badness 10000) in paragraph at lines 948--949
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1008--1010
+Underfull \hbox (badness 10000) in paragraph at lines 981--983
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1012--1013
+Underfull \hbox (badness 10000) in paragraph at lines 985--986
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 995--996
 
  []
 
 
-Overfull \hbox (36.2665pt too wide) in paragraph at lines 1017--1018
+Underfull \hbox (badness 10000) in paragraph at lines 999--1006
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1009
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1012
+
+ []
+
+
+Overfull \hbox (36.2665pt too wide) in paragraph at lines 1016--1017
 [] \T1/futs/m/sc/10.95 c)[][] \T1/futs/m/n/10.95 Geben Sie Pseu-docode f¸r ef-f
 iziente Im-ple-men-tierun-gen der Meth-o-den \T1/cmtt/m/n/10.95 Insert \T1/futs
 /m/n/10.95 und \T1/cmtt/m/n/10.95 ExtractMin
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1017--1018
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1017
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1044
 
  []
 
 
-! LaTeX Error: Environment lstlisting undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1021 \begin{lstlisting}
-                         
-? 
-
-! LaTeX Error: \begin{document} ended by \end{lstlisting}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1042 \end{lstlisting}
-                       
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1043--1045
+Underfull \hbox (badness 10000) in paragraph at lines 1067--1069
 
  []
 
-
-! LaTeX Error: Environment lstlisting undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1046 \begin{lstlisting}
-                         
-? 
-[20]
-
-! LaTeX Error: \begin{document} ended by \end{lstlisting}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1067 \end{lstlisting}
-                       
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1068--1070
-
- []
-
-
-Overfull \hbox (9.0883pt too wide) in paragraph at lines 1091--1092
+[22]
+Overfull \hbox (9.0883pt too wide) in paragraph at lines 1090--1091
 [] \T1/futs/m/sc/10.95 a)[][] \T1/futs/m/n/10.95 Ar-gu-men-tieren Sie, dass \T1
 /cmtt/m/n/10.95 ZweiDrittelSortieren\T1/futs/m/n/10.95 ($\FML/futmi/m/it/10.95 
 A$\T1/futs/m/n/10.95 , $1$, $\FML/futmi/m/it/10.95 n$\T1/futs/m/n/10.95 ) das A
@@ -1935,359 +1837,359 @@ r-ray $\FML/futmi/m/it/10.95 A\T1/futs/m/n/10.95 [1\FML/futmi/m/it/10.95 ::n\T1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1091--1092
+Underfull \hbox (badness 10000) in paragraph at lines 1090--1091
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1093--1103
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1093--1103
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1102
 
  []
 
 
-Overfull \hbox (3.2418pt too wide) in paragraph at lines 1093--1103
+Overfull \hbox (3.2418pt too wide) in paragraph at lines 1092--1102
 \T1/futs/m/n/10.95 Das mit-tlere Drit-tel besteht aus min-destens k El-e-menten
  und die k grˆˇten El-e-mente befinden
  []
 
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 1105--1106
+
+Underfull \hbox (badness 10000) in paragraph at lines 1104--1105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1113
+Underfull \hbox (badness 10000) in paragraph at lines 1106--1112
 
  []
 
-
-Overfull \hbox (32.51114pt too wide) in paragraph at lines 1115--1116
+[23]
+Overfull \hbox (32.51114pt too wide) in paragraph at lines 1114--1115
 [] \T1/futs/m/sc/10.95 c)[][] \T1/futs/m/n/10.95 Ist Zwei-Drittel-Sortieren im 
 worst-case ef-fizien-ter als In-sert-sort, Min-i-mum-suche+Austauschen,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1115--1116
+Underfull \hbox (badness 10000) in paragraph at lines 1114--1115
 
  []
 
 
-Overfull \hbox (0.56514pt too wide) in paragraph at lines 1117--1122
+Overfull \hbox (0.56514pt too wide) in paragraph at lines 1116--1121
 \T1/futs/m/n/10.95 Quicksort hat die Worst-Case Laufzeit $\FMS/futm/m/n/10.95 O
 \T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 n[]\T1/futs/m/n/10.95 )$, zwei-Dritte
 l-Sortieren ist also deut-lich schneller. 
  []
 
 
-Overfull \hbox (4.58365pt too wide) in paragraph at lines 1117--1122
+Overfull \hbox (4.58365pt too wide) in paragraph at lines 1116--1121
 \T1/futs/m/n/10.95 Heapsort hat die Worst-Case Laufzeit $\FMS/futm/m/n/10.95 O\
 T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 n [] n\T1/futs/m/n/10.95 )$, zwei-Drit
 tel-Sortieren ist also et-was schneller. 
  []
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 1128--1131
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 1127--1130
 
  []
 
 
-Overfull \hbox (39.05135pt too wide) in paragraph at lines 1132--1137
+Overfull \hbox (39.05135pt too wide) in paragraph at lines 1131--1136
 \T1/futs/m/n/10.95 Die L‰nge hi-erzu l‰sst sich mit $[][] \FML/futmi/m/it/10.95
  i$ \T1/futs/m/n/10.95 bei fes-tem k bes-tim-men, was $\FML/futmi/m/it/10.95 St
 ellenlaenge \FMS/futm/m/n/10.95 ^^C
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1132--1137
+Underfull \hbox (badness 10000) in paragraph at lines 1131--1136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1143--1147
+Underfull \hbox (badness 10000) in paragraph at lines 1142--1146
 
  []
 
 
-Overfull \hbox (40.13437pt too wide) in paragraph at lines 1150--1151
+Overfull \hbox (40.13437pt too wide) in paragraph at lines 1149--1150
 []\T1/futs/m/n/10.95 Bestimme das Min-i-mum unter allen Zahlen, die im Zahlen-p
 aar kleiner waren im Vergleich($\FMS/futm/m/n/10.95 b[]c ^^@
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1155--1156
+Underfull \hbox (badness 10000) in paragraph at lines 1154--1155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1157--1158
+Underfull \hbox (badness 10000) in paragraph at lines 1156--1157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1159--1160
+Underfull \hbox (badness 10000) in paragraph at lines 1158--1159
 
  []
 
-[23]
-Overfull \hbox (0.41667pt too wide) in paragraph at lines 1173--1174
+[25]
+Overfull \hbox (0.41667pt too wide) in paragraph at lines 1172--1173
 [] \T1/futs/m/sc/10.95 b)[][] \T1/futs/m/n/10.95 F¸r die Laufzei-t-anal-yse der
  Me-di-anbes-tim-mung er-gab sich bei einer Un-terteilung in F¸n-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1186
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1188
+Underfull \hbox (badness 10000) in paragraph at lines 1186--1187
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1190
+Underfull \hbox (badness 10000) in paragraph at lines 1188--1189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1191--1192
+Underfull \hbox (badness 10000) in paragraph at lines 1190--1191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1193--1194
+Underfull \hbox (badness 10000) in paragraph at lines 1192--1193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1195--1196
+Underfull \hbox (badness 10000) in paragraph at lines 1194--1195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1197--1198
+Underfull \hbox (badness 10000) in paragraph at lines 1196--1197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1199--1200
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1201--1202
+Underfull \hbox (badness 10000) in paragraph at lines 1200--1201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1206--1208
+Underfull \hbox (badness 10000) in paragraph at lines 1205--1207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1209--1210
+Underfull \hbox (badness 10000) in paragraph at lines 1208--1209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1211--1212
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1211
 
  []
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 1213--1214
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1215--1216
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1217--1218
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1219--1220
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1229
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1252--1253
-
- []
-
-[25]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1284 
-       
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1285--1286
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1292 
-       
-? 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 1315--1317
+Underfull \hbox (badness 10000) in paragraph at lines 1212--1213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1324--1325
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1215
 
  []
 
 
-Overfull \hbox (10.16206pt too wide) in paragraph at lines 1328--1331
+Underfull \hbox (badness 10000) in paragraph at lines 1216--1217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1218--1219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1227--1228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1251--1252
+
+ []
+
+[27]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1283 
+       
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1284--1285
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1291 
+       
+? 
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 1314--1316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1323--1324
+
+ []
+
+
+Overfull \hbox (10.16206pt too wide) in paragraph at lines 1327--1330
 [] \T1/futs/m/sc/10.95 b)[][] \T1/futs/m/n/10.95 Das zweite Prob-lem ist es, zu
  entschei-den, ob in der Liste $\FML/futmi/m/it/10.95 A$ \T1/futs/m/n/10.95 ein
  be-liebiger Wert $\FML/futmi/m/it/10.95 x$ \T1/futs/m/n/10.95 vorkommt.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1328--1331
+Underfull \hbox (badness 10000) in paragraph at lines 1327--1330
 
  []
 
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 1339--1340
-
- []
-
-
-! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1346 \end{tikzpicture}
-                        }
-? 
-! Extra }, or forgotten \endgroup.
-l.1346 \end{tikzpicture}}
-                         
-? 
-
-! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1359 \end{tikzpicture}
-                        }
-? 
-! Extra }, or forgotten \endgroup.
-l.1359 \end{tikzpicture}}
-                         
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1362--1365
-
- []
-
-
-! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1376 \end{tikzpicture}
-                        }
-? 
-! Extra }, or forgotten \endgroup.
-l.1376 \end{tikzpicture}}
-                         
-? 
-! Extra }, or forgotten \endgroup.
-l.1386 \end{tikzpicture}}
-                         
-? 
-! Extra }, or forgotten \endgroup.
-l.1411 \end{tikzpicture}}
-                         
-? 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 1414--1417
-
- []
-
-! Extra }, or forgotten \endgroup.
-l.1440 \end{tikzpicture}}
-                         
-? 
-! Extra }, or forgotten \endgroup.
-l.1460 \end{tikzpicture}}
-                         
-? 
-! Extra }, or forgotten \endgroup.
-l.1488 \end{tikzpicture}}
-                         
-? 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 1494--1495
+Underfull \hbox (badness 10000) in paragraph at lines 1338--1339
 
  []
 
+
+! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1345 \end{tikzpicture}
+                        }
+? 
 ! Extra }, or forgotten \endgroup.
-l.1521 \end{tikzpicture}}
+l.1345 \end{tikzpicture}}
+                         
+? 
+
+! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1358 \end{tikzpicture}
+                        }
+? 
+! Extra }, or forgotten \endgroup.
+l.1358 \end{tikzpicture}}
+                         
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1361--1364
+
+ []
+
+
+! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1375 \end{tikzpicture}
+                        }
+? 
+! Extra }, or forgotten \endgroup.
+l.1375 \end{tikzpicture}}
                          
 ? 
 ! Extra }, or forgotten \endgroup.
-l.1546 \end{tikzpicture}}
+l.1385 \end{tikzpicture}}
+                         
+? 
+! Extra }, or forgotten \endgroup.
+l.1410 \end{tikzpicture}}
                          
 ? 
 [30]
-! Extra }, or forgotten \endgroup.
-l.1572 \end{tikzpicture}}
-                         
-? 
-! Extra }, or forgotten \endgroup.
-l.1598 \end{tikzpicture}}
-                         
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1602--1603
+Underfull \hbox (badness 10000) in paragraph at lines 1413--1416
 
  []
 
+! Extra }, or forgotten \endgroup.
+l.1439 \end{tikzpicture}}
+                         
+? 
+! Extra }, or forgotten \endgroup.
+l.1459 \end{tikzpicture}}
+                         
+? 
+! Extra }, or forgotten \endgroup.
+l.1487 \end{tikzpicture}}
+                         
+? 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 1613--1615
+Underfull \hbox (badness 10000) in paragraph at lines 1493--1494
 
  []
 
 ! Extra }, or forgotten \endgroup.
-l.1629 \end{tikzpicture}}
+l.1520 \end{tikzpicture}}
+                         
+? 
+! Extra }, or forgotten \endgroup.
+l.1545 \end{tikzpicture}}
+                         
+? 
+[32]
+! Extra }, or forgotten \endgroup.
+l.1571 \end{tikzpicture}}
+                         
+? 
+! Extra }, or forgotten \endgroup.
+l.1597 \end{tikzpicture}}
+                         
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1601--1602
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 1612--1614
+
+ []
+
+! Extra }, or forgotten \endgroup.
+l.1628 \end{tikzpicture}}
                          
 ? 
 
@@ -2297,118 +2199,118 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1637 
+l.1636 
        
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1638--1643
+Underfull \hbox (badness 10000) in paragraph at lines 1637--1642
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1644--1645
+Underfull \hbox (badness 10000) in paragraph at lines 1643--1644
 
  []
 
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 1646--1647
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1654--1655
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 1645--1646
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1656--1658
+Underfull \hbox (badness 10000) in paragraph at lines 1653--1654
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1659--1660
+Underfull \hbox (badness 10000) in paragraph at lines 1655--1657
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1661--1662
+Underfull \hbox (badness 10000) in paragraph at lines 1658--1659
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1663--1664
+Underfull \hbox (badness 10000) in paragraph at lines 1660--1661
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1665--1666
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1663
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1667--1668
+Underfull \hbox (badness 10000) in paragraph at lines 1664--1665
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1669--1670
+Underfull \hbox (badness 10000) in paragraph at lines 1666--1667
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1671--1672
+Underfull \hbox (badness 10000) in paragraph at lines 1668--1669
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1675--1676
+Underfull \hbox (badness 10000) in paragraph at lines 1670--1671
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1677--1678
-
- []
-
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 1694--1695
+Underfull \hbox (badness 10000) in paragraph at lines 1674--1675
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1753--1757
+Underfull \hbox (badness 10000) in paragraph at lines 1676--1677
 
  []
 
-[34] <baum06A3b.jpg, id=124, 369.63094pt x 258.9675pt>
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 1693--1694
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1752--1756
+
+ []
+
+[36] <baum06A3b.jpg, id=130, 369.63094pt x 258.9675pt>
 File: baum06A3b.jpg Graphic file (type jpg)
  <use baum06A3b.jpg>
-Package pdftex.def Info: baum06A3b.jpg used on input line 1758.
+Package pdftex.def Info: baum06A3b.jpg used on input line 1757.
 (pdftex.def)             Requested size: 284.52644pt x 142.27054pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1758--1759
+Underfull \hbox (badness 10000) in paragraph at lines 1757--1758
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1761--1763
+Underfull \hbox (badness 10000) in paragraph at lines 1760--1762
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1767--1768
+Underfull \hbox (badness 10000) in paragraph at lines 1766--1767
 
  []
 
-[35 <./baum06A3b.jpg>]
-Overfull \hbox (10.14395pt too wide) in paragraph at lines 1788--1799
+[37 <./baum06A3b.jpg>]
+Overfull \hbox (10.14395pt too wide) in paragraph at lines 1787--1798
 \FML/futmi/m/it/10.95 O\T1/futs/m/n/10.95 (1)$ berech-net wer-den kˆn-nen. Gebe
 n Sie einen \T1/futs/m/it/10.95 Plane-Sweep \T1/futs/m/n/10.95 Al-go-rith-mus f
 ¸r das Schnittprob-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1788--1799
+Underfull \hbox (badness 10000) in paragraph at lines 1787--1798
 
  []
 
@@ -2419,11 +2321,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1819 
+l.1818 
        
 ? 
 
-Overfull \hbox (91.76083pt too wide) in paragraph at lines 1820--1833
+Overfull \hbox (91.76083pt too wide) in paragraph at lines 1819--1832
 []\T1/futs/b/n/10.95 InterceptionFinder $[]$ 
  []
 
@@ -2434,16 +2336,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1834 
+l.1833 
        
 ? 
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 1835--1836
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 1834--1835
 
  []
 
 ! Extra }, or forgotten $.
-l.1838 ...*log(n))+O (n)+O (log(n))+O (n)+O (1)+O}
+l.1837 ...*log(n))+O (n)+O (log(n))+O (n)+O (1)+O}
                                                    (n)=O (n*log(n))$
 ? 
 
@@ -2453,10 +2355,10 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1848 
+l.1847 
        
 ? 
-[37])
+[39])
 Runaway argument?
 { get and remove first event e in X \; \eIF {e is start of circle} { \ETC.
 ! File ended while scanning use of \algocf@Whilestrip.
@@ -2487,30 +2389,6 @@ Runaway argument?
 *
 (Please type a command or say `\end')
 *
-(Please type a command or say `\end')
-*
-(Please type a command or say `\end')
-*
-(Please type a command or say `\end')
-*
-(Please type a command or say `\end')
-*
-(Please type a command or say `\end')
-*
-(Please type a command or say `\end')
-*
-(Please type a command or say `\end')
-*
-(Please type a command or say `\end')
-*
-(Please type a command or say `\end')
-*
-(Please type a command or say `\end')
-*
-(Please type a command or say `\end')
-*
-(Please type a command or say `\end')
-*
 ! Emergency stop.
 <*> 
     
@@ -2518,11 +2396,11 @@ End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 19449 strings out of 492995
- 386538 string characters out of 6132703
- 689105 words of memory out of 5000000
- 22558 multiletter control sequences out of 15000+600000
+ 21049 strings out of 492995
+ 407619 string characters out of 6132703
+ 711862 words of memory out of 5000000
+ 24146 multiletter control sequences out of 15000+600000
  105621 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,14n,68p,8852b,4749s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,14n,68p,8852b,5697s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
