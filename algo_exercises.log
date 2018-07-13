@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.23)  13 JUL 2018 14:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.23)  13 JUL 2018 15:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1600,25 +1600,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 458--459
  []
 
 [11]
-! Undefined control sequence.
-<recently read> \mathcalO 
-                          
-l.481 ...ge Frage in einer Laufzeit von $\mathcalO
-                                                  (n\log n)$ beantworten kan...
-
-? 
-
 Underfull \hbox (badness 10000) in paragraph at lines 481--482
 
  []
 
-! Undefined control sequence.
-<recently read> \mathcalO 
-                          
-l.501 ...ge Frage in einer Laufzeit von $\mathcalO
-                                                  (n)$ beantwortet. Geben Si...
-
-? 
 
 Overfull \hbox (2.07004pt too wide) in paragraph at lines 501--502
 [] \T1/futs/m/sc/10.95 c)[][] \T1/futs/m/n/10.95 Es ist klar, dass ein Al-go-ri
@@ -2032,31 +2017,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1251--1252
  []
 
 [27]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1283 
-       
-? 
-
 Underfull \hbox (badness 10000) in paragraph at lines 1284--1285
 
  []
 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1291 
-       
-? 
 [28]
 Underfull \hbox (badness 10000) in paragraph at lines 1314--1316
 
@@ -2092,11 +2056,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.1345 \end{tikzpicture}
-                        }
-? 
-! Extra }, or forgotten \endgroup.
-l.1345 \end{tikzpicture}}
-                         
+                        
 ? 
 
 ! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
@@ -2106,11 +2066,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.1358 \end{tikzpicture}
-                        }
-? 
-! Extra }, or forgotten \endgroup.
-l.1358 \end{tikzpicture}}
-                         
+                        
 ? 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1361--1364
@@ -2125,60 +2081,23 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.1375 \end{tikzpicture}
-                        }
-? 
-! Extra }, or forgotten \endgroup.
-l.1375 \end{tikzpicture}}
-                         
-? 
-! Extra }, or forgotten \endgroup.
-l.1385 \end{tikzpicture}}
-                         
-? 
-! Extra }, or forgotten \endgroup.
-l.1410 \end{tikzpicture}}
-                         
+                        
 ? 
 [30]
 Underfull \hbox (badness 10000) in paragraph at lines 1413--1416
 
  []
 
-! Extra }, or forgotten \endgroup.
-l.1439 \end{tikzpicture}}
-                         
-? 
-! Extra }, or forgotten \endgroup.
-l.1459 \end{tikzpicture}}
-                         
-? 
-! Extra }, or forgotten \endgroup.
-l.1487 \end{tikzpicture}}
-                         
-? 
 [31]
 Underfull \hbox (badness 10000) in paragraph at lines 1493--1494
 
  []
 
 ! Extra }, or forgotten \endgroup.
-l.1520 \end{tikzpicture}}
-                         
-? 
-! Extra }, or forgotten \endgroup.
 l.1545 \end{tikzpicture}}
                          
 ? 
 [32]
-! Extra }, or forgotten \endgroup.
-l.1571 \end{tikzpicture}}
-                         
-? 
-! Extra }, or forgotten \endgroup.
-l.1597 \end{tikzpicture}}
-                         
-? 
-
 Underfull \hbox (badness 10000) in paragraph at lines 1601--1602
 
  []
@@ -2188,10 +2107,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1612--1614
 
  []
 
-! Extra }, or forgotten \endgroup.
-l.1628 \end{tikzpicture}}
-                         
-? 
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2387,8 +2302,6 @@ Runaway argument?
 *
 (Please type a command or say `\end')
 *
-(Please type a command or say `\end')
-*
 ! Emergency stop.
 <*> 
     
@@ -2396,10 +2309,10 @@ End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 21049 strings out of 492995
- 407619 string characters out of 6132703
+ 21048 strings out of 492995
+ 407611 string characters out of 6132703
  711862 words of memory out of 5000000
- 24146 multiletter control sequences out of 15000+600000
+ 24145 multiletter control sequences out of 15000+600000
  105621 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,14n,68p,8852b,5697s stack positions out of 5000i,500n,10000p,200000b,80000s
