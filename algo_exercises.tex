@@ -3120,6 +3120,260 @@ Geben Sie Werte für $a$, $b$ und $m$ an, sodass $m$ minimal ist und alle Werte 
 \newpage
 \section{Blatt 10}
 %----------------------------------------------------------------------------
+\subsection{Grapheigenschaften}
+Gegeben sei ein einfacher, zusammenhängender Graph $G=(V,E)$ mit $|V|=n$ und $|E|=m$. \\
+
+G=(V,E) einfach zusammenhängend \\
+$|V|=n$ Knoten \\
+$|E|=m$ Kanten 
+
+\paragraph{a)}
+Zeigen Sie, dass es in $G$ zwei Knoten mit demselben Grad gibt. \\
+
+G hat zwei Knoten vom selben Grad ]]
+$|V| = n$, maximaler Grad p Knoten: n-1; minimaler Grad: 1 \\
+$\rightarrow$ Schubladenprinzip : $\dfrac{n}{n-1} Fächer \rightarrow Doppelbelegung$
+
+\paragraph{b)}
+Zeigen Sie, dass $G$ eine gerade Anzahl an Knoten mit ungeradem Grad hat. \\
+
+G hat eine gerade Anzahl von Knoten mit ungeradem Grad \\
+$\sum^{v \in V}_{v} deg(v) = 2*|E| \Rightarrow \sum_{v,even} deg(v) + \sum_{v,odd} deg(v)=2*|E| \Leftrightarrow \sum_{v,odd} deg(v) = 2*|E| * \sum_{v,even} deg(v)$
+
+\paragraph{c)}
+$G$ heiß \emph{vollständig}, wenn jeder Knoten durch Kanten mit jedem anderen Knoten
+verbunden ist. Berechnen Sie die Anzahl der Kanten in einem vollständigen Graphen. \\
+
+Jeder Knoten hat n-1 Verbindungen $n*n-1$ \\
+ABER jede Kante ist mit zwei Knoten verbunden deshalb gilt: $\dfrac{n*n-1}{2}$
+
+\paragraph{d)}
+$G$ heißt \emph{$d$-regulär}, wenn jeder Knoten aus $V$ einen Grad von $d$ hat.
+Zeigen Sie, dass $m=\tfrac{d\cdot n}2$, falls $G$ $d$-regulär ist. \\
+
+d regulär $\Rightarrow$ deg(v) = d $\forall v \in V$ \\
+$\sum_{v} deg(v)= 2* |E|$ \\
+$n*d= 2*|E|$ \\
+$\dfrac{n*d}{2}=|E|=m$
+
+%----------------------------------------------------------------------------
+\subsection{Adjazenzmatrix vs. Adjazenzliste}
+Sei $G=(V,E)$ der folgende gerichtete Graph:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.9]{graph}
+\end{figure}
+
+\paragraph{a)}
+Berechnen Sie die Adjazenzmatrix und die Adjazenzliste für $G$. \\
+
+\begin{tabular}{|c|c|}
+\hline
+Adjazenzliste & Adjazenzmatrix \\\hline
+a $\rightarrow$ b $\rightarrow$ c $\rightarrow$ d & 0111 0000 0 \\\hline
+b $\rightarrow$ d $\rightarrow$ e                & 0001 1000 0\\\hline
+c $\rightarrow$ e $\rightarrow$ f                & 0000 1100 0\\\hline
+d                                              & 0000 0000 0\\\hline
+e $\rightarrow$ g $\rightarrow$ h $\rightarrow$ i & 0000 0011 1\\\hline
+f $\rightarrow$ i                               & 0000 0000 1\\\hline
+h                                              & 0000 0000 0\\\hline
+i                                              & 0000 0000 0\\\hline
+\end{tabular}
+
+\paragraph{b)}
+Wenden Sie den Algorithmus aus der Vorlesung auf Ihre Adjazenzliste aus (a) an,
+um eine topologische Sortierung von $G$ zu berechnen. \\
+
+Reihenfolge: abcdefghi \\
+Laufzeit: $O(n^{2})$ \\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (38.4,-16) circle (3);
+\draw (38.4,-16) node {$a$};
+\draw [black] (28.3,-27.6) circle (3);
+\draw (28.3,-27.6) node {$b$};
+\draw [black] (49,-27) circle (3);
+\draw (49,-27) node {$c$};
+\draw [black] (14.3,-33.2) circle (3);
+\draw (14.3,-33.2) node {$d$};
+\draw [black] (38.4,-37.3) circle (3);
+\draw (38.4,-37.3) node {$e$};
+\draw [black] (60.3,-36.7) circle (3);
+\draw (60.3,-36.7) node {$f$};
+\draw [black] (30.1,-50.6) circle (3);
+\draw (30.1,-50.6) node {$g$};
+\draw [black] (43.1,-50.5) circle (3);
+\draw (43.1,-50.5) node {$h$};
+\draw [black] (54.5,-50.5) circle (3);
+\draw (54.5,-50.5) node {$i$};
+\draw [black] (36.7,-18.5) -- (30.33,-25.4);
+\fill [black] (30.33,-25.4) -- (31.24,-25.15) -- (30.51,-24.47);
+\draw [black] (40.6,-18.3) -- (46.92,-24.84);
+\fill [black] (46.92,-24.84) -- (46.72,-23.92) -- (46,-24.61);
+\draw [black] (35.8,-17.4) -- (16.72,-31.42);
+\fill [black] (16.72,-31.42) -- (17.66,-31.35) -- (17.07,-30.55);
+\draw [black] (25.8,-29.5) -- (17.16,-32.28);
+\fill [black] (17.16,-32.28) -- (18.07,-32.51) -- (17.76,-31.56);
+\draw [black] (30.46,-29.68) -- (36.24,-35.22);
+\fill [black] (36.24,-35.22) -- (36.01,-34.31) -- (35.31,-35.03);
+\draw [black] (47.3,-29.7) -- (40.68,-35.35);
+\fill [black] (40.68,-35.35) -- (41.61,-35.21) -- (40.97,-34.45);
+\draw [black] (51.4,-28.9) -- (58.04,-34.72);
+\fill [black] (58.04,-34.72) -- (57.77,-33.82) -- (57.11,-34.57);
+\draw [black] (59.14,-39.47) -- (55.66,-47.73);
+\fill [black] (55.66,-47.73) -- (56.43,-47.19) -- (55.51,-46.8);
+\draw [black] (40.72,-39.2) -- (52.18,-48.6);
+\fill [black] (52.18,-48.6) -- (51.88,-47.7) -- (51.24,-48.48);
+\draw [black] (39.2,-40.3) -- (42.03,-47.7);
+\fill [black] (42.03,-47.7) -- (42.21,-46.77) -- (41.28,-47.13);
+\draw [black] (37.4,-40.2) -- (31.82,-48.14);
+\fill [black] (31.82,-48.14) -- (32.69,-47.78) -- (31.87,-47.2);
+\end{tikzpicture}
+\end{center}
+
+\paragraph{c)}
+Der \emph{transponierte Graph} eines Graphen $G=(V,E)$ ist der Graph $G'=(V,E')$, wobei
+\[ E' := \{ (v,u) \mid (u,v)\in E\}. \]
+Nehmen Sie an, dass $G$ als Adjazenzmatrix vorliegt. Beschreiben Sie einen Algorithmus,
+der den transponierten Graph $G'$ in einer Laufzeit von $\calO(|V|^2)$ berechnet. \\
+
+transponieren der Matrix mit 2 For-Schleifen \\
+
+\paragraph{d)}
+Nehmen Sie nun an, dass $G$ als Adjazenzliste vorliegt. Beschreiben Sie einen Algorithmus,
+der den transponierten Graph $G'$ in einer Laufzeit von $\calO(|V| + |E|)$ berechnet. \\
+
+Sei $n= |V|$ \\
+Sei L Adjeszenzliste für Knoten \\
+i: $L[i]$ enthält Adjeszenztenknoten von i \\
+
+\begin{algorithm}[H]
+\SetAlgoLined
+initialisiere L' für alle Knoten \\
+\For {i= 1 to n}{
+  \For {j= 1 to $|L[i]|$} {
+     \If {$L[i]$ enthält j}{
+       $L'[j]$.append i
+     }
+  }
+}
+\end{algorithm} \\
+
+%----------------------------------------------------------------------------
+\subsection{Dijkstra-Algorithmus}
+Wenden Sie den Dijkstra-Algorithmus auf das folgende Beispiel an.
+Verwenden Sie dabei $s$ als Startknoten und
+geben Sie alle Zwischenschritte an!
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.9]{dijkstra}
+\end{figure}
+
+\begin{tabular}{|c||c|c|}
+\hline
+# & s & s' \\\hline
+1 & (s,0,-) & (a,4,s),(b,6,s) \\\hline
+2 & (a,4,s) & (b,6,s),(i,10,a) \\\hline
+3 & (b,6,s) & (c,8,b),(d,11,b) \\\hline
+4 & (c,8,b) & (d,10,c),(e,15,c) \\\hline
+5 & (d,10,c) & (f,11,d),(e,15,c) \\\hline
+6 & (f,11,d) & (e,14,f),(t,20,f) \\\hline
+7 & (e,14,f) & (t,19,e) \\\hline
+\end{tabular}
+
+%----------------------------------------------------------------------------
+\subsection{Anwendung von Dijkstra}
+Betrachten Sie ein gerichtetes Netzwerk $G=(V,E)$ zusammen mit einer
+Wahrscheinlichkeitsfunktion $p:E\rightarrow (0,1]$. Dabei ist $0<p(v,w) \le 1$
+die \emph{Zuverlässigkeit} der Kante $(v,w)$.
+Seien $s,t\in V$ Knoten, zwischen denen ein Packet gesendet werden soll.
+Ob das Packet erfolgreich gesendet wird, hängt von der Zuverlässigkeit
+des verwendeten Pfades ab. Dabei beschreibt die \emph{Zuverlässigkeit eines Pfades}
+die Wahrscheinlichkeit, dass ein Packet erfolgreich über einen Pfad gesendet
+werden kann.
+
+\paragraph{a)}
+Wie lässt sich die Zuverlässigkeit eines Pfades $s=v_0\to v_1\to \cdots \to v_k=t$
+berechnen? \\
+
+$$\prod^{k}_{i=1} p(v_{i-1},v_{i})$$
+
+\paragraph{b)}
+Geben Sie ein Beispiel an, bei dem der Dijkstra-Algorithmus nicht den Pfad von $s$ nach $t$ mit der höchsten Zuverlässigkeit findet, wenn man für jede Kante $(v,w)$
+das Kantengewicht $1-p(v,w)$ (d.\,h. die Ausfallswahrscheinlichkeit) verwendet. \\
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (17.6,-35.6) circle (3);
+\draw (17.6,-35.6) node {$s$};
+\draw [black] (34.9,-24) circle (3);
+\draw (34.9,-24) node {$a$};
+\draw [black] (34.9,-40.8) circle (3);
+\draw (34.9,-40.8) node {$b$};
+\draw [black] (49.8,-33.2) circle (3);
+\draw (49.8,-33.2) node {$t$};
+\draw [black] (20.09,-33.93) -- (32.41,-25.67);
+\fill [black] (32.41,-25.67) -- (31.47,-25.7) -- (32.02,-26.53);
+\draw (24.47,-29.3) node [above] {$1/2$};
+\draw [black] (20.47,-36.46) -- (32.03,-39.94);
+\fill [black] (32.03,-39.94) -- (31.4,-39.23) -- (31.12,-40.18);
+\draw (28.16,-37.59) node [above] {$9/10$};
+\draw [black] (37.57,-39.44) -- (47.13,-34.56);
+\fill [black] (47.13,-34.56) -- (46.19,-34.48) -- (46.64,-35.37);
+\draw (44.61,-37.51) node [below] {$3/20$};
+\draw [black] (42.2,-26.6) -- (47.53,-31.23);
+\draw (41.66,-25.15) node [left] {$1/2$};
+\fill [black] (47.53,-31.23) -- (47.26,-30.33) -- (46.6,-31.09);
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (17.6,-35.6) circle (3);
+\draw (17.6,-35.6) node {$s$};
+\draw [black] (34.9,-24) circle (3);
+\draw (34.9,-24) node {$a$};
+\draw [black] (34.9,-40.8) circle (3);
+\draw (34.9,-40.8) node {$b$};
+\draw [black] (49.8,-33.2) circle (3);
+\draw (49.8,-33.2) node {$t$};
+\draw [black] (20.09,-33.93) -- (32.41,-25.67);
+\fill [black] (32.41,-25.67) -- (31.47,-25.7) -- (32.02,-26.53);
+\draw (24.47,-29.3) node [above] {$1/2$};
+\draw [black] (20.47,-36.46) -- (32.03,-39.94);
+\fill [black] (32.03,-39.94) -- (31.4,-39.23) -- (31.12,-40.18);
+\draw (28.16,-37.59) node [above] {$1/10$};
+\draw [black] (37.57,-39.44) -- (47.13,-34.56);
+\fill [black] (47.13,-34.56) -- (46.19,-34.48) -- (46.64,-35.37);
+\draw (45.11,-37.51) node [below] {$17/20$};
+\draw [black] (44.2,-28) -- (47.6,-31.16);
+\draw (43.67,-26.54) node [left] {$1/2$};
+\fill [black] (47.6,-31.16) -- (47.36,-30.25) -- (46.68,-30.98);
+\end{tikzpicture}
+\end{center}
+
+\begin{itemize}
+\item Pfad s-a-t: Kosten 1
+\item Pfad s-b-t: Kosten $\dfrac{19}{20}$
+\end{itemize}
+
+\paragraph{c)}
+Beschreiben Sie einen Algorithmus, der mit Hilfe des Dijkstra-Algorithmus,
+den Pfad zwischen $s$ und $t$ mit der höchsten Zuverlässigkeit findet. Begründen Sie
+die Laufzeit und Korrektheit Ihres Algorithmus. \\
+
+\begin{enumerate}
+\item Wie bekommen wir Add? \\
+$log(a*b)=log(a)+log(b)$
+\item Wie minimieren? \\
+Gewicht: $-log(p(v,w))$
+\end{enumerate}
 
 %----------------------------------------------------------------------------------------
 \newpage
