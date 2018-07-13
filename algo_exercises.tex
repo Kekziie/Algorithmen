@@ -478,7 +478,7 @@ counter2++ \\
 Der Algorithmus hat $\mathcal{O}(z)$ Laufzeit, weil hier jede Zelle des Arrays einmal mit jeder anderen addiert und anschließendauf Größe = z verglichen wird.
 
 \paragraph{b)}
-Verwenden Sie nun die binäre Suche, um einen effizienteren Algorithmus zu finden, der die obige Frage in einer Laufzeit von $\mathcalO(n\log n)$ beantworten kann. Geben Sie auch hier Pseudocode an und begründen Sie die Korrektheit Ihres Algorithmus. Erklären Sie, warum Ihr Algorithmus die angegebene Laufzeit hat. \\
+Verwenden Sie nun die binäre Suche, um einen effizienteren Algorithmus zu finden, der die obige Frage in einer Laufzeit von $O(n\log n)$ beantworten kann. Geben Sie auch hier Pseudocode an und begründen Sie die Korrektheit Ihres Algorithmus. Erklären Sie, warum Ihr Algorithmus die angegebene Laufzeit hat. \\
 
 \begin{algorithm}[H]
 \SetAlgoLined
@@ -495,10 +495,10 @@ $y=z-A(counter)$ \\
 \Return $false$ \\
 \end{algorithm}
 
-Da nun das Komplementärelement von y (also x mit $x+y=z$) nicht mehr in linearer Suchzeit, sondern logarithmischer Suchzeit $log(n)$ gefunden wird, falls vorhanden, benötigt dieser Algorithmus für jede Rekursion nicht mehr $\mathcal{O}(n)$ sondern $\mathcal{log(n)}$ Schritte, was bei Tests für alle n Elemente des Input Arrays zu maximal $n*log(n)$ Schritten führt, was bedeutet, dass die Laufzeit in $\mathcal{O}(n*log(n))$ liegt.
+Da nun das Komplementärelement von y (also x mit $x+y=z$) nicht mehr in linearer Suchzeit, sondern logarithmischer Suchzeit $log(n)$ gefunden wird, falls vorhanden, benötigt dieser Algorithmus für jede Rekursion nicht mehr $O(n)$ sondern $O(log(n))$ Schritte, was bei Tests für alle n Elemente des Input Arrays zu maximal $n*log(n)$ Schritten führt, was bedeutet, dass die Laufzeit in $O(n*log(n))$ liegt.
 
 \paragraph{c)}
-Es ist klar, dass ein Algorithmus für die obige Frage mindestens die Laufzeit $\Omega(n)$ benötigt. Versuchen Sie, einen Algorithmus zu finden, der obige Frage in einer Laufzeit von $\mathcalO(n)$ beantwortet. Geben Sie Pseudocode an und begründen Sie die Laufzeit und die Korrektheit Ihres Algorithmus. \\
+Es ist klar, dass ein Algorithmus für die obige Frage mindestens die Laufzeit $\Omega(n)$ benötigt. Versuchen Sie, einen Algorithmus zu finden, der obige Frage in einer Laufzeit von $O(n)$ beantwortet. Geben Sie Pseudocode an und begründen Sie die Laufzeit und die Korrektheit Ihres Algorithmus. \\
 
 \begin{algorithm}[H]
 \SetAlgoLined
@@ -1279,7 +1279,7 @@ geg:
 \item Algorithmus in Zeit T(n)
 \item Menge $M= {(x_{i},y_{i}) \in \mathbb{Q}^{2} | 1 \leq i \leq n}$
 \item zyklische Sortierung der Eckpunkte der konvexen Hülle
-\end{itemize} \\
+\end{itemize} 
 
 z.z. $\Omega$ (n log n) ist eine untere Schranke für worst-case Laufzeit des Algorithmus \\
 
@@ -1287,7 +1287,7 @@ Probleme:
 \begin{enumerate}
 \item konvexe Hülle bestimmen
 \item Verwendung des vergleichsbasierenden Sortierens; läuft also bestenfalls auch n log n
-\end{enumerate} \\
+\end{enumerate} 
 
 Problemlösung:
 \begin{itemize}
@@ -1342,7 +1342,7 @@ Algorithmus). \\
 \begin{center}
  \begin{tikzpicture}[level/.style={sibling distance=60mm/#1}]
 \node [circle,draw] (z){$63$}
-\end{tikzpicture}}
+\end{tikzpicture}
  \end{center} 
 
 \textbf{Schritt 2,3} 
@@ -1355,7 +1355,7 @@ Algorithmus). \\
     child {node [circle,draw] (c) {$36$}}  
   }
   child {node [circle,draw] (d) {}}  
-\end{tikzpicture}}
+\end{tikzpicture}
 \end{center} 
 
 $bal(63)=-2,bal(30)=1$ \\
@@ -1372,7 +1372,7 @@ $\Rightarrow$ Doppelrotation \\
     child {node [circle,draw] (b) {}} 
   }
   child {node [circle,draw] (d) {}}  
-\end{tikzpicture}}
+\end{tikzpicture}
 \end{center} 
 
 \begin{center}
@@ -1382,7 +1382,7 @@ $\Rightarrow$ Doppelrotation \\
   }
   child {node [circle,draw] (j) {$63$}
 };
-\end{tikzpicture}}
+\end{tikzpicture}
 \end{center}
 
 \textbf{Schritt 5,6,7,8,9,10,11}
@@ -1407,7 +1407,7 @@ $\Rightarrow$ Doppelrotation \\
     }
     child {node [circle,draw] (k) {}} 
   };
-\end{tikzpicture}}
+\end{tikzpicture}
 \end{center}
 
 $bal(63)=-2,bal(50)=1$\\
@@ -1436,7 +1436,7 @@ $\Rightarrow$ Doppelrotation \\
        child {node [circle,draw] (i) {$50$}}
     }
   };
-\end{tikzpicture}}
+\end{tikzpicture}
 \end{center}
 
 \begin{center}
@@ -1456,7 +1456,7 @@ $\Rightarrow$ Doppelrotation \\
     child {node [circle,draw] (h) {$50$}}
     child {node [circle,draw] (i) {$63$}}
   };
-\end{tikzpicture}}
+\end{tikzpicture}
 \end{center}
 
 \textbf{Schritt 13,14}
@@ -1484,7 +1484,7 @@ $\Rightarrow$ Doppelrotation \\
     }
     child {node [circle,draw] (k) {$63$}}
   };
-\end{tikzpicture}}
+\end{tikzpicture}
 \end{center}
 
 $|bal(u) \leq 1|: \forall n$, n Knoten $\Rightarrow$ fertig
@@ -1517,7 +1517,7 @@ Lösche 36 und hefte 43 an Baum
     }
     child {node [circle,draw] (k) {$63$}}
   };
-\end{tikzpicture}}
+\end{tikzpicture}
 \end{center}
 
 nachdem 36 gelöscht
@@ -1568,7 +1568,7 @@ Rotation
        child {node [circle,draw] (m) {$63$}}
     }
   };
-\end{tikzpicture}}
+\end{tikzpicture}
 \end{center}
 
 nach 43 gelöscht
@@ -1594,7 +1594,7 @@ nach 43 gelöscht
        child {node [circle,draw] (m) {$63$}}
     }
   };
-\end{tikzpicture}}
+\end{tikzpicture}
 \end{center}
 
 \paragraph{c)} 
@@ -1625,7 +1625,7 @@ $A$ alle Knoten links von $P$ und $C$ alle Knoten rechts von $P$. Gilt dann $a\l
        child {node [circle,draw] (j) {$80$}}
     }
   };
-\end{tikzpicture}}
+\end{tikzpicture}
 \end{center}
 
 ist binärer Suchbaum, weil $\forall$ Knoten n gilt:
