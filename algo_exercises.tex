@@ -3379,6 +3379,278 @@ Gewicht: $-log(p(v,w))$
 \newpage
 \section{Blatt 11}
 %----------------------------------------------------------------------------
+\subsection{Algorithmenentwurf}
+Sei $G = (V,E)$ ein gerichteter Graph. Der Graph $G$ heisst \emph{$(s,t)$-Graph}, falls er nur eine \emph{Quelle} und nur eine \emph{Senke} hat, wobei ein Knoten Quelle (Senke) heisst, falls er keine eingehenden Kanten hat (nur eingehende Kanten hat).
+
+\medskip\noindent
+Nehmen Sie an, dass der Graph $G$ in Adjazenzlistendarstellung gegeben ist.
+Geben Sie einen Algorithmus in Pseudocode, der in Zeit $\calO(|V| + |E|)$ feststellt, ob $G$ ein $(s,t)$-Graph ist. \\
+
+\begin{algorithm}[H]
+\SetAlgoLined
+\For {every node in G}{
+incomingDegree(node) = 0 \;
+}
+sinks = 0; \\
+\For {every node in G}{
+  \For {every target node in nod.adjacentlist}{
+  comingDegree(targetNode) = incomingDegree(targetNode) + 1 \;
+     \If {node.adjacentNodes is empty}{
+     sinks++ \;
+     }
+  }
+}
+sources = 0; \\
+\For {every node in G}{
+   \If {incomingDegree(node) == 0}{
+   sources++ \;
+   }
+}
+\If {Sources == 1}{
+   \If {sinks ==1}{
+     \Return true \;
+   }
+}
+\Return false;
+\end{algorithm} \\
+
+%----------------------------------------------------------------------------
+\subsection{Maximum Bottleneck Path}
+Sei $G=(V,E,c)$ ein gerichteter Graph mit positiven Kantenkosten $c$. Sei $P$ ein Pfad zwischen zwei Knoten $u$ und $v$, wobei die billigste Kante in $P$ Kosten $k$ habe. $P$ heißt \emph{breitester Pfad} von $u$ nach $v$, wenn es keinen anderen Pfad in $G$ von $u$ nach $v$ gibt, dessen billigste Kante teurer als $k$ ist.
+
+\paragraph{a)}
+Zeichnen Sie in folgendem Graphen den breitesten Pfad von $s$ nach $t$ ein. \\
+
+\includegraphics[width=7cm,height=7cm]{graph112.png} \\
+
+\paragraph{b)} 
+Modifizieren Sie Dijkstras Algorithmus so, dass er zu einem gegebenen Startknoten $s$ die breitesten Pfade zu allen anderen Knoten findet. Begründen Sie die Korrektheit und die Laufzeit Ihres Algorithmus. \\
+
+\begin{algorithm}[H]
+\SetAlgoLined
+visited = {s} \\
+queue = empty maxHeap sorted by broadestWidth \\
+\textbf{Forall} $(s,v) \in E$ \textbf{do} \\
+broadestPathTo(v) = $\{(s,v) \}$ \;
+broadestWidth(v) = c(s,v) \;
+queue.add(v) \;
+\textbf{end} \\
+\textbf{Forall} $v \in V | (s,v) \notin E$ \textbf{do} \\
+broadestPathTo(v) = $ \{ \}$ \;
+broadestWidth(v) = 0 \;
+\textbf{end} \\
+\While {visited != V}{
+   currentNode = queue.removeMax() \;
+   visited = visited $\cup$ currentNode \;
+   \textbf{forall} $(currentNode, next) \in E$ \textbf{do} \\
+      \If {$next \notin queue$}{
+         queue.add(next) \;
+      }
+      minNewWidth = min(broadestWidth(currentNode), c(currentNode, next)) \;
+      \eIf {broadestPathTo(next) == $\{ \}$}{
+         broadestPathTo(next) = broadestPathTo(currentNode) $\cup$ (currentNode,next) \;
+         broadestWidth(next) = minNewWidth \;
+      } {
+         \If {minNewWidth $>$ broadestWith(next)}{
+           broadestPathTo(next) = broadestPathTo(currentNode) $\cup$ (currentNode,next) \;
+           broadestWidth(next) = minNewWidth \;
+         }
+      }
+   \textbf{end} \\
+}
+\textbf{forall} $v \in V$ \textbf{do} \\
+   \Return (v,broadestWidth(v), broadestPathTo(v)) \;
+\textbf{end}   
+\end{algorithm} \\
+
+\textbf{Korrektheit:} \\
+Unser Algorithmus geht wie der Dijkstra-Algorithmus vor. Es liefert das korrekte Ergebnis, da sich ein Pfad durch das Hinzufügen von Kanten nur verschmälern, aber nicht verbreitern kann. D.h. der lokal breiteste Pfad ist auch der global breiteste Pfad. \\
+
+\textbf{Laufzeit:} 
+\begin{itemize}
+\item while-Schleife: $O(|V|)$
+\item forall-Schleife: $O(|E|)$
+\item queue enthält maximal $|V|$ Knoten, d.h. einfügen, sortieren und max entfernen kostet jeweils $O(log|V|)$
+\item einfügen von $|V|$ Knoten in queue, entfernen von $|V|$ Knoten, updaten des Sortierkriterium um $O(|E|)$
+\item Laufzeit beträgt: $O(|V|)+O(|E|)+O(2*|V|+|E|)*O(log(|V|)) = O((|V|+|E|)log(|V|))$
+\end{itemize}
+
+%----------------------------------------------------------------------------
+\subsection{Bellman/Ford-Algorithmus}
+Gegeben sei folgender gerichteter Graph $G=(V,E)$. Lösen Sie mit Hilfe des Bellman-Ford-Algorithmus das \textit{single-source shortest-paths} Problem für den Source-Knoten $s$.
+Verwenden Sie dabei die folgende Reihenfolge für die Kanten:
+\[ (s,a), (s,c), (s,d), (a,b), (a,d), (b,a), (c,d), (d,b), (d,e), (e,b). \]
+Zeigen Sie alle Zwischenschritte! \\
+
+\textbf{Durchlauf 1:} \\
+
+\begin{tabular}{|c||c|c|c|}
+\hline
+Kante(u,v) & (Distanz(u)+Gewicht(u,v) $<$ Distanz(v)) & Distanz(v) & Vorgänger(v) \\
+\hline \hline
+(s,a) & true & 1 & s \\\hline
+(s,c) & true & 2 & s \\\hline
+(s,d) & true & 2 & s \\\hline
+(a,b) & true & 0 & a \\\hline
+(a,d) & false & 2 & s \\\hline
+(b,a) & false & -1 & b \\\hline
+(c,d) & false & 2 & s \\\hline
+(d,b) & false & -4 & d \\\hline
+(d,e) & true & 6 & d \\\hline
+(e,b) & false & -4 & d \\\hline
+\end{tabular} \\
+
+\textbf{Durchlauf 2:} \\
+
+\begin{tabular}{|c||c|c|c|}
+\hline
+Kante(u,v) & (Distanz(u)+Gewicht(u,v) $<$ Distanz(v)) & Distanz(v) & Vorgänger(v) \\
+\hline \hline
+(s,a) & false & 1 & s \\\hline
+(s,c) & false & 2 & s \\\hline
+(s,d) & false & 2 & s \\\hline
+(a,b) & false & 0 & a \\\hline
+(a,d) & false & 2 & s \\\hline
+(b,a) & true & -2 & b \\\hline
+(c,d) & false & 2 & s \\\hline
+(d,b) & false & -4 & d \\\hline
+(d,e) & false & 6 & d \\\hline
+(e,b) & false & -4 & d \\\hline
+\end{tabular} \\
+
+\textbf{Durchlauf 3:} \\
+
+\begin{tabular}{|c||c|c|c|}
+\hline
+Kante(u,v) & (Distanz(u)+Gewicht(u,v) $<$ Distanz(v)) & Distanz(v) & Vorgänger(v) \\
+\hline \hline
+(s,a) & false & 1 & s \\\hline
+(s,c) & false & 2 & s \\\hline
+(s,d) & false & 2 & s \\\hline
+(a,b) & false & 0 & a \\\hline
+(a,d) & true & 1 & a \\\hline
+(b,a) & false & -2 & b \\\hline
+(c,d) & false & 2 & s \\\hline
+(d,b) & true & -5 & d \\\hline
+(d,e) & true & 5 & d \\\hline
+(e,b) & false & -5 & d \\\hline
+\end{tabular} \\
+
+\textbf{Durchlauf 4:} \\
+
+\begin{tabular}{|c||c|c|c|}
+\hline
+Kante(u,v) & (Distanz(u)+Gewicht(u,v) $<$ Distanz(v)) & Distanz(v) & Vorgänger(v) \\
+\hline \hline
+(s,a) & false & 1 & s \\\hline
+(s,c) & false & 2 & s \\\hline
+(s,d) & false & 2 & s \\\hline
+(a,b) & false & 0 & a \\\hline
+(a,d) & false & 1 & a \\\hline
+(b,a) & true & -3 & b \\\hline
+(c,d) & false & 2 & s \\\hline
+(d,b) & false & -5 & d \\\hline
+(d,e) & false & 5 & d \\\hline
+(e,b) & false & -5 & d \\\hline
+\end{tabular} \\
+
+\textbf{Durchlauf 5:} \\
+
+\begin{tabular}{|c||c|c|c|}
+\hline
+Kante(u,v) & (Distanz(u)+Gewicht(u,v) $<$ Distanz(v)) & Distanz(v) & Vorgänger(v) \\
+\hline \hline
+(s,a) & false & 1 & s \\\hline
+(s,c) & false & 2 & s \\\hline
+(s,d) & false & 2 & s \\\hline
+(a,b) & false & 0 & a \\\hline
+(a,d) & true & 0 & a \\\hline
+(b,a) & false & -3 & b \\\hline
+(c,d) & false & 2 & s \\\hline
+(d,b) & true & -6 & d \\\hline
+(d,e) & true & 4 & d \\\hline
+(e,b) & false & -6 & d \\\hline
+\end{tabular} \\
+
+\textbf{Durchlauftest auf negativen Zykel} \\
+
+\begin{tabular}{|c||c|c|c|}
+\hline
+Kante(u,v) & (Distanz(u)+Gewicht(u,v) $<$ Distanz(v)) & Distanz(u) & Distanz(v) \\
+\hline \hline
+(s,a) & false & 0 & -3 \\\hline
+(s,c) & false & 0 & 2 \\\hline
+(s,d) & false & 0 & 0 \\\hline
+(a,b) & false & -3 & -6 \\\hline
+(a,d) & false & -3 & 0 \\\hline
+(b,a) & true ($\Rightarrow$ break) & -6 & -3 \\\hline
+(c,d) &  & 2 & 0 \\\hline
+(d,b) &  & 0 & -6 \\\hline
+(d,e) &  & 0 & 4 \\\hline
+(e,b) &  & 4 & -6 \\\hline
+\end{tabular} \\
+
+
+%----------------------------------------------------------------------------
+\subsection{Floyd/Warshall-Algorithmus}
+Sei $G=(V,E)$ ein gerichteter Graph. Die \emph{transitive Hülle} $G'=(V,E')$ des
+Graphen $G$, ist der Graph mit Schleifen, der folgendermaßen definiert ist:
+
+\begin{center}
+$(u,v)\in E'$ gdw. $u=v$ oder es gibt einen Pfad von $u$ nach $v$ in $G$.
+\end{center}
+
+\paragraph{a)}
+Berechnen Sie die transitive Hülle des folgenden Graphen. \\
+
+$G' = (V,E')$ mit E' \\
+$= \{(1,1),(2,1),(2,2),(2,3),(2,4),(3,1),(3,2),(3,3),(3,4),(4,1),(4,2),(4,3),(4,4) \}$
+
+\paragraph{b)}
+Modifizieren Sie den Algorithmus von Floyd/Warshall, um die transitive Hülle $G'$ eines Graphen $G$ in $\calO(n^3)$ zu berechnen. Begründen Sie die Korrektheit und die Laufzeit Ihres Algorithmus.
+
+\begin{algorithm}[H]
+\SetAlgoLined
+A ist Adjazenzmatrix von G = (V,E) \\
+$n=|V|$ \\
+baue neue Matrix(n x n) M \\
+\For {i= 1 to n}{
+   \For {j= 1 to n}{
+      M[i][j] = A[i][j] \;
+   }
+} 
+\For {i = 1 to n}{
+   M[i][i] = 1 \;
+}
+\For {k= 1 to n}{
+   \For {i=1 to n}{
+      \For {j= 1 to n}{
+         \If {M[i][k] == 1 $&&$ M[k][j] == 1}{
+            M[i][j] = 1 \;
+         }
+      }
+   }
+}
+\Return H 
+\end{algorithm} \\
+
+\textbf{Korrektheit:} \\
+Jeder Knoten enthält eine Kante zu sich selbst (transitive Hülle), siehe Zeile 9-11. Außerdem übernimmt die transitive Hülle auch die bereits vorhandenen Kanten des Graphen. Der FW-Algorithmus prüft nun für jeden Knoten, ob die bisher berechnetete Distanz zwischen den Knotenpaaren kürzer wird. Da wir aber nur binär Denken müssen, es also nur 0 keinen Pfad gibt und 1 es gibt einen Pfad, entsteht nur eine neue Adjazenzmatrix. \\
+
+\textbf{Laufzeit:} \\
+ineinander geschachtelte For-Schleifen mit Laufzeit je $O(|V|)$, d.h. die Laufzeit des Algorithmus beträgt: $O(|V|^{3})$
+
+%----------------------------------------------------------------------------
+\subsection{Programmieraufgabe: Dijkstra-Algorithmus}
+Laden Sie die Java-Vorlage aus dem Moodle herunter und machen Sie sich mit der Implementierung von Graphen vertraut, die Sie in der Vorlage finden. Implementieren Sie dann die Methode:
+
+\begin{center}
+\texttt{runDijkstra(Graph g, Node start)},
+\end{center}
+
+\noindent die den Dijkstra-Algorithmus ausführen soll.
+Verwenden Sie bei Ihrer Implementierung sinnvolle Variablennamen und kommentieren Sie Ihren Code!
+Laden Sie Ihre Lösung ins Moodle. Nicht kompilierende Abgaben werden \textbf{mit 0 Punkten} bewertet.
 
 %----------------------------------------------------------------------------------------
 \end{document}
