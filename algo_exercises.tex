@@ -11,6 +11,7 @@
 
 %Algorithms
 \usepackage[ruled,linesnumbered]{algorithm2e}
+\usepackage{listings}
 
 \usepackage[T1]{fontenc} 
 \usepackage{fourier} 
@@ -75,7 +76,7 @@ $\Rightarrow a = b^{x} = b^{log_{b}(a)}$
 Zeigen Sie: $log_{b}(x*y) = log_{b}(x) + log_{b}(y)$
 
 Sei $x_{1}=log_{b}(x), x_{2}=log_{b}(y)$
-$\Rightarrow b^{x_{1}} = x & b^{x_{2}} = y$
+$\Rightarrow b^{x_{1}} = x$ und $b^{x_{2}} = y$
 $\Rightarrow x*y = b^{x_{1}}*b^{x_{2}} = b^{x_{1}+x_{2}}$
 $\Rightarrow log_{b}(x*y) = x_{1} + x^{2} = log_{b}(x) + log_{b}(y)$
 
@@ -340,9 +341,7 @@ Sei n eine Zweierpotenz, das heißt $n = 2^{k}$ für ein $k \epsilon \mathbb{N}$
 
 $$T(n) = A(n) + B(n) ,$$ wobei
 $$A(n)=A(\dfrac{n}{2}) + B( \dfrac{n}{2})$$ und
-$$B(n)=B(n-1)
-
-+2n-1.$$
+$$B(n)=B(n-1)+2n-1.$$
 
 Die Endwerte seien $T(1)=1$, $B(1)=1$ und $A(1)=0$. Finden Sie für $T(n)$ eine geschlossene Form ohne das Mastertheorem zu verwenden und beweisen Sie die Korrektheit Ihrer Lösung.
 
@@ -456,7 +455,7 @@ Durchschnittliche Anzahl (average case): $\dfrac{n*3^{n-1}+2+5}{2} = \dfrac{n}{2
 Sei $A$ ein sortiertes Array der Größe $n$ und sei $z$ eine gegebene Zahl. Das Ziel dieser Übung ist es, folgdende Frage zu beantworten: Gibt es in $A$ zwei verschiedene Elemente $x$ und $y$, so dass $x+y=z$?
 
 \paragraph{a)}
-Es sollte nicht schwierig sein, einen Algorithmus zu finden, der diese Frage in quadratischer Zeit $\calO(n^2)$ beantwortet. Geben Sie Pseudocode für einen solchen Algorithmus an und erklären Sie warum Ihr Algorithmus die Laufzeit $\calO(n^2)$ hat. \\
+Es sollte nicht schwierig sein, einen Algorithmus zu finden, der diese Frage in quadratischer Zeit $O(n^2)$ beantwortet. Geben Sie Pseudocode für einen solchen Algorithmus an und erklären Sie warum Ihr Algorithmus die Laufzeit $O(n^2)$ hat. \\
 
 \begin{algorithm}[H]
 \SetAlgoLined
@@ -479,7 +478,7 @@ counter2++ \\
 Der Algorithmus hat $\mathcal{O}(z)$ Laufzeit, weil hier jede Zelle des Arrays einmal mit jeder anderen addiert und anschließendauf Größe = z verglichen wird.
 
 \paragraph{b)}
-Verwenden Sie nun die binäre Suche, um einen effizienteren Algorithmus zu finden, der die obige Frage in einer Laufzeit von $\calO(n\log n)$ beantworten kann. Geben Sie auch hier Pseudocode an und begründen Sie die Korrektheit Ihres Algorithmus. Erklären Sie, warum Ihr Algorithmus die angegebene Laufzeit hat. \\
+Verwenden Sie nun die binäre Suche, um einen effizienteren Algorithmus zu finden, der die obige Frage in einer Laufzeit von $\mathcalO(n\log n)$ beantworten kann. Geben Sie auch hier Pseudocode an und begründen Sie die Korrektheit Ihres Algorithmus. Erklären Sie, warum Ihr Algorithmus die angegebene Laufzeit hat. \\
 
 \begin{algorithm}[H]
 \SetAlgoLined
@@ -499,7 +498,7 @@ $y=z-A(counter)$ \\
 Da nun das Komplementärelement von y (also x mit $x+y=z$) nicht mehr in linearer Suchzeit, sondern logarithmischer Suchzeit $log(n)$ gefunden wird, falls vorhanden, benötigt dieser Algorithmus für jede Rekursion nicht mehr $\mathcal{O}(n)$ sondern $\mathcal{log(n)}$ Schritte, was bei Tests für alle n Elemente des Input Arrays zu maximal $n*log(n)$ Schritten führt, was bedeutet, dass die Laufzeit in $\mathcal{O}(n*log(n))$ liegt.
 
 \paragraph{c)}
-Es ist klar, dass ein Algorithmus für die obige Frage mindestens die Laufzeit $\Omega(n)$ benötigt. Versuchen Sie, einen Algorithmus zu finden, der obige Frage in einer Laufzeit von $\calO(n)$ beantwortet. Geben Sie Pseudocode an und begründen Sie die Laufzeit und die Korrektheit Ihres Algorithmus. \\
+Es ist klar, dass ein Algorithmus für die obige Frage mindestens die Laufzeit $\Omega(n)$ benötigt. Versuchen Sie, einen Algorithmus zu finden, der obige Frage in einer Laufzeit von $\mathcalO(n)$ beantwortet. Geben Sie Pseudocode an und begründen Sie die Laufzeit und die Korrektheit Ihres Algorithmus. \\
 
 \begin{algorithm}[H]
 \SetAlgoLined
